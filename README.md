@@ -1,5 +1,5 @@
 # libROM runs
-Temporary repository to share libROM runs
+Temporary repository to share libROM run outputs
 
 * nlel_eqp_online${n}ntw${ntw}.txt
 

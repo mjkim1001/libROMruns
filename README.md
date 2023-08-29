@@ -1,2 +1,2 @@
-# libROMruns
-temporary repository to share libROM runs
+# libROM runs
+Temporary repository to share libROM runs

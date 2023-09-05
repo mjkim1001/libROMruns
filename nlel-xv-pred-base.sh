@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -N 1
-#SBATCH -t 10:00:00
-#SBATCH -p pbatch
+#SBATCH -t 1:00:00
+#SBATCH -p pdebug
 #SBATCH --open-mode truncate
 source _get_vecs.sh
 myPath=../../../runnl0904
@@ -26,8 +26,7 @@ IFS=" " read -r -a n_v <<<"$(get_vectors $v_name)"
 nl_name="mergedSV_H.txt"
 IFS=" " read -r -a n_nl <<<"$(get_vectors $nl_name)"
 echo "Recovering number of basis vectors:"
-for ntw in 100 ;do
-#for n in 4 5 6;do
+for ntw in 500 200 ;do
 for ((n = 0; n < "${#fractions[@]}"; n++)); do
     echo "frac: ${fractions[$n]}, x-basis vectors: ${n_x[$n]}, v-basis vectors: ${n_v[$n]}, nl-basis vectors: ${n_nl[$n]}"
    srun -n 1 -p pdebug nonlinear_elasticity_global_rom -online -rxdim ${n_x[$n]} -rvdim ${n_v[$n]} -dt ${dt} -tf $t -eqp -ns 2 -sc 1.0 -hdim ${n_nl[$n]} -ntw ${ntw} >"${myPath}/nlel_eqp_online${n}tw${ntw}.txt"
@@ -36,10 +35,8 @@ for ((n = 0; n < "${#fractions[@]}"; n++)); do
         TT=$(cat ${myPath}/nlel_eqp_online${n}tw${ntw}.txt | grep "Elapsed time for time integration loop " | egrep -wo 'nan|[0-9]*\.([0-9]*|[0-9]*e\-[0-9]*|[0-9]*e\+[0-9]*)')
         nqp=$(cat ${myPath}/nlel_eqp_online${n}tw${ntw}.txt |  grep 'Global number of nonzeros in NNLS solution: ' | egrep -wo '[0-9]*')
         printf "EQP,${dt},${fractions[$n]},${n_x[$n]},${n_v[$n]},${ntw},,${TT},${err_x},${err_v}\n" >> "$output"
-continue
-#if [ $q < ${n_nl[$n]} ]; then
-#        continue
-#fi
+continue # If you only want to run EQP results
+
 q=$((${n_nl[$n]}*2))
         nonlinear_elasticity_global_rom -online -dt ${dt} -tf $t -s 14 -hyp -rvdim ${n_v[$n]} -rxdim ${n_x[$n]}  -hdim ${n_nl[$n]}  -nsr $q -sc 1.0 -sopt > "${myPath}/nlel_sopt_online${n}tw${ntw}.txt"
         err_x=$(cat ${myPath}/nlel_sopt_online${n}tw${ntw}.txt | grep "Relative error of ROM position (x) " | egrep -wo 'nan|[0-9]*\.([0-9]*|[0-9]*e\-[0-9]*|[0-9]*e\+[0-9]*)' | tail -n1)

@@ -6,7 +6,7 @@
 source _get_vecs.sh
 myPath=../../../runnl0904
 output="${myPath}/nlel_xv_pred_base5.txt"
-#printf "method,energy_frac,rxdim,rvdim,nldim,nsr,nqp,time,err_x,err_v\n"  > "$output"
+printf "Method,dt,ef,rxdim,rvdim,ntw,q,time,errx,errv\n"  > "$output"
 # Declare energy fraction array
 fractions=(0.9 0.99 0.999 0.9999 0.99999 0.999999 0.9999999)
 rm basis* 

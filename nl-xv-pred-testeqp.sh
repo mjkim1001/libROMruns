@@ -105,4 +105,5 @@ for ((n = 0; n < 2 ; n++)); do
 	n_value=$(awk -F'[,=]' '/NNLS solver:/ {gsub(/ /, "", $4); print $4}' ${myPath}/nlel_eqp_online${n}t${t}dt${dt}.txt)
 	printf "EQP,$t,${dt},${fractions[$n]},${n_x[$n]},${n_v[$n]},${nqp},${nvar},${m_value},${n_value},${TT},${err_x},${err_v}\n" >> "$output"
 done
+break
 done done

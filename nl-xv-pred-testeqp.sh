@@ -85,8 +85,8 @@ for ((n = 0; n < 2 ; n++)); do
         TT=$(cat ${myPath}/nlel_eqp_online${n}t${t}dt${dt}.txt | grep "Elapsed time for time integration loop " | egrep -wo 'nan|[0-9]*\.([0-9]*|[0-9]*e\-[0-9]*|[0-9]*e\+[0-9]*)')
         nqp=$(cat ${myPath}/nlel_eqp_online${n}t${t}dt${dt}.txt |  grep 'Global number of nonzeros in NNLS solution: ' | egrep -wo '[0-9]*')
   nvar=$(cat ${myPath}/nlel_eqp_online${n}t${t}dt${dt}.txt |  grep 'Number of velocity/deformation unknowns: ' | egrep -wo '[0-9]*')
-	m_value=$(awk -F'[ ,=]' '/NNLS solver:/ {gsub(/ /, "", $3); print $3}' ${myPath}/nlel_eqp_online${n}t${t}dt${dt}.txt)
-	n_value=$(awk -F'[ ,=]' '/NNLS solver:/ {gsub(/ /, "", $6); print $6}' ${myPath}/nlel_eqp_online${n}t${t}dt${dt}.txt)
-				printf "EQP,$t,${dt},${fractions[$n]},${n_x[$n]},${n_v[$n]},${nqp},${nvar},${m_value},${n_value},${TT},${err_x},${err_v}\n" >> "$output"
+	m_value=$(awk -F'[,=]' '/NNLS solver:/ {gsub(/ /, "", $2); print $2}' ${myPath}/nlel_eqp_online${n}t${t}dt${dt}.txt)
+	n_value=$(awk -F'[,=]' '/NNLS solver:/ {gsub(/ /, "", $4); print $4}' ${myPath}/nlel_eqp_online${n}t${t}dt${dt}.txt)
+	printf "EQP,$t,${dt},${fractions[$n]},${n_x[$n]},${n_v[$n]},${nqp},${nvar},${m_value},${n_value},${TT},${err_x},${err_v}\n" >> "$output"
 done
 done done

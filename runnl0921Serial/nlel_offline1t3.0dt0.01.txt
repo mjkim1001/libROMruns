@@ -41,8 +41,8 @@ initial   total energy (TE) = 0.000236149
 step 100, t = 1, EE = 2.16897e-05, KE = 0.00020889, ΔTE = -5.56963e-06
 step 200, t = 2, EE = 4.56749e-05, KE = 0.00017598, ΔTE = -1.44945e-05
 step 300, t = 3, EE = 8.85295e-05, KE = 0.000126824, ΔTE = -2.07953e-05
-Elapsed time for time integration loop 1.44729
+Elapsed time for time integration loop 1.39056
 Creating file: basis0_V_snapshot.000000
 Creating file: basis0_H_snapshot.000000
 Creating file: basis0_X_snapshot.000000
-Elapsed time for entire simulation 1.75492
+Elapsed time for entire simulation 1.56258

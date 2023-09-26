@@ -43,8 +43,8 @@ step 200, t = 2, EE = 0.000108245, KE = 0.000265373, ΔTE = -2.4888e-05
 step 300, t = 3, EE = 0.000183346, KE = 0.000182315, ΔTE = -3.2846e-05
 step 400, t = 4, EE = 0.000228615, KE = 0.000131774, ΔTE = -3.81173e-05
 step 500, t = 5, EE = 0.000228895, KE = 0.000125834, ΔTE = -4.37763e-05
-Elapsed time for time integration loop 2.23596
+Elapsed time for time integration loop 2.37308
 Creating file: basis1_V_snapshot.000000
 Creating file: basis1_H_snapshot.000000
 Creating file: basis1_X_snapshot.000000
-Elapsed time for entire simulation 2.48473
+Elapsed time for entire simulation 2.62498

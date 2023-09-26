@@ -40,8 +40,8 @@ initial kinetic energy (KE) = 0.000318121
 initial   total energy (TE) = 0.000318121
 step 100, t = 1, EE = 3.19807e-05, KE = 0.000278219, ΔTE = -7.92091e-06
 step 200, t = 2, EE = 7.03409e-05, KE = 0.000227528, ΔTE = -2.02513e-05
-Elapsed time for time integration loop 0.959892
+Elapsed time for time integration loop 0.978834
 Creating file: basis2_V_snapshot.000000
 Creating file: basis2_H_snapshot.000000
 Creating file: basis2_X_snapshot.000000
-Elapsed time for entire simulation 1.2237
+Elapsed time for entire simulation 1.11775

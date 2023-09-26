@@ -1,0 +1,57 @@
+Options used:
+   --mesh ../data/beam-quad.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --order 2
+   --ode-solver 14
+   --t-final 4
+   --time-step 0.01
+   --viscosity 0.01
+   --shear-modulus 0.25
+   --bulk-modulus 5
+   --adaptive-lin-rtol
+   --visualization
+   --no-visit-datafiles
+   --visualization-steps 100
+   --nset 0
+   --no-offline
+   --online
+   --no-merge
+   --no-qdeim
+   --no-sopt
+   --nsr 1170
+   --rxdim 6
+   --rvdim 15
+   --hdim 26
+   --id 0
+   --hyperreduce
+   --not-xbase-only
+   --velocity-ic
+   --scaling 1
+   --no-eqp
+   --no-sample-mesh
+   --no-preceqp
+   --tol-nnls 1e-14
+   --max-nnls 0
+   --n-time-windows 0
+Number of velocity/deformation unknowns: 1170
+initial elastic energy (EE) = 8.68126e-18
+initial kinetic energy (KE) = 0.000318121
+initial   total energy (TE) = 0.000318121
+Opening file: basisV.000000
+reduced V dim = 15
+Opening file: basisX.000000
+reduced X dim = 6
+Opening file: basisH.000000
+reduced H dim = 26
+Using GNAT sampling
+sample mesh has 128 elements, 165 vertices
+Lifted initial energies, EE = 8.68126e-18, KE = 0.000318121, ΔTE = 0
+step 100, t = 1, EE = 3.30549e-05, KE = 0.000279954, ΔTE = -5.11169e-06
+step 200, t = 2, EE = 7.12855e-05, KE = 0.000231429, ΔTE = -1.54063e-05
+step 300, t = 3, EE = 0.000132505, KE = 0.000166324, ΔTE = -1.92912e-05
+step 400, t = 4, EE = 0.000190296, KE = 0.000122257, ΔTE = -5.56762e-06
+Elapsed time for time integration loop 1.25984
+Relative error of ROM position (x) at t_final: 4 is 0.000289824
+Relative error of ROM velocity (v) at t_final: 4 is 0.384944
+Elapsed time for entire simulation 1.64761

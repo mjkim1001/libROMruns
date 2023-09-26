@@ -1,0 +1,49 @@
+Options used:
+   --mesh ../data/beam-quad.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --order 2
+   --ode-solver 14
+   --t-final 4
+   --time-step 0.01
+   --viscosity 0.01
+   --shear-modulus 0.25
+   --bulk-modulus 5
+   --adaptive-lin-rtol
+   --visualization
+   --no-visit-datafiles
+   --visualization-steps 100
+   --nset 0
+   --offline
+   --no-online
+   --no-merge
+   --no-qdeim
+   --no-sopt
+   --nsr -1
+   --rxdim -1
+   --rvdim -1
+   --hdim -1
+   --id 2
+   --hyperreduce
+   --not-xbase-only
+   --velocity-ic
+   --scaling 1
+   --no-eqp
+   --no-sample-mesh
+   --no-preceqp
+   --tol-nnls 1e-14
+   --max-nnls 0
+   --n-time-windows 0
+Number of velocity/deformation unknowns: 1170
+initial elastic energy (EE) = 8.68126e-18
+initial kinetic energy (KE) = 0.000318121
+initial   total energy (TE) = 0.000318121
+step 100, t = 1, EE = 3.19807e-05, KE = 0.000278219, ΔTE = -7.92091e-06
+step 200, t = 2, EE = 7.03409e-05, KE = 0.000227528, ΔTE = -2.02513e-05
+step 300, t = 3, EE = 0.000128348, KE = 0.000160819, ΔTE = -2.8954e-05
+step 400, t = 4, EE = 0.000174736, KE = 0.000109128, ΔTE = -3.42571e-05
+Elapsed time for time integration loop 1.8921
+Creating file: basis2_V_snapshot.000000
+Creating file: basis2_H_snapshot.000000
+Creating file: basis2_X_snapshot.000000
+Elapsed time for entire simulation 2.10911

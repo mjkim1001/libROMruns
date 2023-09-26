@@ -1,0 +1,47 @@
+Options used:
+   --mesh ../data/beam-quad.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --order 2
+   --ode-solver 14
+   --t-final 5
+   --time-step 0.01
+   --viscosity 0.01
+   --shear-modulus 0.25
+   --bulk-modulus 5
+   --adaptive-lin-rtol
+   --visualization
+   --no-visit-datafiles
+   --visualization-steps 1
+   --nset 2
+   --no-offline
+   --no-online
+   --merge
+   --no-qdeim
+   --no-sopt
+   --nsr -1
+   --rxdim -1
+   --rvdim -1
+   --hdim -1
+   --id 0
+   --hyperreduce
+   --not-xbase-only
+   --velocity-ic
+   --scaling 1
+   --no-eqp
+   --no-sample-mesh
+   --no-preceqp
+   --tol-nnls 1e-14
+   --max-nnls 0
+   --n-time-windows 0
+Number of velocity/deformation unknowns: 1170
+Opening file: basis0_V_snapshot.000000
+Opening file: basis1_V_snapshot.000000
+Creating file: basisV.000000
+Opening file: basis0_X_snapshot.000000
+Opening file: basis1_X_snapshot.000000
+Creating file: basisX.000000
+Opening file: basis0_H_snapshot.000000
+Opening file: basis1_H_snapshot.000000
+Creating file: basisH.000000
+Elapsed time for merging and building ROM basis: 5.907988e+00 second

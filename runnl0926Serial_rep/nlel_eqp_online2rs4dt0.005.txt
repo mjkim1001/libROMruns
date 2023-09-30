@@ -5,7 +5,7 @@ Options used:
    --order 2
    --ode-solver 14
    --t-final 1
-   --time-step 0.01
+   --time-step 0.005
    --viscosity 0.01
    --shear-modulus 0.25
    --bulk-modulus 5
@@ -15,30 +15,37 @@ Options used:
    --visualization-steps 1
    --nset 1
    --no-offline
-   --no-online
-   --merge
+   --online
+   --no-merge
    --no-qdeim
    --no-sopt
    --nsr -1
-   --rxdim -1
-   --rvdim -1
-   --hdim -1
+   --rxdim 3
+   --rvdim 8
+   --hdim 1
    --id 0
    --hyperreduce
    --not-xbase-only
    --velocity-ic
    --scaling 1
-   --no-eqp
+   --eqp
    --no-sample-mesh
    --no-preceqp
    --tol-nnls 1e-14
    --max-nnls 0
    --n-time-windows 0
 Number of velocity/deformation unknowns: 16962
-Opening file: basis0_V_snapshot.000000
-Creating file: basisV.000000
+initial elastic energy (EE) = 2.03224e-18
+initial kinetic energy (KE) = 0.000318123
+initial   total energy (TE) = 0.000318123
+Opening file: basisV.000000
+reduced V dim = 8
+Opening file: basisX.000000
+reduced X dim = 3
+Opening file: basisH.000000
+reduced H dim = 1
 Opening file: basis0_X_snapshot.000000
-Creating file: basisX.000000
-Opening file: basis0_H_snapshot.000000
-Creating file: basisH.000000
-Elapsed time for merging and building ROM basis: 2.910364e+00 second
+NNLSSolver init on rank 0 out of 1 processes
+0 0 1608 32768 0 nan -nan
+{    0,    0}:  On entry to 
+PDORMQR parameter number    4 had an illegal value 

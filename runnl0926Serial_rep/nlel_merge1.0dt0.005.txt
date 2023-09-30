@@ -5,7 +5,7 @@ Options used:
    --order 2
    --ode-solver 14
    --t-final 1
-   --time-step 0.01
+   --time-step 0.005
    --viscosity 0.01
    --shear-modulus 0.25
    --bulk-modulus 5
@@ -41,4 +41,4 @@ Opening file: basis0_X_snapshot.000000
 Creating file: basisX.000000
 Opening file: basis0_H_snapshot.000000
 Creating file: basisH.000000
-Elapsed time for merging and building ROM basis: 2.910364e+00 second
+Elapsed time for merging and building ROM basis: 9.376659e+00 second

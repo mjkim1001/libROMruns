@@ -1,6 +1,6 @@
 Options used:
    --mesh ../data/beam-quad.mesh
-   --refine-serial 4
+   --refine-serial 3
    --refine-parallel 0
    --order 2
    --ode-solver 14
@@ -12,11 +12,11 @@ Options used:
    --adaptive-lin-rtol
    --visualization
    --no-visit-datafiles
-   --visualization-steps 1
-   --nset 1
-   --no-offline
+   --visualization-steps 100
+   --nset 0
+   --offline
    --no-online
-   --merge
+   --no-merge
    --no-qdeim
    --no-sopt
    --nsr -1
@@ -34,11 +34,13 @@ Options used:
    --tol-nnls 1e-14
    --max-nnls 0
    --n-time-windows 0
-Number of velocity/deformation unknowns: 16962
-Opening file: basis0_V_snapshot.000000
-Creating file: basisV.000000
-Opening file: basis0_X_snapshot.000000
-Creating file: basisX.000000
-Opening file: basis0_H_snapshot.000000
-Creating file: basisH.000000
-Elapsed time for merging and building ROM basis: 2.910364e+00 second
+Number of velocity/deformation unknowns: 4386
+initial elastic energy (EE) = 3.93175e-18
+initial kinetic energy (KE) = 0.000318123
+initial   total energy (TE) = 0.000318123
+step 100, t = 1, EE = 3.17876e-05, KE = 0.000278391, ΔTE = -7.94421e-06
+Elapsed time for time integration loop 2.31196
+Creating file: basis0_V_snapshot.000000
+Creating file: basis0_H_snapshot.000000
+Creating file: basis0_X_snapshot.000000
+Elapsed time for entire simulation 2.8653

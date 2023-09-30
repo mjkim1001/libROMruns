@@ -1,6 +1,6 @@
 Options used:
    --mesh ../data/beam-quad.mesh
-   --refine-serial 4
+   --refine-serial 2
    --refine-parallel 0
    --order 2
    --ode-solver 14
@@ -34,11 +34,11 @@ Options used:
    --tol-nnls 1e-14
    --max-nnls 0
    --n-time-windows 0
-Number of velocity/deformation unknowns: 16962
+Number of velocity/deformation unknowns: 1170
 Opening file: basis0_V_snapshot.000000
 Creating file: basisV.000000
 Opening file: basis0_X_snapshot.000000
 Creating file: basisX.000000
 Opening file: basis0_H_snapshot.000000
 Creating file: basisH.000000
-Elapsed time for merging and building ROM basis: 2.910364e+00 second
+Elapsed time for merging and building ROM basis: 3.209485e-01 second

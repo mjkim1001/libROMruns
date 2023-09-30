@@ -5,18 +5,18 @@ Options used:
    --order 2
    --ode-solver 14
    --t-final 1
-   --time-step 0.01
+   --time-step 0.005
    --viscosity 0.01
    --shear-modulus 0.25
    --bulk-modulus 5
    --adaptive-lin-rtol
    --visualization
    --no-visit-datafiles
-   --visualization-steps 1
-   --nset 1
-   --no-offline
+   --visualization-steps 100
+   --nset 0
+   --offline
    --no-online
-   --merge
+   --no-merge
    --no-qdeim
    --no-sopt
    --nsr -1
@@ -35,10 +35,13 @@ Options used:
    --max-nnls 0
    --n-time-windows 0
 Number of velocity/deformation unknowns: 16962
-Opening file: basis0_V_snapshot.000000
-Creating file: basisV.000000
-Opening file: basis0_X_snapshot.000000
-Creating file: basisX.000000
-Opening file: basis0_H_snapshot.000000
-Creating file: basisH.000000
-Elapsed time for merging and building ROM basis: 2.910364e+00 second
+initial elastic energy (EE) = 2.03224e-18
+initial kinetic energy (KE) = 0.000318123
+initial   total energy (TE) = 0.000318123
+step 100, t = 0.5, EE = 1.30161e-05, KE = 0.000301578, ΔTE = -3.52883e-06
+step 200, t = 1, EE = 3.17121e-05, KE = 0.000278458, ΔTE = -7.95256e-06
+Elapsed time for time integration loop 18.5419
+Creating file: basis0_V_snapshot.000000
+Creating file: basis0_H_snapshot.000000
+Creating file: basis0_X_snapshot.000000
+Elapsed time for entire simulation 20.5483

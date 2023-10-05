@@ -39,8 +39,8 @@ initial elastic energy (EE) = 8.68126e-18
 initial kinetic energy (KE) = 0.000318121
 initial   total energy (TE) = 0.000318121
 step 100, t = 1, EE = 3.19807e-05, KE = 0.000278219, ΔTE = -7.92091e-06
-Elapsed time for time integration loop 0.460696
+Elapsed time for time integration loop 0.457014
 Creating file: basis0_V_snapshot.000000
 Creating file: basis0_H_snapshot.000000
 Creating file: basis0_X_snapshot.000000
-Elapsed time for entire simulation 0.821167
+Elapsed time for entire simulation 0.81594

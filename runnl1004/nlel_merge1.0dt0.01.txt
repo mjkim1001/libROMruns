@@ -41,4 +41,4 @@ Opening file: basis0_X_snapshot.000000
 Creating file: basisX.000000
 Opening file: basis0_H_snapshot.000000
 Creating file: basisH.000000
-Elapsed time for merging and building ROM basis: 2.816714e-01 second
+Elapsed time for merging and building ROM basis: 7.823326e-01 second

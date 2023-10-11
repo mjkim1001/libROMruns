@@ -1,4 +1,4 @@
-method,t,energy_frac,rxdim,rvdim,nldim,nqp,time,err_x,err_v
+method,t,energy_frac,rxdim,rvdim,nldim,q,nqp,time,err_x,err_v
 EQP,1.0,0.9,1,2,198,202,,0.0249684,7.19825e-05,0.144835
 SOPT,1.0,0.9,1,2,3,40,360,0.102144,0.00118782,0.195167
 gappy-POD,1.0,0.9,1,2,3,40,261,0.0736734,0.00175896,0.275633

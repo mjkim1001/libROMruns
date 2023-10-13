@@ -1,0 +1,47 @@
+Options used:
+   --mesh ../data/beam-quad.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --order 2
+   --ode-solver 14
+   --t-final 1
+   --time-step 0.01
+   --viscosity 0.01
+   --shear-modulus 0.25
+   --bulk-modulus 5
+   --adaptive-lin-rtol
+   --visualization
+   --no-visit-datafiles
+   --visualization-steps 1
+   --nset 0
+   --no-offline
+   --online
+   --no-merge
+   --qdeim
+   --no-sopt
+   --nsr 50
+   --rxdim 37
+   --rvdim 57
+   --hdim 61
+   --id 0
+   --hyperreduce
+   --not-xbase-only
+   --velocity-ic
+   --scaling 1
+   --no-eqp
+   --no-sample-mesh
+   --no-preceqp
+   --tol-nnls 1e-14
+   --max-nnls 0
+   --n-time-windows 0
+Number of velocity/deformation unknowns: 1170
+initial elastic energy (EE) = 8.68126e-18
+initial kinetic energy (KE) = 0.000318121
+initial   total energy (TE) = 0.000318121
+Opening file: basisV.000000
+reduced V dim = 57
+Opening file: basisX.000000
+reduced X dim = 37
+Opening file: basisH.000000
+reduced H dim = 61
+Using QDEIM sampling

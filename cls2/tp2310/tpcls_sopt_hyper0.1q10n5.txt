@@ -1,0 +1,145 @@
+
+       __                __                 
+      / /   ____  ____  / /_  ____  _____   
+     / /   / __ `/ __ `/ __ \/ __ \/ ___/ 
+    / /___/ /_/ / /_/ / / / / /_/ (__  )    
+   /_____/\__,_/\__, /_/ /_/\____/____/  
+               /____/                       
+
+Options used:
+   --mesh data/box01_hex.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --problem 3
+   --order-kinematic 2
+   --order-thermo 1
+   --ode-solver 7
+   --t-final 0.1
+   --cfl 0.5
+   --cg-tol 1e-08
+   --ftz-tol 0
+   --cg-max-steps 300
+   --max-steps -1
+   --partial-assembly
+   --no-impose-viscosity
+   --no-visualization
+   --visualization-steps 5
+   --no-match-end-time
+   --no-visit
+   --no-print
+   --outputfilename tpShortSerial
+   --visitfilename Laghos
+   --param_dir 
+   --timewindowfilename tw.csv
+   --timewindowparamfilename twp.csv
+   --initsamplesfilename initSamples
+   --partition 0
+   --no-build-database
+   --no-use-database
+   --no-sample-stages
+   --no-offline
+   --online
+   --no-restore
+   --rom_dimx 6
+   --rom_dimv 18
+   --rom_dime 20
+   --rom_dimfv -1
+   --rom_dimfe -1
+   --numsamplex 0
+   --numsamplev 0
+   --numsamplee 0
+   --numtsamplev 1
+   --numtsamplee 1
+   --sfactorx 2
+   --sfactorv 10
+   --sfactore 10
+   --rom-ef 0.9999
+   --rom-efx 0.9999
+   --sv-shift 1
+   --bi 
+   --numwindows 0
+   --numwindowsamples 0
+   --numwindowoverlap 0
+   --dtFactor 1
+   --dtc 0
+   --dmd
+   --dmdtbegin 0
+   --dtime-step -1
+   --dmdcrbf 0.9
+   --no-dmdnuf
+   --visdiff -1
+   --no-writesol
+   --no-soldiff
+   --no-romhr
+   --romhrprep
+   --precls
+   --romsvdstatic
+   --no-romsvdrm
+   --rand_dimx -1
+   --rand_dimv -1
+   --rand_dime -1
+   --rand_dimfv -1
+   --rand_dimfe -1
+   --romoffset
+   --norm_type l2
+   --sdim 0
+   --linearitytol 1e-07
+   --singularvaluetol 1e-14
+   --samplingtol 1e-07
+   --greedy-param bef
+   --greedy-param-min 0
+   --greedy-param-max 0
+   --greedy-param-size 0
+   --greedytf -1
+   --greedytol 0.1
+   --greedyalpha 1.05
+   --greedymaxclamp 2
+   --greedysubsize 0
+   --greedyconvsize 0
+   --greedysamplingtype random
+   --greedyerrorindtype useLastLifted
+   --romsns
+   --romgramschmidt
+   --rhofactor 1
+   --atwoodfactor 0.333333
+   --blastefactor 1
+   --romparam -1
+   --romoffsettype initial
+   --romindicatortype time
+   --romspacetimetype spatial
+   --no-romusexv
+   --no-romusevx
+   --no-romusexandv
+   --hrsamplingtype sopt
+Zones min/max: 1344 1344
+Number of kinematic (position, velocity) dofs: 38475
+Number of specific internal energy dofs: 10752
+0: pmesh number of elements 1344
+Opening file: run/tpShortSerial/basisV0.000000
+Read basis run/tpShortSerial/basisV0 of dimension 18
+Opening file: run/tpShortSerial/basisE0.000000
+Read basis run/tpShortSerial/basisE0 of dimension 20
+Opening file: run/tpShortSerial/basisX0.000000
+Read basis run/tpShortSerial/basisX0 of dimension 6
+Opening file: run/tpShortSerial/basisV0.000000
+Read basis run/tpShortSerial/basisV0 of dimension 18
+Opening file: run/tpShortSerial/basisE0.000000
+Read basis run/tpShortSerial/basisE0 of dimension 20
+Reading: run/tpShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 510.727, 0, 135.013
+start preprocessing hyper-reduction
+number of samples for velocity: 28
+number of samples for energy  : 30
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:7.605543 -9.034229:1.187848
+18	28	k141933.520182	k128352.625590	k855244.488179	k213861.703772	k64934.332779	k33759.047999	k95362.206135	k358099.390540	k467183.205986	k53581.880954	k17936.014455	k45577.291728	k19962.798435	k47859347.857477	k1203273.477846	k189641.561206	k1301624.715931	k2028832644067.451416	k1339247.776680	k156924276.333812	k5922981.185420	k196680.099068	k2056678.157771	k28693942.558473	k351025985.821756	k5904125314.935102	k2050958786538.031250	k978027567723.073120	
+conditionNum:6.612387 -9.780136:1.479063
+20	30	k22134.407039	k2916473.897854	k22394.411137	k217472.273726	k19234.939971	k38921.135922	k23186.463524	k35301.883030	k28720.433547	k65318.343549	k145539.471676	k26178.093243	k14526.218573	k3031579.179857	k254734.474211	k83489.320226	k112203.923229	k194885.517973	k86856.109479	k117914.297592	k170823.268183	k135410.610878	k2526824179.385128	k429194740.044723	k32620875065.278004	k45360512246.155487	k20427.710938	k397263.980989	k156581.341698	k156617.987770	
+	E30sample mesh has 91 elements, 312 vertices
+Elapsed time for hyper-reduction preprocessing: 0.82432 sec
+Writing SP files for window: 0
+Offset Style: initial
+Indicator Style: time
+Window 0: initial romS norm 0
+Hyperreduction pre-processing completed. 

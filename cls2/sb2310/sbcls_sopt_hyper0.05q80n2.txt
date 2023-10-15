@@ -1,0 +1,146 @@
+
+       __                __                 
+      / /   ____  ____  / /_  ____  _____   
+     / /   / __ `/ __ `/ __ \/ __ \/ ___/ 
+    / /___/ /_/ / /_/ / / / / /_/ (__  )    
+   /_____/\__,_/\__, /_/ /_/\____/____/  
+               /____/                       
+
+Options used:
+   --mesh data/cube01_hex.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --problem 1
+   --order-kinematic 2
+   --order-thermo 1
+   --ode-solver 7
+   --t-final 0.05
+   --cfl 0.5
+   --cg-tol 1e-08
+   --ftz-tol 0
+   --cg-max-steps 300
+   --max-steps -1
+   --partial-assembly
+   --no-impose-viscosity
+   --no-visualization
+   --visualization-steps 5
+   --no-match-end-time
+   --no-visit
+   --no-print
+   --outputfilename sbShortSerial
+   --visitfilename Laghos
+   --param_dir 
+   --timewindowfilename tw.csv
+   --timewindowparamfilename twp.csv
+   --initsamplesfilename initSamples
+   --partition 211
+   --no-build-database
+   --no-use-database
+   --no-sample-stages
+   --no-offline
+   --online
+   --no-restore
+   --rom_dimx 14
+   --rom_dimv 10
+   --rom_dime 34
+   --rom_dimfv -1
+   --rom_dimfe -1
+   --numsamplex 0
+   --numsamplev 0
+   --numsamplee 0
+   --numtsamplev 1
+   --numtsamplee 1
+   --sfactorx 2
+   --sfactorv 80
+   --sfactore 80
+   --rom-ef 0.9999
+   --rom-efx 0.9999
+   --sv-shift 1
+   --bi 
+   --numwindows 0
+   --numwindowsamples 0
+   --numwindowoverlap 0
+   --dtFactor 1
+   --dtc 0
+   --dmd
+   --dmdtbegin 0
+   --dtime-step -1
+   --dmdcrbf 0.9
+   --no-dmdnuf
+   --visdiff -1
+   --no-writesol
+   --no-soldiff
+   --no-romhr
+   --romhrprep
+   --precls
+   --romsvdstatic
+   --no-romsvdrm
+   --rand_dimx -1
+   --rand_dimv -1
+   --rand_dime -1
+   --rand_dimfv -1
+   --rand_dimfe -1
+   --romoffset
+   --norm_type l2
+   --sdim 0
+   --linearitytol 1e-07
+   --singularvaluetol 1e-14
+   --samplingtol 1e-07
+   --greedy-param bef
+   --greedy-param-min 0
+   --greedy-param-max 0
+   --greedy-param-size 0
+   --greedytf -1
+   --greedytol 0.1
+   --greedyalpha 1.05
+   --greedymaxclamp 2
+   --greedysubsize 0
+   --greedyconvsize 0
+   --greedysamplingtype random
+   --greedyerrorindtype useLastLifted
+   --romsns
+   --romgramschmidt
+   --rhofactor 1
+   --atwoodfactor 0.333333
+   --blastefactor 1
+   --romparam -1
+   --romoffsettype initial
+   --romindicatortype time
+   --romspacetimetype spatial
+   --no-romusexv
+   --no-romusevx
+   --no-romusexandv
+   --hrsamplingtype sopt
+Non-Cartesian partitioning through METIS will be used.
+Zones min/max: 512 512
+Number of kinematic (position, velocity) dofs: 14739
+Number of specific internal energy dofs: 4096
+0: pmesh number of elements 512
+Opening file: run/sbShortSerial/basisV0.000000
+Read basis run/sbShortSerial/basisV0 of dimension 10
+Opening file: run/sbShortSerial/basisE0.000000
+Read basis run/sbShortSerial/basisE0 of dimension 34
+Opening file: run/sbShortSerial/basisX0.000000
+Read basis run/sbShortSerial/basisX0 of dimension 14
+Opening file: run/sbShortSerial/basisV0.000000
+Read basis run/sbShortSerial/basisV0 of dimension 10
+Opening file: run/sbShortSerial/basisE0.000000
+Read basis run/sbShortSerial/basisE0 of dimension 34
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.1796, 0, 1024
+start preprocessing hyper-reduction
+number of samples for velocity: 90
+number of samples for energy  : 114
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:1.393408 -10.475984:7.518248
+10	90	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k230993.213276	k411922.743397	k262954.770114	k636087.728260	k64104.435924	k374151.941564	k316544.372723	k1267809.090707	k76650.137698	k268561563470.391571	k520725.218165	k51180553796.341049	k230993.213277	k411922.743397	k230960.491020	k746188.530087	k64104.435923	k90351.504637	k90351.504637	k76650.137697	k1074973.054859	k102853.231296	k42962.985502	k38864.095967	
+conditionNum:6.516741 -16.357528:2.510078
+34	114	k57677.730652	k66160.894669	k66160.894934	k57677.731303	k99913.210562	k100826.853084	k100518.361079	k111641.835606	k111641.835584	k99903.405617	k110332.051980	k110327.479195	k99907.461129	k99905.557131	k100269.211108	k100518.361157	k101481.271977	k59191.408173	k70055.023067	k70055.023051	k73501.528531	k70055.023071	k73501.528556	k73501.528532	k67607.948094	k100269.211005	k111100.926572	k111100.926561	k100826.853115	k101481.272019	k105386.850449	k109564.913952	k122461.393514	k134053.747724	k120721.434770	k263196.036761	k172336.529898	k172336.529789	k176806.871468	k178963.274850	k347522.805415	k222626.260015	k222626.259950	k10075470162.566366	k498810255.381874	k79697856229.689255	k1.000000	k105386.850433	k109564.914051	k162050.556686	k193526.706897	k162050.556782	k176806.871616	k193526.706999	k122461.393458	k120721.434728	k178963.274678	k74941935.266428	k10075470161.857275	k79697856231.678391	k712162706919.984131	k302679180108.276733	k2533941618849.220215	k712162707012.523682	k3455766953990.187500	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k79697856214.350281	k1.000000	k10075470165.751749	k386343531174.536194	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k1.000000	k504283861.715609	k3532252118858.784668	k3532252115763.424316	k2728726155418.440430	
+	E114sample mesh has 236 elements, 622 vertices
+Elapsed time for hyper-reduction preprocessing: 2.00944 sec
+Writing SP files for window: 0
+Offset Style: initial
+Indicator Style: time
+Window 0: initial romS norm 0
+Hyperreduction pre-processing completed. 

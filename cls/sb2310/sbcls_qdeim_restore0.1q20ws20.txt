@@ -1,0 +1,236 @@
+
+       __                __                 
+      / /   ____  ____  / /_  ____  _____   
+     / /   / __ `/ __ `/ __ \/ __ \/ ___/ 
+    / /___/ /_/ / /_/ / / / / /_/ (__  )    
+   /_____/\__,_/\__, /_/ /_/\____/____/  
+               /____/                       
+
+Unrecognized option: -
+
+Usage: ./laghos [options] ...
+Options:
+   -h, --help
+	Print this help message and exit.
+   -m <string>, --mesh <string>, current value: data/cube01_hex.mesh
+	Mesh file to use.
+   -rs <int>, --refine-serial <int>, current value: 2
+	Number of times to refine the mesh uniformly in serial.
+   -rp <int>, --refine-parallel <int>, current value: 0
+	Number of times to refine the mesh uniformly in parallel.
+   -p <int>, --problem <int>, current value: 1
+	Problem setup to use.
+   -ok <int>, --order-kinematic <int>, current value: 2
+	Order (degree) of the kinematic finite element space.
+   -ot <int>, --order-thermo <int>, current value: 1
+	Order (degree) of the thermodynamic finite element space.
+   -s <int>, --ode-solver <int>, current value: 7
+	ODE solver: 1 - Forward Euler,
+	            2 - RK2 SSP, 3 - RK3 SSP, 4 - RK4, 6 - RK6,
+	            7 - RK2Avg.
+   -tf <double>, --t-final <double>, current value: 0.1
+	Final time; start time is 0.
+   -cfl <double>, --cfl <double>, current value: 0.5
+	CFL-condition number.
+   -cgt <double>, --cg-tol <double>, current value: 1e-08
+	Relative CG tolerance (velocity linear solve).
+   -ftz <double>, --ftz-tol <double>, current value: 0
+	Absolute flush-to-zero tolerance.
+   -cgm <int>, --cg-max-steps <int>, current value: 300
+	Maximum number of CG iterations (velocity linear solve).
+   -ms <int>, --max-steps <int>, current value: -1
+	Maximum number of steps (negative means no restriction).
+   -pa, --partial-assembly, -fa, --full-assembly, current option: --partial-assembly
+	Activate 1D tensor-based assembly (partial assembly).
+   -iv, --impose-viscosity, -niv, --no-impose-viscosity, current option: --no-impose-viscosity
+	Use active viscosity terms even for smooth problems.
+   -vis, --visualization, -no-vis, --no-visualization, current option: --no-visualization
+	Enable or disable GLVis visualization.
+   -vs <int>, --visualization-steps <int>, current value: 5
+	Visualize every n-th timestep.
+   -met, --match-end-time, -no-met, --no-match-end-time, current option: --no-match-end-time
+	Match the end time of each window.
+   -visit, --visit, -no-visit, --no-visit, current option: --no-visit
+	Enable or disable VisIt visualization.
+   -print, --print, -no-print, --no-print, current option: --no-print
+	Enable or disable result output (files in mfem format).
+   -o <string>, --outputfilename <string>, current value: sbShortSerial
+	Name of the sub-folder to dump files within the run directory
+   -k <string>, --visitfilename <string>, current value: Laghos
+	Name of the visit dump files
+   -pardir <string>, --param_dir <string>, current value: 
+	Name of the subdirectory containing testing parameter files
+   -tw <string>, --timewindowfilename <string>, current value: tw.csv
+	Name of the CSV file defining offline time windows
+   -twp <string>, --timewindowparamfilename <string>, current value: twp.csv
+	Name of the CSV file defining online time window parameters
+   -is <string>, --initsamplesfilename <string>, current value: initSamples
+	Prefix of the CSV file defining prescribed sample points
+   -pt <int>, --partition <int>, current value: 211
+	Customized x/y/z Cartesian MPI partitioning of the serial mesh.
+	Here x,y,z are relative task ratios in each direction.
+	Example: with 48 mpi tasks and -pt 321, one would get a Cartesian
+	partition of the serial mesh by (6,4,2) MPI tasks in (x,y,z).
+	NOTE: the serially refined mesh must have the appropriate number
+	of zones in each direction, e.g., the number of zones in direction x
+	must be divisible by the number of MPI tasks in direction x.
+	Available options: 11, 21, 111, 211, 221, 311, 321, 322, 432.
+   -build-database, --build-database, -no-build-database, --no-build-database, current option: --no-build-database
+	Enable or disable ROM database building.
+   -use-database, --use-database, -no-use-database, --no-use-database, current option: --no-use-database
+	Enable or disable ROM database usage.
+   -sample-stages, --sample-stages, -no-sample-stages, --no-sample-stages, current option: --no-sample-stages
+	Enable or disable sampling of intermediate Runge Kutta stages in ROM offline phase.
+   -offline, --offline, -no-offline, --no-offline, current option: --no-offline
+	Enable or disable ROM offline computations and output.
+   -online, --online, -no-online, --no-online, current option: --no-online
+	Enable or disable ROM online computations and output.
+   -restore, --restore, -no-restore, --no-restore, current option: --restore
+	Enable or disable ROM restoration phase where ROM solution is lifted to FOM size.
+   -rdimx <int>, --rom_dimx <int>, current value: -1
+	ROM dimension for X.
+	Ceiling ROM dimension for X over all time windows.
+   -rdimv <int>, --rom_dimv <int>, current value: -1
+	ROM dimension for V.
+	Ceiling ROM dimension for V over all time windows.
+   -rdime <int>, --rom_dime <int>, current value: -1
+	ROM dimension for E.
+	Ceiling ROM dimension for E over all time windows.
+   -rdimfv <int>, --rom_dimfv <int>, current value: -1
+	ROM dimension for Fv.
+	Ceiling ROM dimension for Fv over all time windows.
+   -rdimfe <int>, --rom_dimfe <int>, current value: -1
+	ROM dimension for Fe.
+	Ceiling ROM dimension for Fe over all time windows.
+   -nsamx <int>, --numsamplex <int>, current value: 0
+	number of samples for X.
+   -nsamv <int>, --numsamplev <int>, current value: 0
+	number of samples for V.
+   -nsame <int>, --numsamplee <int>, current value: 0
+	number of samples for E.
+   -ntsamv <int>, --numtsamplev <int>, current value: 1
+	number of time samples for V.
+   -ntsame <int>, --numtsamplee <int>, current value: 1
+	number of time samples for E.
+   -sfacx <double>, --sfactorx <double>, current value: 2
+	sample factor for X.
+   -sfacv <double>, --sfactorv <double>, current value: 20
+	sample factor for V.
+   -sface <double>, --sfactore <double>, current value: 2
+	sample factor for E.
+   -ef <double>, --rom-ef <double>, current value: 0.9999
+	Energy fraction for recommended ROM basis sizes.
+   -efx <double>, --rom-efx <double>, current value: 0.9999
+	Energy fraction for recommended X ROM basis size.
+   -sv-shift <int>, --sv-shift <int>, current value: 1
+	Number of shifted singular values in energy fraction calculation when window-dependent offsets are not used.
+   -bi <string>, --bi <string>, current value: 
+	Basis identifier for parametric case.
+   -nwin <int>, --numwindows <int>, current value: 25
+	Number of ROM time windows.
+   -nwinsamp <int>, --numwindowsamples <int>, current value: 0
+	Number of samples in ROM windows.
+   -nwinover <int>, --numwindowoverlap <int>, current value: 0
+	Number of samples for ROM window overlap.
+   -dtFactor <double>, --dtFactor <double>, current value: 1
+	Scaling factor for dt.
+   -dtc <double>, --dtc <double>, current value: 0
+	Fixed (constant) dt.
+   -dmd, --dmd, -dmd, --dmd, current option: --dmd
+	Do DMD calculations.
+   -dmdtbegin <double>, --dmdtbegin <double>, current value: 0
+	Time to begin DMD. If DMD starts from t = 0, it will not work due to an zero initial vectors.
+   -ddt <double>, --dtime-step <double>, current value: -1
+	Desired Time step.
+   -dmdcrbf <double>, --dmdcrbf <double>, current value: 0.9
+	DMD RBF value between two closes training parameter points.
+   -dmdnuf, --dmdnuf, -no-dmdnuf, --no-dmdnuf, current option: --no-dmdnuf
+	Use NonuniformDMD rather than AdaptiveDMD.
+   -visdiff <int>, --visdiff <int>, current value: -1
+	VisIt DC cycle to diff.
+   -writesol, --writesol, -no-writesol, --no-writesol, current option: --no-writesol
+	Enable or disable write solution.
+   -soldiff, --soldiff, -no-soldiff, --no-soldiff, current option: --soldiff
+	Enable or disable solution difference norm computation.
+   -romhr, --romhr, -no-romhr, --no-romhr, current option: --no-romhr
+	Enable or disable ROM hyperreduction.
+   -romhrprep, --romhrprep, -no-romhrprep, --no-romhrprep, current option: --no-romhrprep
+	Enable or disable ROM hyperreduction preprocessing.
+   -precls, --precls, -no-precls, --no-precls, current option: --precls
+	Enable or disable preconditioning the hyper-reduction based on the Christoffel function weight.
+   -romsvds, --romsvdstatic, -no-romsvds, --no-romsvds, current option: --romsvdstatic
+	Enable or disable ROM static SVD.
+   -romsvdrm, --romsvdrandom, -no-romsvdrm, --no-romsvdrm, current option: --no-romsvdrm
+	Enable or disable ROM randomized SVD.
+   -randdimx <int>, --rand_dimx <int>, current value: -1
+	Randomized SVD subspace dimension for X.
+   -randdimv <int>, --rand_dimv <int>, current value: -1
+	Randomized SVD subspace dimension for V.
+   -randdime <int>, --rand_dime <int>, current value: -1
+	Randomized SVD subspace dimension for E.
+   -randdimfv <int>, --rand_dimfv <int>, current value: -1
+	Randomized SVD subspace dimension for Fv.
+   -randdimfe <int>, --rand_dimfe <int>, current value: -1
+	Randomized SVD subspace dimension for Fe.
+   -romos, --romoffset, -no-romoffset, --no-romoffset, current option: --romoffset
+	Enable or disable initial state offset for ROM.
+   -normtype <string>, --norm_type <string>, current value: l2
+	Norm type for relative error computation.
+   -sdim <int>, --sdim <int>, current value: 0
+	ROM max sample dimension
+   -lintol <double>, --linearitytol <double>, current value: 1e-07
+	The incremental SVD model linearity tolerance.
+   -svtol <double>, --singularvaluetol <double>, current value: 1e-14
+	The incremental SVD model singular value tolerance.
+   -samptol <double>, --samplingtol <double>, current value: 1e-07
+	The incremental SVD model sampling tolerance.
+   -greedy-param <string>, --greedy-param <string>, current value: bef
+	The domain to parameterize.
+   -greedy-param-min <double>, --greedy-param-min <double>, current value: 0
+	The minimum value of the parameter point space.
+   -greedy-param-max <double>, --greedy-param-max <double>, current value: 0
+	The maximum value of the parameter point space.
+   -greedy-param-size <int>, --greedy-param-size <int>, current value: 0
+	The number of values to search in the parameter point space.
+   -greedytf <double>, --greedytf <double>, current value: -1
+	The greedy algorithm error indicator final time.
+   -greedytol <double>, --greedytol <double>, current value: 0.1
+	The greedy algorithm tolerance.
+   -greedyalpha <double>, --greedyalpha <double>, current value: 1.05
+	The greedy algorithm alpha constant.
+   -greedymaxclamp <double>, --greedymaxclamp <double>, current value: 2
+	The greedy algorithm max clamp constant.
+   -greedysubsize <int>, --greedysubsize <int>, current value: 0
+	The greedy algorithm subset size.
+   -greedyconvsize <int>, --greedyconvsize <int>, current value: 0
+	The greedy algorithm convergence subset size.
+   -greedysamptype <string>, --greedysamplingtype <string>, current value: random
+	Sampling type for the greedy algorithm.
+   -greedyerrindtype <string>, --greedyerrorindtype <string>, current value: useLastLifted
+	Error indicator type for the greedy algorithm.
+   -romsns, --romsns, -no-romsns, --no-romsns, current option: --romsns
+	Enable or disable SNS in hyperreduction on Fv and Fe
+   -romgs, --romgramschmidt, -no-romgs, --no-romgramschmidt, current option: --romgramschmidt
+	Enable or disable Gram-Schmidt orthonormalization on V and E induced by mass matrices.
+   -rhof <double>, --rhofactor <double>, current value: 1
+	Factor for scaling rho.
+   -af <double>, --atwoodfactor <double>, current value: 0.333333
+	Factor for Atwood number in Rayleigh-Taylor instability problem.
+   -bef <double>, --blastefactor <double>, current value: 1
+	Factor for scaling blast energy.
+   -rpar <int>, --romparam <int>, current value: -1
+	ROM offline parameter index.
+   -rostype <string>, --romoffsettype <string>, current value: load
+	Offset type for initializing ROM windows.
+   -loctype <string>, --romindicatortype <string>, current value: time
+	Indicator type for partitioning ROM windows.
+   -romst <string>, --romspacetimetype <string>, current value: spatial
+	Space-time method.
+   -romxv, --romusexv, -no-romxv, --no-romusexv, current option: --no-romusexv
+	Enable or disable use of V basis for X-X0.
+   -romvx, --romusevx, -no-romvx, --no-romusevx, current option: --no-romusevx
+	Enable or disable use of X-X0 basis for V.
+   -romxandv, --romusexandv, -no-romxandv, --no-romusexandv, current option: --no-romusexandv
+	Enable or disable merging of X-X0 and V bases.
+   -hrsamptype <string>, --hrsamplingtype <string>, current value: gnat
+	Sampling type for the hyperreduction.

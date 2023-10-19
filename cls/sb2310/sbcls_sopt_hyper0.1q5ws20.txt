@@ -1,0 +1,748 @@
+
+       __                __                 
+      / /   ____  ____  / /_  ____  _____   
+     / /   / __ `/ __ `/ __ \/ __ \/ ___/ 
+    / /___/ /_/ / /_/ / / / / /_/ (__  )    
+   /_____/\__,_/\__, /_/ /_/\____/____/  
+               /____/                       
+
+Options used:
+   --mesh data/cube01_hex.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --problem 1
+   --order-kinematic 2
+   --order-thermo 1
+   --ode-solver 7
+   --t-final 0.1
+   --cfl 0.5
+   --cg-tol 1e-08
+   --ftz-tol 0
+   --cg-max-steps 300
+   --max-steps -1
+   --partial-assembly
+   --no-impose-viscosity
+   --no-visualization
+   --visualization-steps 5
+   --no-match-end-time
+   --no-visit
+   --no-print
+   --outputfilename sbShortSerial
+   --visitfilename Laghos
+   --param_dir 
+   --timewindowfilename tw.csv
+   --timewindowparamfilename twp.csv
+   --initsamplesfilename initSamples
+   --partition 211
+   --no-build-database
+   --no-use-database
+   --no-sample-stages
+   --no-offline
+   --online
+   --no-restore
+   --rom_dimx -1
+   --rom_dimv -1
+   --rom_dime -1
+   --rom_dimfv -1
+   --rom_dimfe -1
+   --numsamplex 0
+   --numsamplev 0
+   --numsamplee 0
+   --numtsamplev 1
+   --numtsamplee 1
+   --sfactorx 2
+   --sfactorv 5
+   --sfactore 5
+   --rom-ef 0.9999
+   --rom-efx 0.9999
+   --sv-shift 1
+   --bi 
+   --numwindows 25
+   --numwindowsamples 0
+   --numwindowoverlap 0
+   --dtFactor 1
+   --dtc 0
+   --dmd
+   --dmdtbegin 0
+   --dtime-step -1
+   --dmdcrbf 0.9
+   --no-dmdnuf
+   --visdiff -1
+   --no-writesol
+   --no-soldiff
+   --no-romhr
+   --romhrprep
+   --precls
+   --romsvdstatic
+   --no-romsvdrm
+   --rand_dimx -1
+   --rand_dimv -1
+   --rand_dime -1
+   --rand_dimfv -1
+   --rand_dimfe -1
+   --romoffset
+   --norm_type l2
+   --sdim 0
+   --linearitytol 1e-07
+   --singularvaluetol 1e-14
+   --samplingtol 1e-07
+   --greedy-param bef
+   --greedy-param-min 0
+   --greedy-param-max 0
+   --greedy-param-size 0
+   --greedytf -1
+   --greedytol 0.1
+   --greedyalpha 1.05
+   --greedymaxclamp 2
+   --greedysubsize 0
+   --greedyconvsize 0
+   --greedysamplingtype random
+   --greedyerrorindtype useLastLifted
+   --romsns
+   --romgramschmidt
+   --rhofactor 1
+   --atwoodfactor 0.333333
+   --blastefactor 1
+   --romparam -1
+   --romoffsettype load
+   --romindicatortype time
+   --romspacetimetype spatial
+   --no-romusexv
+   --no-romusevx
+   --no-romusexandv
+   --hrsamplingtype sopt
+Reading time window parameters from file run/sbShortSerial/twp.csv
+Using time window 0 with end time 0.00661713, rdimx 9, rdimv 20, rdime 13, nsamx 18, nsamv 25, nsame 18
+Using time window 1 with end time 0.0134736, rdimx 8, rdimv 20, rdime 16, nsamx 16, nsamv 25, nsame 21
+Using time window 2 with end time 0.0205265, rdimx 7, rdimv 20, rdime 18, nsamx 14, nsamv 25, nsame 23
+Using time window 3 with end time 0.0259126, rdimx 6, rdimv 20, rdime 19, nsamx 12, nsamv 25, nsame 24
+Using time window 4 with end time 0.0304021, rdimx 4, rdimv 20, rdime 20, nsamx 8, nsamv 25, nsame 25
+Using time window 5 with end time 0.0342763, rdimx 4, rdimv 20, rdime 19, nsamx 8, nsamv 25, nsame 24
+Using time window 6 with end time 0.0381504, rdimx 4, rdimv 20, rdime 19, nsamx 8, nsamv 25, nsame 24
+Using time window 7 with end time 0.041304, rdimx 4, rdimv 20, rdime 20, nsamx 8, nsamv 25, nsame 25
+Using time window 8 with end time 0.0441031, rdimx 3, rdimv 20, rdime 19, nsamx 6, nsamv 25, nsame 24
+Using time window 9 with end time 0.0469022, rdimx 3, rdimv 20, rdime 18, nsamx 6, nsamv 25, nsame 23
+Using time window 10 with end time 0.0497013, rdimx 2, rdimv 20, rdime 19, nsamx 4, nsamv 25, nsame 24
+Using time window 11 with end time 0.0525507, rdimx 3, rdimv 20, rdime 20, nsamx 6, nsamv 25, nsame 25
+Using time window 12 with end time 0.0554058, rdimx 3, rdimv 20, rdime 19, nsamx 6, nsamv 25, nsame 24
+Using time window 13 with end time 0.0582609, rdimx 3, rdimv 20, rdime 20, nsamx 6, nsamv 25, nsame 25
+Using time window 14 with end time 0.0612436, rdimx 2, rdimv 20, rdime 19, nsamx 4, nsamv 25, nsame 24
+Using time window 15 with end time 0.0644536, rdimx 2, rdimv 20, rdime 19, nsamx 4, nsamv 25, nsame 24
+Using time window 16 with end time 0.0679553, rdimx 3, rdimv 20, rdime 20, nsamx 6, nsamv 25, nsame 25
+Using time window 17 with end time 0.0715338, rdimx 4, rdimv 20, rdime 20, nsamx 8, nsamv 25, nsame 25
+Using time window 18 with end time 0.0753774, rdimx 4, rdimv 20, rdime 20, nsamx 8, nsamv 25, nsame 25
+Using time window 19 with end time 0.0795296, rdimx 5, rdimv 20, rdime 20, nsamx 10, nsamv 25, nsame 25
+Using time window 20 with end time 0.0839177, rdimx 4, rdimv 20, rdime 20, nsamx 8, nsamv 25, nsame 25
+Using time window 21 with end time 0.0884739, rdimx 4, rdimv 20, rdime 20, nsamx 8, nsamv 25, nsame 25
+Using time window 22 with end time 0.0931488, rdimx 3, rdimv 20, rdime 20, nsamx 6, nsamv 25, nsame 25
+Using time window 23 with end time 0.0979647, rdimx 3, rdimv 20, rdime 20, nsamx 6, nsamv 25, nsame 25
+Using time window 24 with end time 0.1, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 15, nsame 15
+Non-Cartesian partitioning through METIS will be used.
+Zones min/max: 512 512
+Number of kinematic (position, velocity) dofs: 14739
+Number of specific internal energy dofs: 4096
+0: pmesh number of elements 512
+Opening file: run/sbShortSerial/basisV24.000000
+Read basis run/sbShortSerial/basisV24 of dimension 10
+Opening file: run/sbShortSerial/basisE24.000000
+Read basis run/sbShortSerial/basisE24 of dimension 10
+Opening file: run/sbShortSerial/basisX24.000000
+Read basis run/sbShortSerial/basisX24 of dimension 3
+Opening file: run/sbShortSerial/basisV24.000000
+Read basis run/sbShortSerial/basisV24 of dimension 10
+Opening file: run/sbShortSerial/basisE24.000000
+Read basis run/sbShortSerial/basisE24 of dimension 10
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.3099, 21.8977, 256.328
+start preprocessing hyper-reduction
+number of samples for velocity: 15
+number of samples for energy  : 15
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:7.867557 -6.545164:0.831918
+10	15	k282626.055039	k1243984459592.873047	k883130.273428	k437298379193.207336	k248412.857390	k2424443.316198	k480555.434885	k651807.011495	k2072877955017.670166	k635097.855641	k605739.343606	k1117693.039542	k753821.780264	k225510.920291	k2840410222626.222168	
+conditionNum:8.148316 -6.321784:0.775839
+10	15	k35692.674732	k69774.203725	k185600.441721	k89129.522661	k158106.168274	k180737.962330	k156548.760309	k181329.308886	k124028.699668	k247382.246122	k324675.580698	k849006.893632	k269646.964668	k191081.512080	k656169406648.241333	
+	E15sample mesh has 28 elements, 120 vertices
+Elapsed time for hyper-reduction preprocessing: 0.10235 sec
+Opening file: run/sbShortSerial/basisV23.000000
+Read basis run/sbShortSerial/basisV23 of dimension 20
+Opening file: run/sbShortSerial/basisE23.000000
+Read basis run/sbShortSerial/basisE23 of dimension 20
+Opening file: run/sbShortSerial/basisX23.000000
+Read basis run/sbShortSerial/basisX23 of dimension 3
+Opening file: run/sbShortSerial/basisV23.000000
+Read basis run/sbShortSerial/basisV23 of dimension 20
+Opening file: run/sbShortSerial/basisE23.000000
+Read basis run/sbShortSerial/basisE23 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.298, 21.8991, 261.111
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:10.619964 -9.046174:0.851808
+20	25	k1937773.605421	k413775.531647	k355326.288514	k369496.442667	k55504.062462	k1221854187602.624512	k808051.641905	k339706.950714	k1842081.640806	k194747.074459	k437451.107386	k316337.173679	k1048190.643902	k1981604630463.849121	k94217.561674	k1301259.210368	k642354.740410	k323636.085055	k221654.800577	k259005.863516	k518888.230563	k405136771065.351318	k115588.131141	k207905.649772	k366371.890575	
+conditionNum:27.090188 -9.854852:0.363779
+20	25	k49520.668839	k73800.054265	k150910.272167	k151473.666078	k140093.499928	k112773.600616	k114526.564518	k189783.483610	k201225.620668	k168710.335033	k53664.794918	k77013.492369	k156903.965192	k93982.447304	k376338.857491	k267674.535753	k130203.577383	k180130.604469	k164626.486891	k478553.598922	k1060255.360110	k404426.940386	k18114837913.660553	k1871154608931.326416	k55470597183.105797	
+	E25sample mesh has 38 elements, 133 vertices
+Elapsed time for hyper-reduction preprocessing: 0.250485 sec
+Opening file: run/sbShortSerial/basisV22.000000
+Read basis run/sbShortSerial/basisV22 of dimension 20
+Opening file: run/sbShortSerial/basisE22.000000
+Read basis run/sbShortSerial/basisE22 of dimension 20
+Opening file: run/sbShortSerial/basisX22.000000
+Read basis run/sbShortSerial/basisX22 of dimension 3
+Opening file: run/sbShortSerial/basisV22.000000
+Read basis run/sbShortSerial/basisV22 of dimension 20
+Opening file: run/sbShortSerial/basisE22.000000
+Read basis run/sbShortSerial/basisE22 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2869, 21.9054, 266.078
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:17.947954 -8.682249:0.483746
+20	25	k771195.909817	k240208.352012	k1313867012326.410400	k538465686934.425171	k2256239442601.426270	k2653529488151.315918	k886187.269740	k212456.165882	k1363309.234748	k151277.821609	k541955.262845	k1575529.498281	k1824222133536.779053	k1384410.265275	k164505.113870	k237661.118277	k163778.197908	k206463.795847	k1947253.051537	k1350995.688164	k702117.428917	k399178348135.192993	k128619.531525	k132227.375575	k57222.916489	
+conditionNum:15.720214 -9.288704:0.590876
+20	25	k47287.890593	k56565.678069	k47603.956161	k168520.103406	k161925.079870	k228239.863880	k112774.972554	k194876.927525	k155715.789258	k147088.118203	k169162.212950	k51963.812148	k73396.070066	k126783.614882	k145652.840215	k377457.642840	k255963.790615	k305087.299831	k195080.747298	k336103371537.402527	k382290.259868	k5324645458.425972	k2445273.211514	k9321817151.272270	k2201944502957.716309	
+	E25sample mesh has 48 elements, 177 vertices
+Elapsed time for hyper-reduction preprocessing: 0.279276 sec
+Opening file: run/sbShortSerial/basisV21.000000
+Read basis run/sbShortSerial/basisV21 of dimension 20
+Opening file: run/sbShortSerial/basisE21.000000
+Read basis run/sbShortSerial/basisE21 of dimension 20
+Opening file: run/sbShortSerial/basisX21.000000
+Read basis run/sbShortSerial/basisX21 of dimension 4
+Opening file: run/sbShortSerial/basisV21.000000
+Read basis run/sbShortSerial/basisV21 of dimension 20
+Opening file: run/sbShortSerial/basisE21.000000
+Read basis run/sbShortSerial/basisE21 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2766, 21.9159, 271.282
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:11.129422 -8.674807:0.779448
+20	25	k715069135976.498535	k1534478.747918	k99165.720021	k118507.819685	k925772989128.224609	k1853866780200.716309	k716982.561550	k228189.589456	k582151.649575	k573253.908129	k126637021304.610031	k161724.206337	k368829.500337	k1310049.712357	k1965216264961.322754	k72136.554048	k1408555.657535	k1452686.982357	k170126.562036	k391259.769759	k441717.309502	k632890.974639	k161909.869558	k605465.887490	k928699.860941	
+conditionNum:8.794984 -8.758936:0.995901
+20	25	k45188.882507	k52484.808290	k45283.367878	k114114.532395	k112604.568942	k235385.654918	k107148.633199	k116711.060811	k126422.952821	k61067.483130	k131778.268165	k144534.116863	k121649.227158	k190881.969287	k274479.796521	k272010.564673	k195791.412033	k680193230724.369873	k356105.577266	k1220580276621.059326	k10280021852.965307	k1707760582657.680176	k32198876025.385494	k26189783803.501526	k78024180514.921936	
+	E25sample mesh has 34 elements, 149 vertices
+Elapsed time for hyper-reduction preprocessing: 0.269444 sec
+Opening file: run/sbShortSerial/basisV20.000000
+Read basis run/sbShortSerial/basisV20 of dimension 20
+Opening file: run/sbShortSerial/basisE20.000000
+Read basis run/sbShortSerial/basisE20 of dimension 20
+Opening file: run/sbShortSerial/basisX20.000000
+Read basis run/sbShortSerial/basisX20 of dimension 4
+Opening file: run/sbShortSerial/basisV20.000000
+Read basis run/sbShortSerial/basisV20 of dimension 20
+Opening file: run/sbShortSerial/basisE20.000000
+Read basis run/sbShortSerial/basisE20 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2672, 21.9184, 276.687
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:15.870169 -8.617398:0.542993
+20	25	k1808189.619169	k653541.492067	k286264.591521	k279373.397630	k434960.235455	k218171.562830	k590154.801234	k360498.786387	k473048.849687	k280943.634234	k940548.761175	k1515604.214100	k154986.774135	k1391451.618959	k967827.240684	k935278.655520	k504494.367868	k206144.242283	k755238.202935	k1877066357628.307861	k3077225822560.190430	k3953709409534.128906	k273036.157891	k1901128070321.352051	k2418140379914.053223	
+conditionNum:16.591540 -8.213060:0.495015
+20	25	k46717.570927	k54885.418571	k46966.092342	k208065.101922	k120612.049393	k197312.315154	k226667.568997	k179150.718286	k110009.994506	k292189.633275	k114795.806950	k330700.856448	k16010233179.031746	k1161045.928205	k108926.996950	k147574.831264	k208977.168929	k134917.995113	k298273.148382	k233664.764772	k226603.170132	k476711.349592	k4770963504.371123	k75763296102.817337	k529002598869.071594	
+	E25sample mesh has 43 elements, 175 vertices
+Elapsed time for hyper-reduction preprocessing: 0.287857 sec
+Opening file: run/sbShortSerial/basisV19.000000
+Read basis run/sbShortSerial/basisV19 of dimension 20
+Opening file: run/sbShortSerial/basisE19.000000
+Read basis run/sbShortSerial/basisE19 of dimension 20
+Opening file: run/sbShortSerial/basisX19.000000
+Read basis run/sbShortSerial/basisX19 of dimension 5
+Opening file: run/sbShortSerial/basisV19.000000
+Read basis run/sbShortSerial/basisV19 of dimension 20
+Opening file: run/sbShortSerial/basisE19.000000
+Read basis run/sbShortSerial/basisE19 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2587, 21.9257, 282.194
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:22.565397 -8.965793:0.397325
+20	25	k811802.295473	k1296519.773388	k157610.052633	k206879.509019	k1125700.755088	k695277.975471	k101379.350051	k311693.222401	k322842.525423	k91240.046634	k1704087383154.576172	k1401145.255346	k275616.694150	k148721.800394	k154324.609339	k79285.279740	k941829554507.335938	k2231783600142.670410	k3393887.583971	k618559.783626	k207363.498682	k604231.865210	k88558.271019	k3093322.871299	k1339765099795.201660	
+conditionNum:13.910853 -8.848434:0.636081
+20	25	k45070.585424	k51718.678777	k44931.398862	k187801.830241	k137789.271364	k104469.269395	k124782.299823	k140107.013810	k140384.880769	k91074.708863	k85543.853436	k167546.893998	k60888.208454	k149401.904576	k126439.145635	k112680.934614	k2009121.896973	k318505.338978	k132956.689378	k217894.298602	k145585.596176	k316812.206171	k12806826268.330282	k1298992879618.658447	k9098727415.983213	
+	E25sample mesh has 27 elements, 117 vertices
+Elapsed time for hyper-reduction preprocessing: 0.255086 sec
+Opening file: run/sbShortSerial/basisV18.000000
+Read basis run/sbShortSerial/basisV18 of dimension 20
+Opening file: run/sbShortSerial/basisE18.000000
+Read basis run/sbShortSerial/basisE18 of dimension 20
+Opening file: run/sbShortSerial/basisX18.000000
+Read basis run/sbShortSerial/basisX18 of dimension 4
+Opening file: run/sbShortSerial/basisV18.000000
+Read basis run/sbShortSerial/basisV18 of dimension 20
+Opening file: run/sbShortSerial/basisE18.000000
+Read basis run/sbShortSerial/basisE18 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2512, 21.9345, 287.675
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:14.023628 -8.910188:0.635370
+20	25	k485926512442.174927	k1416293.619396	k304701.365332	k2973686334684.297363	k282699.315625	k402600.730923	k914371.945279	k635687000485.727173	k253113.624578	k689516.136172	k193699.641444	k2309195699063.858887	k1735954379555.353271	k2523027867249.761719	k789971.651654	k1608445.958107	k284305.693430	k298083.683507	k1124785.815318	k816980.618539	k20640326939.196224	k360188.182755	k130738.538669	k26807744596.785164	k54921.227002	
+conditionNum:16.476811 -9.241406:0.560873
+20	25	k45302.996858	k51886.547148	k46325.027609	k83136.504933	k148045.072050	k128105.715099	k128463.011675	k132641.915104	k249715.040538	k94491.868362	k112071.316595	k129659.357962	k277118.464176	k251291.809604	k728942.139459	k107909.522019	k123338.769147	k219912.317911	k248625.663352	k5379674796.358091	k42796860662.867302	k3864879147.602396	k7462826244.623280	k1093768641563.497314	k87329674876.469009	
+	E25sample mesh has 45 elements, 179 vertices
+Elapsed time for hyper-reduction preprocessing: 0.27445 sec
+Opening file: run/sbShortSerial/basisV17.000000
+Read basis run/sbShortSerial/basisV17 of dimension 20
+Opening file: run/sbShortSerial/basisE17.000000
+Read basis run/sbShortSerial/basisE17 of dimension 20
+Opening file: run/sbShortSerial/basisX17.000000
+Read basis run/sbShortSerial/basisX17 of dimension 4
+Opening file: run/sbShortSerial/basisV17.000000
+Read basis run/sbShortSerial/basisV17 of dimension 20
+Opening file: run/sbShortSerial/basisE17.000000
+Read basis run/sbShortSerial/basisE17 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2445, 21.9372, 293.179
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:12.825756 -8.928744:0.696157
+20	25	k1308487.859173	k193047.497466	k526459.984309	k346145693.760946	k81528.135858	k888184.410354	k17003731230.183189	k2842939082255.407715	k1727653876701.447021	k356464452039.861938	k2977145706030.625977	k2276056174469.354004	k406701.550877	k476330.010960	k693894.140365	k1793343892604.398682	k1991153169939.126221	k1477584677750.140137	k1400656.645661	k570136.063855	k256639.438895	k960363.892685	k458686.614894	k82218.280453	k660852106034.503174	
+conditionNum:23.542971 -9.690220:0.411597
+20	25	k44914.076897	k52537.661449	k45964.595898	k111437.987831	k110554.073800	k119857.100216	k123146.187746	k128310.386370	k123687.911732	k87479.716154	k101628.012530	k142746.095865	k84162.208358	k293251.582915	k119410.642991	k92164.647707	k107795.513685	k116787.716911	k151272.749854	k339452.897569	k18814489700.813698	k97619931197.590881	k45266456245.232841	k747551215890.513184	k31657056895.133766	
+	E25sample mesh has 57 elements, 215 vertices
+Elapsed time for hyper-reduction preprocessing: 0.315936 sec
+Opening file: run/sbShortSerial/basisV16.000000
+Read basis run/sbShortSerial/basisV16 of dimension 20
+Opening file: run/sbShortSerial/basisE16.000000
+Read basis run/sbShortSerial/basisE16 of dimension 20
+Opening file: run/sbShortSerial/basisX16.000000
+Read basis run/sbShortSerial/basisX16 of dimension 3
+Opening file: run/sbShortSerial/basisV16.000000
+Read basis run/sbShortSerial/basisV16 of dimension 20
+Opening file: run/sbShortSerial/basisE16.000000
+Read basis run/sbShortSerial/basisE16 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2382, 21.9374, 299.009
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:10.448445 -9.043400:0.865526
+20	25	k892853.899067	k1029417.880516	k296693.628270	k373123.484953	k2093284.182534	k38521791213.127945	k154692.249588	k934506.103181	k31703343.173176	k254155.886308	k3320990252174.193848	k854781.649039	k217238.795219	k432457.765182	k20604378.017629	k555954475820.977417	k468818380.748149	k178492.523069	k173590.994597	k1252973728024.767578	k1198097193652.844238	k1491989539146.814209	k882656.246025	k428182.704190	k268894.716828	
+conditionNum:21.180565 -9.743014:0.459998
+20	25	k48403.941972	k66200.511524	k152097.565037	k112772.730408	k151610.103471	k153465.469194	k105831.339195	k134647.146669	k96954.042572	k99280.682749	k209022.447771	k159704.670765	k94171.728016	k152814.689419	k110665.331778	k170197.011797	k242660.438990	k1996878486.035786	k14912362761.258629	k280902096642.165771	k2341464796791.257324	k364955308599.936890	k425286726.303124	k365343094610.140808	k231929905338.098907	
+	E25sample mesh has 42 elements, 156 vertices
+Elapsed time for hyper-reduction preprocessing: 0.265691 sec
+Opening file: run/sbShortSerial/basisV15.000000
+Read basis run/sbShortSerial/basisV15 of dimension 20
+Opening file: run/sbShortSerial/basisE15.000000
+Read basis run/sbShortSerial/basisE15 of dimension 19
+Opening file: run/sbShortSerial/basisX15.000000
+Read basis run/sbShortSerial/basisX15 of dimension 2
+Opening file: run/sbShortSerial/basisV15.000000
+Read basis run/sbShortSerial/basisV15 of dimension 20
+Opening file: run/sbShortSerial/basisE15.000000
+Read basis run/sbShortSerial/basisE15 of dimension 19
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2328, 21.9372, 304.786
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 24
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:14.393008 -8.898124:0.618225
+20	25	k296885.475382	k554161.149169	k188353355.692766	k126952.394308	k271542556.676586	k150436.765331	k927510.611520	k859558.731818	k1059064.908135	k258951.007373	k310000.504794	k691479.451274	k3787904696013.039062	k652170.304288	k240380.345417	k495072.604176	k1044756.864689	k405155.736625	k1125324801525.920654	k96961.604962	k188026.771913	k144355447.395383	k150022.104906	k424799224119.829407	k35568040792.344391	
+conditionNum:17.653849 -8.907925:0.504588
+19	24	k45635.050236	k54474.218295	k96494.649564	k124238.917518	k106253.762405	k90303.099656	k127966.125077	k119521.555142	k85431.821289	k124019.281547	k122239.322926	k162806.935199	k167746.955164	k292325.462127	k192080.367932	k226661.556433	k120528.317904	k230849.573897	k180974.992470	k1421960.821161	k3484827085.051623	k664451630220.790405	k953053014.651748	k98258357890.672531	
+	E24sample mesh has 37 elements, 144 vertices
+Elapsed time for hyper-reduction preprocessing: 0.254154 sec
+Opening file: run/sbShortSerial/basisV14.000000
+Read basis run/sbShortSerial/basisV14 of dimension 20
+Opening file: run/sbShortSerial/basisE14.000000
+Read basis run/sbShortSerial/basisE14 of dimension 19
+Opening file: run/sbShortSerial/basisX14.000000
+Read basis run/sbShortSerial/basisX14 of dimension 2
+Opening file: run/sbShortSerial/basisV14.000000
+Read basis run/sbShortSerial/basisV14 of dimension 20
+Opening file: run/sbShortSerial/basisE14.000000
+Read basis run/sbShortSerial/basisE14 of dimension 19
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.228, 21.9325, 310.574
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 24
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:11.656253 -8.582780:0.736324
+20	25	k539093.183787	k995310.215157	k155799.470296	k630763.690441	k238335.635954	k81975.477267	k622537.552679	k571329.632106	k470861.470018	k218617.580320	k669408.643264	k708526303773.035889	k70590441.874622	k15712543872.374426	k254520.787588	k1127222.543778	k842140.133292	k14774507181.797741	k208576.471082	k783554.686120	k417400.449228	k439126.294531	k1461004.578552	k167374.809852	k319226281846.740662	
+conditionNum:9.518289 -8.338435:0.876044
+19	24	k46946.946228	k70118.224476	k56162.493274	k90788.069822	k118650.658659	k126279.397536	k101259.314797	k99513.847170	k170418.022366	k82261.610982	k92972.341251	k146396.572802	k130885.453967	k179817.788490	k199369.367938	k136961.727449	k230802.116079	k182654.512321	k7811022.300440	k162509249581.987030	k327751563352.559753	k1211488306.992422	k6526179819.779865	k3069573497.241179	
+	E24sample mesh has 47 elements, 154 vertices
+Elapsed time for hyper-reduction preprocessing: 0.259973 sec
+Opening file: run/sbShortSerial/basisV13.000000
+Read basis run/sbShortSerial/basisV13 of dimension 20
+Opening file: run/sbShortSerial/basisE13.000000
+Read basis run/sbShortSerial/basisE13 of dimension 20
+Opening file: run/sbShortSerial/basisX13.000000
+Read basis run/sbShortSerial/basisX13 of dimension 3
+Opening file: run/sbShortSerial/basisV13.000000
+Read basis run/sbShortSerial/basisV13 of dimension 20
+Opening file: run/sbShortSerial/basisE13.000000
+Read basis run/sbShortSerial/basisE13 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2235, 21.9268, 316.541
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:9.691319 -8.846867:0.912865
+20	25	k326344174282.307617	k366823.495521	k415483.975137	k318215.355477	k1405286662169.187744	k1118511.190572	k293028.872657	k299620.101655	k348506.183879	k585967.656002	k842537.360226	k1599831.797341	k16876902917.408911	k4424511470.794196	k289600.114966	k116448.263745	k1532485256250.418457	k604784.730894	k179038.760782	k1946540234701.882568	k201625.738741	k223590.424019	k80049.303308	k1954250158542.405762	k1598174141018.935791	
+conditionNum:24.959691 -10.281578:0.411927
+20	25	k47080.247584	k68544.483446	k59618.851158	k83392.033671	k96438.951335	k156776.102262	k89792.998393	k82918.723186	k93382.493959	k84195.608946	k118986.082834	k128721.543983	k86034.274067	k92790.171539	k224434.476581	k172810.897757	k120538.224147	k172810.897686	k206290.672084	k4447599.361923	k117912.054632	k211484.250471	k315831.083569	k442661993062.192749	k1350105967.971407	
+	E25sample mesh has 47 elements, 174 vertices
+Elapsed time for hyper-reduction preprocessing: 0.275063 sec
+Opening file: run/sbShortSerial/basisV12.000000
+Read basis run/sbShortSerial/basisV12 of dimension 20
+Opening file: run/sbShortSerial/basisE12.000000
+Read basis run/sbShortSerial/basisE12 of dimension 19
+Opening file: run/sbShortSerial/basisX12.000000
+Read basis run/sbShortSerial/basisX12 of dimension 3
+Opening file: run/sbShortSerial/basisV12.000000
+Read basis run/sbShortSerial/basisV12 of dimension 20
+Opening file: run/sbShortSerial/basisE12.000000
+Read basis run/sbShortSerial/basisE12 of dimension 19
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2193, 21.9203, 322.975
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 24
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:16.300289 -9.017490:0.553210
+20	25	k125086150273.820770	k739693.590865	k222623.165101	k734858.287470	k16542363306.602392	k1627238487104.832031	k1099913922364.186035	k592209.619646	k338562.399710	k415269.368715	k720070.908317	k1793453.381340	k2242863096534.668945	k1694782766747.960938	k1485576183436.227295	k2733358299370.017578	k106674.360863	k86195.415816	k199439.603538	k320560.281110	k471521.553795	k1262683.724519	k622456.938045	k255565.755335	k116752.029579	
+conditionNum:14.638312 -8.886639:0.607081
+19	24	k43865.045285	k50870.523705	k44605.651910	k98385.258622	k144276.105928	k102864.784974	k87023.019012	k85382.221919	k91097.609074	k66720.413194	k111221.656121	k116454.431709	k115069.429206	k186718.484666	k443981.465323	k2623095921051.389160	k35295045088.714096	k195525.564744	k246150.007331	k104975.796429	k5104359852.126656	k642836580878.137085	k4274340949.845013	k1809358502387.685059	
+	E24sample mesh has 52 elements, 194 vertices
+Elapsed time for hyper-reduction preprocessing: 0.277977 sec
+Opening file: run/sbShortSerial/basisV11.000000
+Read basis run/sbShortSerial/basisV11 of dimension 20
+Opening file: run/sbShortSerial/basisE11.000000
+Read basis run/sbShortSerial/basisE11 of dimension 20
+Opening file: run/sbShortSerial/basisX11.000000
+Read basis run/sbShortSerial/basisX11 of dimension 3
+Opening file: run/sbShortSerial/basisV11.000000
+Read basis run/sbShortSerial/basisV11 of dimension 20
+Opening file: run/sbShortSerial/basisE11.000000
+Read basis run/sbShortSerial/basisE11 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2153, 21.9172, 329.943
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:17.192555 -8.746175:0.508719
+20	25	k613209.673537	k702305.467677	k398830.112539	k394301.695375	k7360378.000422	k226228.602026	k299770.097744	k422841.132205	k295018.148855	k904038341931.642700	k203472.183214	k414928.076154	k133816.254162	k1349181755323.570068	k787350.599884	k1209682.261612	k217207.230303	k313833.525950	k184842.144881	k505892333912.437317	k142163.352316	k3751727670.599752	k367278929237.846741	k1200934580986.287598	k1213638147488.512939	
+conditionNum:39.640546 -9.227974:0.232791
+20	25	k44478.644091	k51242.946060	k51489.745308	k45085.244941	k88030.434075	k108977.163673	k142988.745667	k90477.619083	k84710.705662	k107104.226104	k94317.299836	k102981.743048	k167389.739607	k80355.642286	k127272.195364	k106657.438497	k177334.459901	k482994.574522	k106657.438554	k229446.679353	k167299.298196	k1222607141.881133	k1669217057.393286	k331974647.943638	k297084860193.615845	
+	E25sample mesh has 39 elements, 156 vertices
+Elapsed time for hyper-reduction preprocessing: 0.262131 sec
+Opening file: run/sbShortSerial/basisV10.000000
+Read basis run/sbShortSerial/basisV10 of dimension 20
+Opening file: run/sbShortSerial/basisE10.000000
+Read basis run/sbShortSerial/basisE10 of dimension 19
+Opening file: run/sbShortSerial/basisX10.000000
+Read basis run/sbShortSerial/basisX10 of dimension 2
+Opening file: run/sbShortSerial/basisV10.000000
+Read basis run/sbShortSerial/basisV10 of dimension 20
+Opening file: run/sbShortSerial/basisE10.000000
+Read basis run/sbShortSerial/basisE10 of dimension 19
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2115, 21.9085, 337.397
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 24
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:10.156880 -8.521474:0.838985
+20	25	k763116.676587	k1751723710515.839844	k197202.229506	k484444.287790	k164154256914.837555	k194593.906094	k132547.212814	k134488.435001	k50918.928980	k75189.768506	k1592813778.148842	k1310942.936696	k602795.903548	k1549433.770811	k242760.320183	k365790.008452	k183592.729320	k345259.802678	k17322825457.768509	k778323207725.418457	k140340.443828	k409362.189307	k85852.532638	k1780224826999.432617	k1258329914939.533447	
+conditionNum:13.601006 -8.162786:0.600160
+19	24	k43430.185490	k50006.583280	k50054.944304	k43560.107279	k84174.166168	k92372.652267	k81300.727247	k86723.870068	k106531.983377	k91887.366470	k107864.732783	k90524.614168	k140198.231451	k97325.293680	k223285.120224	k160369.041945	k175254.781120	k163919.820070	k213112.612389	k1886042605.940904	k63660823319.647011	k1886042595.994429	k1817694218353.578125	k635803068330.674438	
+	E24sample mesh has 50 elements, 187 vertices
+Elapsed time for hyper-reduction preprocessing: 0.273933 sec
+Opening file: run/sbShortSerial/basisV9.000000
+Read basis run/sbShortSerial/basisV9 of dimension 20
+Opening file: run/sbShortSerial/basisE9.000000
+Read basis run/sbShortSerial/basisE9 of dimension 18
+Opening file: run/sbShortSerial/basisX9.000000
+Read basis run/sbShortSerial/basisX9 of dimension 3
+Opening file: run/sbShortSerial/basisV9.000000
+Read basis run/sbShortSerial/basisV9 of dimension 20
+Opening file: run/sbShortSerial/basisE9.000000
+Read basis run/sbShortSerial/basisE9 of dimension 18
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.208, 21.9006, 345.501
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 23
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:12.484789 -9.321442:0.746624
+20	25	k670046.785972	k1613584.751485	k158616557076.779297	k88391.538534	k349005.703157	k24910807320.570679	k99243.327237	k151873.508269	k1696887.211165	k848187.691408	k68698529040.965691	k956112.027995	k412347.421035	k174813.604850	k361212.497941	k802372.400890	k930178865280.510498	k217405793577.421387	k249420.176034	k395875.455256	k2788944.906681	k506916514216.783447	k446027773666.973389	k627854.414978	k25148982706.626232	
+conditionNum:11.561432 -9.084149:0.785729
+18	23	k43736.333799	k51339.207880	k43165.699210	k91238.099847	k76364.196902	k100845.023698	k80832.346371	k89338.476950	k106238.185625	k108488.492786	k139718.350810	k224893.167777	k335111088899.114807	k366612639702.888000	k141763.545501	k181491.117674	k634895157.049709	k8765857063.815371	k52590327237.676575	k137615285027.452698	k235215938677.981262	k41197457487.838448	k235215938517.919281	
+	E23sample mesh has 50 elements, 206 vertices
+Elapsed time for hyper-reduction preprocessing: 0.281099 sec
+Opening file: run/sbShortSerial/basisV8.000000
+Read basis run/sbShortSerial/basisV8 of dimension 20
+Opening file: run/sbShortSerial/basisE8.000000
+Read basis run/sbShortSerial/basisE8 of dimension 19
+Opening file: run/sbShortSerial/basisX8.000000
+Read basis run/sbShortSerial/basisX8 of dimension 3
+Opening file: run/sbShortSerial/basisV8.000000
+Read basis run/sbShortSerial/basisV8 of dimension 20
+Opening file: run/sbShortSerial/basisE8.000000
+Read basis run/sbShortSerial/basisE8 of dimension 19
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2046, 21.8804, 354.344
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 24
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:8.873054 -8.558803:0.964584
+20	25	k1420173.930751	k766977.292668	k2118255.293057	k631197.664668	k495045.360983	k2197724590.440818	k108280.812892	k354053.938203	k21878832865.056007	k423205511994.998047	k932766.969601	k282861.563586	k357391.223882	k192184.340123	k643274.923794	k395699.983483	k85577410426.978210	k92908.451691	k667779.481427	k1417039548207.552246	k577540.262323	k367670.160175	k172025.050224	k289735.205499	k119212.592052	
+conditionNum:8.815710 -8.360344:0.948346
+19	24	k44347.102802	k51447.743209	k44185.062593	k79017.117616	k102588.905875	k95586.408172	k86393.721492	k89486.929099	k75723.246205	k100640.645730	k140816.094632	k79316.500146	k146772.958859	k162673.330108	k186554.007677	k258809.980710	k332059.365851	k358887.996208	k693892303.581336	k270396.658820	k3204123297.877500	k1903718252198.654785	k7285211128.176865	k262522921986.862030	
+	E24sample mesh has 37 elements, 130 vertices
+Elapsed time for hyper-reduction preprocessing: 0.254839 sec
+Opening file: run/sbShortSerial/basisV7.000000
+Read basis run/sbShortSerial/basisV7 of dimension 20
+Opening file: run/sbShortSerial/basisE7.000000
+Read basis run/sbShortSerial/basisE7 of dimension 20
+Opening file: run/sbShortSerial/basisX7.000000
+Read basis run/sbShortSerial/basisX7 of dimension 4
+Opening file: run/sbShortSerial/basisV7.000000
+Read basis run/sbShortSerial/basisV7 of dimension 20
+Opening file: run/sbShortSerial/basisE7.000000
+Read basis run/sbShortSerial/basisE7 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.2011, 21.8406, 365.374
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:22.599411 -9.365003:0.414391
+20	25	k2047450.277634	k1294987.169307	k1629688387826.085938	k1203770.294803	k99255020.796623	k75722635445.894211	k2643173686736.341309	k1772209665760.715576	k35967.492466	k311273.272514	k315247.612455	k449439.455436	k164049.810615	k394023.204160	k478659.528422	k2267910908200.571777	k2612355125295.101074	k679683929954.497437	k898050.412351	k562663.148352	k319309.047160	k167424.826812	k1011959272420.361816	k86239.068688	k458841.202261	
+conditionNum:10.716943 -9.194858:0.857974
+20	25	k44364.217331	k51023.133360	k51083.338598	k44513.246454	k81599.282121	k109152.414334	k87488.876461	k96868.749104	k86015.359514	k94874.495017	k123071.619134	k101067.862385	k143403.855919	k160132.092117	k147192.208569	k186185.054002	k196158.783962	k228816.294529	k216198.229506	k478028687839.646851	k132574.121705	k226100.087862	k406890.005329	k165454424287.557892	k846978784768.736084	
+	E25sample mesh has 51 elements, 180 vertices
+Elapsed time for hyper-reduction preprocessing: 0.282151 sec
+Opening file: run/sbShortSerial/basisV6.000000
+Read basis run/sbShortSerial/basisV6 of dimension 20
+Opening file: run/sbShortSerial/basisE6.000000
+Read basis run/sbShortSerial/basisE6 of dimension 19
+Opening file: run/sbShortSerial/basisX6.000000
+Read basis run/sbShortSerial/basisX6 of dimension 4
+Opening file: run/sbShortSerial/basisV6.000000
+Read basis run/sbShortSerial/basisV6 of dimension 20
+Opening file: run/sbShortSerial/basisE6.000000
+Read basis run/sbShortSerial/basisE6 of dimension 19
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.1971, 21.7791, 380.806
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 24
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:7.872736 -8.539310:1.084669
+20	25	k113707115721.023453	k1002982.336751	k784064.325537	k825475.340711	k693220.472357	k2300622950898.699707	k297397.791426	k433764.004028	k496843.737783	k417443.665146	k152530.794588	k334218.736716	k166177.065956	k343778.865853	k2495152082.152524	k551818.050849	k350081.599255	k1055231646755.851074	k1226878957743.138672	k17276503685.197357	k255636.837235	k163186.811052	k756702144339.078857	k233907.183495	k2883818819814.425293	
+conditionNum:14.047029 -9.273639:0.660185
+19	24	k43184.317713	k49614.153502	k49676.656655	k43314.277368	k90518.385366	k116943.546841	k77845.883802	k80700.567246	k108574.498106	k87989.365674	k108653.189557	k79419.550671	k95203.023248	k140154.702223	k201448.697557	k457734.507690	k1.000000	k352386546084.689087	k152383.616233	k1021928508.676761	k12266753041.478893	k2843044846.765461	k943190333786.561890	k251582061525.662445	
+	E24sample mesh has 50 elements, 170 vertices
+Elapsed time for hyper-reduction preprocessing: 0.272957 sec
+Opening file: run/sbShortSerial/basisV5.000000
+Read basis run/sbShortSerial/basisV5 of dimension 20
+Opening file: run/sbShortSerial/basisE5.000000
+Read basis run/sbShortSerial/basisE5 of dimension 19
+Opening file: run/sbShortSerial/basisX5.000000
+Read basis run/sbShortSerial/basisX5 of dimension 4
+Opening file: run/sbShortSerial/basisV5.000000
+Read basis run/sbShortSerial/basisV5 of dimension 20
+Opening file: run/sbShortSerial/basisE5.000000
+Read basis run/sbShortSerial/basisE5 of dimension 19
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.1936, 21.7054, 398.875
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 24
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:17.106735 -8.629029:0.504423
+20	25	k98980619943.732590	k2028429705518.699707	k833882.935289	k574169.706475	k276371.047611	k354277.545763	k294472.376853	k389969.071893	k113168.978507	k1050953141024.072388	k965560.258489	k274868.597954	k476323.072775	k661747.517463	k496044.154624	k48821080544.843269	k253757.403309	k528598198066.819763	k2635270942854.739258	k464170295419.533081	k687943457356.208252	k135003.183967	k1154626.105945	k61417.178280	k2728287089366.770020	
+conditionNum:9.808595 -8.496851:0.866266
+19	24	k43205.145770	k49551.479502	k49529.378845	k43159.094874	k82204.831530	k92062.389712	k91784.555910	k100002.266117	k113320.195873	k89510.936669	k83213.169706	k151956.360168	k116502.164491	k98101.667867	k166782.480914	k231492.699682	k333469187.415541	k1212865875.941509	k35374454540.193825	k133285.746811	k10892983542.394945	k7518599122.759295	k179445981704.597443	k155671101239.327942	
+	E24sample mesh has 31 elements, 141 vertices
+Elapsed time for hyper-reduction preprocessing: 0.247085 sec
+Opening file: run/sbShortSerial/basisV4.000000
+Read basis run/sbShortSerial/basisV4 of dimension 20
+Opening file: run/sbShortSerial/basisE4.000000
+Read basis run/sbShortSerial/basisE4 of dimension 20
+Opening file: run/sbShortSerial/basisX4.000000
+Read basis run/sbShortSerial/basisX4 of dimension 4
+Opening file: run/sbShortSerial/basisV4.000000
+Read basis run/sbShortSerial/basisV4 of dimension 20
+Opening file: run/sbShortSerial/basisE4.000000
+Read basis run/sbShortSerial/basisE4 of dimension 20
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.1899, 21.5472, 424.738
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 25
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:14.509238 -8.854484:0.610265
+20	25	k2061522389431.424316	k189631.801629	k678174.362930	k1324839076.790804	k48269360087.885628	k54703.932904	k356604.636456	k324044.434172	k37416.268625	k2330253232598.050781	k1106653047.668555	k360081.842909	k181866275.968150	k1808644380154.329590	k1490067478080.442627	k103719.366459	k256167.177414	k2303757516328.786621	k1874470794626.585938	k1690230037445.270752	k334271.042989	k2828736008788.911621	k220617.255339	k1607651050541.663574	k649466100164.192017	
+conditionNum:10.367575 -8.341652:0.804591
+20	25	k44239.937393	k50745.645543	k50744.674234	k44238.010695	k78983.700306	k86554.421281	k83703.877564	k91161.881137	k80040.707674	k77671.112210	k102884.967158	k107658.453719	k111253.089946	k111654.934912	k101023.314919	k138987.252846	k1433373516.247558	k182413.228017	k2420264375.734379	k89596396189.333954	k860420070.402632	k186737153587.988647	k546883474888.599792	k186737152622.871002	k1330992416980.776855	
+	E25sample mesh has 60 elements, 230 vertices
+Elapsed time for hyper-reduction preprocessing: 0.315649 sec
+Opening file: run/sbShortSerial/basisV3.000000
+Read basis run/sbShortSerial/basisV3 of dimension 20
+Opening file: run/sbShortSerial/basisE3.000000
+Read basis run/sbShortSerial/basisE3 of dimension 19
+Opening file: run/sbShortSerial/basisX3.000000
+Read basis run/sbShortSerial/basisX3 of dimension 6
+Opening file: run/sbShortSerial/basisV3.000000
+Read basis run/sbShortSerial/basisV3 of dimension 20
+Opening file: run/sbShortSerial/basisE3.000000
+Read basis run/sbShortSerial/basisE3 of dimension 19
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.1862, 21.2448, 465.45
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 24
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:10.622627 -8.611351:0.810661
+20	25	k672692.845834	k294985.767616	k253532.241719	k189640.487386	k175552.831989	k2324686512829.841309	k123608.867928	k82283815.804959	k899546196711.871826	k3277798795600.990234	k2964316519259.871582	k781306314588.141968	k99374.180306	k822143.293831	k609782.915630	k341189.715859	k116051.811453	k858318.276189	k14225795787.433931	k302140.879993	k468730.903347	k1986881758658.170654	k954857218.691157	k138537.487912	k58879.820345	
+conditionNum:9.627982 -9.339751:0.970063
+19	24	k43155.716118	k49528.738411	k49559.479198	k43223.067375	k76652.738042	k74963.451541	k83490.173988	k74992.801921	k83185.852060	k75926.707495	k183471.223307	k86360.389441	k88491.570137	k121210.991613	k115270.072396	k335618778.104424	k125152.076548	k4741261681.893556	k4569011603.120616	k422520166098.101868	k255980989652.067963	k102405821.209934	k1367220445020.381104	k56744731579.732536	
+	E24sample mesh has 46 elements, 174 vertices
+Elapsed time for hyper-reduction preprocessing: 0.27998 sec
+Opening file: run/sbShortSerial/basisV2.000000
+Read basis run/sbShortSerial/basisV2 of dimension 20
+Opening file: run/sbShortSerial/basisE2.000000
+Read basis run/sbShortSerial/basisE2 of dimension 18
+Opening file: run/sbShortSerial/basisX2.000000
+Read basis run/sbShortSerial/basisX2 of dimension 7
+Opening file: run/sbShortSerial/basisV2.000000
+Read basis run/sbShortSerial/basisV2 of dimension 20
+Opening file: run/sbShortSerial/basisE2.000000
+Read basis run/sbShortSerial/basisE2 of dimension 18
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.1825, 20.5776, 543.699
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 23
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:12.211765 -8.105261:0.663726
+20	25	k621014.079553	k800310034864.973145	k1890368821504.033203	k49389.810715	k18760820118.716732	k2000207802371.411133	k1513074898870.343018	k3827735.538961	k872893.663328	k147602.701993	k80479.537214	k180743.817397	k30666463.136066	k750838194118.521240	k529712.257991	k1144479416980.660156	k214162.720079	k317761.817942	k258985.269674	k423827.818478	k113793.469487	k26382.127630	k277529.916462	k35086.624219	k888534601565.700806	
+conditionNum:9.724796 -8.714977:0.896160
+18	23	k41966.785843	k48139.233355	k48139.283978	k41966.936230	k137728.829052	k80956.748049	k73325.530623	k81409.881104	k75959.068292	k73039.123509	k74643.556342	k90649.168156	k103622.446832	k93382.819704	k511675365639.849609	k133907.448626	k9438135189.846689	k12054511474.328550	k35490321.389890	k121871.969424	k79548720723.645981	k286757037490.022766	k24074304618.399593	
+	E23sample mesh has 44 elements, 171 vertices
+Elapsed time for hyper-reduction preprocessing: 0.257768 sec
+Opening file: run/sbShortSerial/basisV1.000000
+Read basis run/sbShortSerial/basisV1 of dimension 20
+Opening file: run/sbShortSerial/basisE1.000000
+Read basis run/sbShortSerial/basisE1 of dimension 16
+Opening file: run/sbShortSerial/basisX1.000000
+Read basis run/sbShortSerial/basisX1 of dimension 8
+Opening file: run/sbShortSerial/basisV1.000000
+Read basis run/sbShortSerial/basisV1 of dimension 20
+Opening file: run/sbShortSerial/basisE1.000000
+Read basis run/sbShortSerial/basisE1 of dimension 16
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.1804, 18.504, 704.135
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 21
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:10.049417 -8.715337:0.867248
+20	25	k840203.558520	k519789.582599	k260925.199214	k147027.975281	k7045113686.547585	k267626293718.845459	k17913833875.267776	k81927.074784	k618653.433031	k219049.118697	k296393061344.485413	k51497.126354	k713264950.889750	k522505721658.781189	k318231.818705	k528832.143204	k1206863.744359	k190830.785498	k363222.544429	k972488809833.170288	k113511.710690	k773780.828588	k2514138413.520221	k160267814892.446930	k27022.086398	
+conditionNum:7.025644 -7.920027:1.127303
+16	21	k39566.712238	k45386.373031	k45386.810980	k39567.805931	k68966.287714	k77585.801517	k79330.802669	k72722.360508	k69340.195786	k79004.982520	k86862.914581	k136102.885140	k359724.283869	k115942.473336	k17633612819.958748	k161735607.962314	k329650380625.669250	k209107487930.612518	k23853643030.221870	k47175680592.676857	k2174006457716.538574	
+	E21sample mesh has 38 elements, 155 vertices
+Elapsed time for hyper-reduction preprocessing: 0.251582 sec
+Opening file: run/sbShortSerial/basisV0.000000
+Read basis run/sbShortSerial/basisV0 of dimension 20
+Opening file: run/sbShortSerial/basisE0.000000
+Read basis run/sbShortSerial/basisE0 of dimension 13
+Opening file: run/sbShortSerial/basisX0.000000
+Read basis run/sbShortSerial/basisX0 of dimension 9
+Opening file: run/sbShortSerial/basisV0.000000
+Read basis run/sbShortSerial/basisV0 of dimension 20
+Opening file: run/sbShortSerial/basisE0.000000
+Read basis run/sbShortSerial/basisE0 of dimension 13
+Reading: run/sbShortSerial/ROMoffset/init
+Read init vectors X, V, E with norms 71.1796, 0, 1024
+start preprocessing hyper-reduction
+number of samples for velocity: 25
+number of samples for energy  : 18
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:9.539846 -8.711868:0.913208
+20	25	k334756262357.242188	k452694.190407	k221502.849290	k316649.312650	k350868.179503	k499382.188818	k1040451924.679071	k112614.589544	k75459.514434	k45816973925.526276	k25389.620081	k600133.167724	k408274999.517188	k213083.439001	k129732.068330	k12408589787.189077	k106692399205.461426	k880674.375087	k7807991001.664644	k243530.686581	k389018.723040	k634233615661.567017	k49164.343690	k168497.808404	k128405.090445	
+conditionNum:6.665092 -6.974388:1.046405
+13	18	k35664.853836	k40910.402950	k40910.417946	k35664.887404	k101696.338460	k639488.013352	k120482.290760	k64479.307867	k77709.292908	k66863.513481	k82917.946676	k639488.013300	k639488.013265	k17648625.156491	k589028068.646247	k1034541180.901245	k1034541180.894285	k288849598928.908020	
+	E18sample mesh has 30 elements, 105 vertices
+Elapsed time for hyper-reduction preprocessing: 0.222967 sec
+Writing SP files for window: 0
+Writing SP files for window: 1
+Writing SP files for window: 2
+Writing SP files for window: 3
+Writing SP files for window: 4
+Writing SP files for window: 5
+Writing SP files for window: 6
+Writing SP files for window: 7
+Writing SP files for window: 8
+Writing SP files for window: 9
+Writing SP files for window: 10
+Writing SP files for window: 11
+Writing SP files for window: 12
+Writing SP files for window: 13
+Writing SP files for window: 14
+Writing SP files for window: 15
+Writing SP files for window: 16
+Writing SP files for window: 17
+Writing SP files for window: 18
+Writing SP files for window: 19
+Writing SP files for window: 20
+Writing SP files for window: 21
+Writing SP files for window: 22
+Writing SP files for window: 23
+Writing SP files for window: 24
+Offset Style: load
+Indicator Style: time
+Window 0: initial romS norm 0
+Hyperreduction pre-processing completed. 

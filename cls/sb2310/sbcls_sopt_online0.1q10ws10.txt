@@ -1,0 +1,1503 @@
+
+       __                __                 
+      / /   ____  ____  / /_  ____  _____   
+     / /   / __ `/ __ `/ __ \/ __ \/ ___/ 
+    / /___/ /_/ / /_/ / / / / /_/ (__  )    
+   /_____/\__,_/\__, /_/ /_/\____/____/  
+               /____/                       
+
+Options used:
+   --mesh data/cube01_hex.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --problem 1
+   --order-kinematic 2
+   --order-thermo 1
+   --ode-solver 7
+   --t-final 0.1
+   --cfl 0.5
+   --cg-tol 1e-08
+   --ftz-tol 0
+   --cg-max-steps 300
+   --max-steps -1
+   --partial-assembly
+   --no-impose-viscosity
+   --no-visualization
+   --visualization-steps 5
+   --no-match-end-time
+   --no-visit
+   --no-print
+   --outputfilename sbShortSerial
+   --visitfilename Laghos
+   --param_dir 
+   --timewindowfilename tw.csv
+   --timewindowparamfilename twp.csv
+   --initsamplesfilename initSamples
+   --partition 211
+   --no-build-database
+   --no-use-database
+   --no-sample-stages
+   --no-offline
+   --online
+   --no-restore
+   --rom_dimx -1
+   --rom_dimv -1
+   --rom_dime -1
+   --rom_dimfv -1
+   --rom_dimfe -1
+   --numsamplex 0
+   --numsamplev 0
+   --numsamplee 0
+   --numtsamplev 1
+   --numtsamplee 1
+   --sfactorx 2
+   --sfactorv 10
+   --sfactore 10
+   --rom-ef 0.9999
+   --rom-efx 0.9999
+   --sv-shift 1
+   --bi 
+   --numwindows 49
+   --numwindowsamples 0
+   --numwindowoverlap 0
+   --dtFactor 1
+   --dtc 0
+   --dmd
+   --dmdtbegin 0
+   --dtime-step -1
+   --dmdcrbf 0.9
+   --no-dmdnuf
+   --visdiff -1
+   --no-writesol
+   --no-soldiff
+   --romhr
+   --no-romhrprep
+   --precls
+   --romsvdstatic
+   --no-romsvdrm
+   --rand_dimx -1
+   --rand_dimv -1
+   --rand_dime -1
+   --rand_dimfv -1
+   --rand_dimfe -1
+   --romoffset
+   --norm_type l2
+   --sdim 0
+   --linearitytol 1e-07
+   --singularvaluetol 1e-14
+   --samplingtol 1e-07
+   --greedy-param bef
+   --greedy-param-min 0
+   --greedy-param-max 0
+   --greedy-param-size 0
+   --greedytf -1
+   --greedytol 0.1
+   --greedyalpha 1.05
+   --greedymaxclamp 2
+   --greedysubsize 0
+   --greedyconvsize 0
+   --greedysamplingtype random
+   --greedyerrorindtype useLastLifted
+   --romsns
+   --romgramschmidt
+   --rhofactor 1
+   --atwoodfactor 0.333333
+   --blastefactor 1
+   --romparam -1
+   --romoffsettype load
+   --romindicatortype time
+   --romspacetimetype spatial
+   --no-romusexv
+   --no-romusevx
+   --no-romusexandv
+   --hrsamplingtype gnat
+Reading time window parameters from file run/sbShortSerial/twp.csv
+Using time window 0 with end time 0.0032822, rdimx 7, rdimv 10, rdime 9, nsamx 14, nsamv 20, nsame 19
+Using time window 1 with end time 0.00661713, rdimx 6, rdimv 10, rdime 10, nsamx 12, nsamv 20, nsame 20
+Using time window 2 with end time 0.0100454, rdimx 6, rdimv 10, rdime 10, nsamx 12, nsamv 20, nsame 20
+Using time window 3 with end time 0.0134736, rdimx 5, rdimv 10, rdime 10, nsamx 10, nsamv 20, nsame 20
+Using time window 4 with end time 0.0169019, rdimx 4, rdimv 10, rdime 10, nsamx 8, nsamv 20, nsame 20
+Using time window 5 with end time 0.0205265, rdimx 6, rdimv 10, rdime 10, nsamx 12, nsamv 20, nsame 20
+Using time window 6 with end time 0.0236337, rdimx 5, rdimv 10, rdime 10, nsamx 10, nsamv 20, nsame 20
+Using time window 7 with end time 0.0259126, rdimx 4, rdimv 10, rdime 10, nsamx 8, nsamv 20, nsame 20
+Using time window 8 with end time 0.0281915, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 9 with end time 0.0304021, rdimx 4, rdimv 10, rdime 10, nsamx 8, nsamv 20, nsame 20
+Using time window 10 with end time 0.0323392, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 11 with end time 0.0342763, rdimx 4, rdimv 10, rdime 10, nsamx 8, nsamv 20, nsame 20
+Using time window 12 with end time 0.0362133, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 13 with end time 0.0381504, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 14 with end time 0.0398551, rdimx 4, rdimv 10, rdime 10, nsamx 8, nsamv 20, nsame 20
+Using time window 15 with end time 0.041304, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 16 with end time 0.0427035, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 17 with end time 0.0441031, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 18 with end time 0.0455026, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 19 with end time 0.0469022, rdimx 2, rdimv 10, rdime 10, nsamx 4, nsamv 20, nsame 20
+Using time window 20 with end time 0.0483017, rdimx 2, rdimv 10, rdime 10, nsamx 4, nsamv 20, nsame 20
+Using time window 21 with end time 0.0497013, rdimx 2, rdimv 10, rdime 10, nsamx 4, nsamv 20, nsame 20
+Using time window 22 with end time 0.0511232, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 23 with end time 0.0525507, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 24 with end time 0.0539783, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 25 with end time 0.0554058, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 26 with end time 0.0568333, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 27 with end time 0.0582609, rdimx 2, rdimv 10, rdime 10, nsamx 4, nsamv 20, nsame 20
+Using time window 28 with end time 0.0597286, rdimx 2, rdimv 10, rdime 10, nsamx 4, nsamv 20, nsame 20
+Using time window 29 with end time 0.0612436, rdimx 2, rdimv 10, rdime 10, nsamx 4, nsamv 20, nsame 20
+Using time window 30 with end time 0.0628137, rdimx 2, rdimv 10, rdime 10, nsamx 4, nsamv 20, nsame 20
+Using time window 31 with end time 0.0644536, rdimx 2, rdimv 10, rdime 10, nsamx 4, nsamv 20, nsame 20
+Using time window 32 with end time 0.0661804, rdimx 2, rdimv 10, rdime 10, nsamx 4, nsamv 20, nsame 20
+Using time window 33 with end time 0.0679553, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 34 with end time 0.0697303, rdimx 4, rdimv 10, rdime 10, nsamx 8, nsamv 20, nsame 20
+Using time window 35 with end time 0.0715338, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 36 with end time 0.0734175, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 37 with end time 0.0753774, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 38 with end time 0.0774082, rdimx 4, rdimv 10, rdime 10, nsamx 8, nsamv 20, nsame 20
+Using time window 39 with end time 0.0795296, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 40 with end time 0.081702, rdimx 4, rdimv 10, rdime 10, nsamx 8, nsamv 20, nsame 20
+Using time window 41 with end time 0.0839177, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 42 with end time 0.0861778, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 43 with end time 0.0884739, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 44 with end time 0.0908067, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 45 with end time 0.0931488, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 46 with end time 0.0955376, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 47 with end time 0.0979647, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Using time window 48 with end time 0.1, rdimx 3, rdimv 10, rdime 10, nsamx 6, nsamv 20, nsame 20
+Offset Style: load
+Indicator Style: time
+Window 0: initial romS norm 0
+ROM online at t 0, dt 0.000646102, romS norm 0
+numRowV 20
+numRowE19
+numRowV 20
+numRowE19
+ROM online at t 0.000646102, dt 0.000659024, romS norm 14.0838
+numRowV 20
+numRowE19
+numRowV 20
+numRowE19
+ROM online at t 0.00130513, dt 0.000659024, romS norm 48.5139
+numRowV 20
+numRowE19
+numRowV 20
+numRowE19
+ROM online at t 0.00196415, dt 0.000659024, romS norm 92.4082
+numRowV 20
+numRowE19
+numRowV 20
+numRowE19
+ROM online at t 0.00262317, dt 0.000659024, romS norm 138.233
+numRowV 20
+numRowE19
+numRowV 20
+numRowE19
+ROM online at t 0.0032822, dt 0.000659024, romS norm 183.094
+numRowV 20
+numRowE19
+numRowV 20
+numRowE19
+ROM online basis change for window 1 at t 0.00394122, dt 0.000659024
+Window 1: initial romS norm 42.0566
+ROM online at t 0.00394122, dt 0.000659024, romS norm 42.0566
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.00460025, dt 0.000659024, romS norm 80.5105
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.00525927, dt 0.000672205, romS norm 114.923
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.00593147, dt 0.000685649, romS norm 146.119
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.00661712, dt 0.000685649, romS norm 174.5
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 2 at t 0.00730277, dt 0.000685649
+Window 2: initial romS norm 25.987
+ROM online at t 0.00730277, dt 0.000685649, romS norm 25.987
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.00798842, dt 0.000685649, romS norm 49.3106
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.00867407, dt 0.000685649, romS norm 70.3845
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.00935972, dt 0.000685649, romS norm 89.4598
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0100454, dt 0.000685649, romS norm 106.376
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 3 at t 0.010731, dt 0.000685649
+Window 3: initial romS norm 15.4529
+ROM online at t 0.010731, dt 0.000685649, romS norm 15.4529
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0114167, dt 0.000685649, romS norm 29.8792
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0121023, dt 0.000685649, romS norm 43.1565
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.012788, dt 0.000685649, romS norm 55.3077
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 4 at t 0.0134736, dt 0.000685649
+Window 4: initial romS norm 0.688874
+ROM online at t 0.0134736, dt 0.000685649, romS norm 0.688874
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0141593, dt 0.000685649, romS norm 10.4794
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0148449, dt 0.000685649, romS norm 20.271
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0155306, dt 0.000685649, romS norm 29.4625
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0162162, dt 0.000685649, romS norm 38.1068
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0169019, dt 0.000699362, romS norm 46.1855
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 5 at t 0.0176012, dt 0.000713349
+Window 5: initial romS norm 7.90932
+ROM online at t 0.0176012, dt 0.000713349, romS norm 7.90932
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0183146, dt 0.000727616, romS norm 15.5194
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0190422, dt 0.000727616, romS norm 23.0222
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0197698, dt 0.000727616, romS norm 30.1842
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0204974, dt 0.000727616, romS norm 37.0276
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 6 at t 0.021225, dt 0.000742168
+Window 6: initial romS norm 6.34556
+ROM online at t 0.021225, dt 0.000742168, romS norm 6.34556
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+Repeating step 32
+ROM online at t 0.021225, dt 0.000630843, romS norm 6.34556
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+Repeating step 32
+ROM online at t 0.021225, dt 0.000536216, romS norm 6.34556
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+Repeating step 32
+ROM online at t 0.021225, dt 0.000455784, romS norm 6.34556
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+Repeating step 32
+ROM online at t 0.021225, dt 0.000387416, romS norm 6.34556
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0216124, dt 0.000395165, romS norm 9.70054
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0220076, dt 0.000403068, romS norm 13.0616
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0224107, dt 0.000411129, romS norm 16.4153
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0228218, dt 0.000411129, romS norm 19.7574
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0232329, dt 0.000419352, romS norm 23.0366
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 7 at t 0.0236523, dt 0.000427739
+Window 7: initial romS norm 0.746508
+ROM online at t 0.0236523, dt 0.000427739, romS norm 0.746508
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.02408, dt 0.000436294, romS norm 3.38318
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0245163, dt 0.00044502, romS norm 6.59601
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0249613, dt 0.00045392, romS norm 9.82238
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0254153, dt 0.000462998, romS norm 13.0396
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0258783, dt 0.000472258, romS norm 16.2402
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 8 at t 0.0263505, dt 0.000481704
+Window 8: initial romS norm 2.86212
+ROM online at t 0.0263505, dt 0.000481704, romS norm 2.86212
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0268322, dt 0.000491338, romS norm 6.00511
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0273236, dt 0.000501164, romS norm 9.14714
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0278247, dt 0.000501164, romS norm 12.2701
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 9 at t 0.0283259, dt 0.000501164
+Window 9: initial romS norm 0.914347
+ROM online at t 0.0283259, dt 0.000501164, romS norm 0.914347
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.028827, dt 0.000501164, romS norm 3.65147
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0293282, dt 0.000501164, romS norm 6.49641
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+Repeating step 50
+ROM online at t 0.0293282, dt 0.00042599, romS norm 6.49641
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0297542, dt 0.00042599, romS norm 8.86319
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0301802, dt 0.00042599, romS norm 11.1781
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 10 at t 0.0306062, dt 0.00042599
+Window 10: initial romS norm 1.13624
+ROM online at t 0.0306062, dt 0.00042599, romS norm 1.13624
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+Repeating step 53
+ROM online at t 0.0306062, dt 0.000362091, romS norm 1.13624
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0309683, dt 0.000362091, romS norm 2.84419
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0313304, dt 0.000362091, romS norm 4.66309
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0316925, dt 0.000362091, romS norm 6.47407
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0320545, dt 0.000362091, romS norm 8.264
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 11 at t 0.0324166, dt 0.000362091
+Window 11: initial romS norm 0.652821
+ROM online at t 0.0324166, dt 0.000362091, romS norm 0.652821
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0327787, dt 0.000362091, romS norm 1.93393
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0331408, dt 0.000362091, romS norm 3.59899
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0335029, dt 0.000362091, romS norm 5.27589
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.033865, dt 0.000362091, romS norm 6.93929
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0342271, dt 0.000362091, romS norm 8.58425
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 12 at t 0.0345892, dt 0.000362091
+Window 12: initial romS norm 1.25953
+ROM online at t 0.0345892, dt 0.000362091, romS norm 1.25953
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0349513, dt 0.000362091, romS norm 2.75195
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0353134, dt 0.000362091, romS norm 4.30469
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0356755, dt 0.000362091, romS norm 5.85173
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0360376, dt 0.000362091, romS norm 7.38303
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 13 at t 0.0363996, dt 0.000362091
+Window 13: initial romS norm 0.815679
+ROM online at t 0.0363996, dt 0.000362091, romS norm 0.815679
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0367617, dt 0.000362091, romS norm 2.0573
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0371238, dt 0.000362091, romS norm 3.49008
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0374859, dt 0.000362091, romS norm 4.93294
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.037848, dt 0.000362091, romS norm 6.36579
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 14 at t 0.0382101, dt 0.000362091
+Window 14: initial romS norm 0.669789
+ROM online at t 0.0382101, dt 0.000362091, romS norm 0.669789
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0385722, dt 0.000362091, romS norm 1.48282
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0389343, dt 0.000362091, romS norm 2.79144
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+Repeating step 76
+ROM online at t 0.0389343, dt 0.000307778, romS norm 2.79144
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0392421, dt 0.000307778, romS norm 3.93114
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0395498, dt 0.000307778, romS norm 5.068
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 15 at t 0.0398576, dt 0.000307778
+Window 15: initial romS norm 0.691683
+ROM online at t 0.0398576, dt 0.000307778, romS norm 0.691683
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0401654, dt 0.000307778, romS norm 1.05095
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0404732, dt 0.000307778, romS norm 2.05217
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0407809, dt 0.000307778, romS norm 3.11479
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0410887, dt 0.000307778, romS norm 4.18624
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 16 at t 0.0413965, dt 0.000307778
+Window 16: initial romS norm 0.594715
+ROM online at t 0.0413965, dt 0.000307778, romS norm 0.594715
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0417043, dt 0.000307778, romS norm 1.258
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0420121, dt 0.000307778, romS norm 2.2451
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0423198, dt 0.000307778, romS norm 3.26663
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0426276, dt 0.000307778, romS norm 4.29089
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 17 at t 0.0429354, dt 0.000307778
+Window 17: initial romS norm 0.700343
+ROM online at t 0.0429354, dt 0.000307778, romS norm 0.700343
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0432432, dt 0.000307778, romS norm 1.6035
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0435509, dt 0.000307778, romS norm 2.58037
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0438587, dt 0.000307778, romS norm 3.56325
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 18 at t 0.0441665, dt 0.000307778
+Window 18: initial romS norm 0.419092
+ROM online at t 0.0441665, dt 0.000307778, romS norm 0.419092
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0444743, dt 0.000307778, romS norm 1.02821
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0447821, dt 0.000307778, romS norm 1.95102
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0450898, dt 0.000307778, romS norm 2.89289
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0453976, dt 0.000307778, romS norm 3.83292
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 19 at t 0.0457054, dt 0.000307778
+Window 19: initial romS norm 0.552881
+ROM online at t 0.0457054, dt 0.000307778, romS norm 0.552881
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0460132, dt 0.000307778, romS norm 1.37616
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0463209, dt 0.000307778, romS norm 2.27392
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0466287, dt 0.000307778, romS norm 3.17626
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 20 at t 0.0469365, dt 0.000307778
+Window 20: initial romS norm 0.392243
+ROM online at t 0.0469365, dt 0.000307778, romS norm 0.392243
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0472443, dt 0.000307778, romS norm 0.863483
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0475521, dt 0.000307778, romS norm 1.70552
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0478598, dt 0.000307778, romS norm 2.56793
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0481676, dt 0.000307778, romS norm 3.43159
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 21 at t 0.0484754, dt 0.000307778
+Window 21: initial romS norm 0.456669
+ROM online at t 0.0484754, dt 0.000307778, romS norm 0.456669
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0487832, dt 0.000307778, romS norm 1.18395
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0490909, dt 0.000307778, romS norm 2.00723
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0493987, dt 0.000307778, romS norm 2.83733
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 22 at t 0.0497065, dt 0.000307778
+Window 22: initial romS norm 0.406814
+ROM online at t 0.0497065, dt 0.000307778, romS norm 0.406814
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0500143, dt 0.000307778, romS norm 0.724062
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0503221, dt 0.000307778, romS norm 1.49058
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+Repeating step 113
+ROM online at t 0.0503221, dt 0.000261611, romS norm 1.49058
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0505837, dt 0.000261611, romS norm 2.16603
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0508453, dt 0.000261611, romS norm 2.84262
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0511069, dt 0.000261611, romS norm 3.51536
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 23 at t 0.0513685, dt 0.000261611
+Window 23: initial romS norm 0.557324
+ROM online at t 0.0513685, dt 0.000261611, romS norm 0.557324
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0516301, dt 0.000261611, romS norm 1.15222
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0518917, dt 0.000261611, romS norm 1.79291
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0521533, dt 0.000261611, romS norm 2.43854
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0524149, dt 0.000261611, romS norm 3.08402
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 24 at t 0.0526766, dt 0.000261611
+Window 24: initial romS norm 0.364177
+ROM online at t 0.0526766, dt 0.000261611, romS norm 0.364177
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0529382, dt 0.000261611, romS norm 0.831552
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0531998, dt 0.000261611, romS norm 1.43665
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0534614, dt 0.000261611, romS norm 2.05621
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.053723, dt 0.000261611, romS norm 2.67799
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 25 at t 0.0539846, dt 0.000261611
+Window 25: initial romS norm 0.378704
+ROM online at t 0.0539846, dt 0.000261611, romS norm 0.378704
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0542462, dt 0.000261611, romS norm 0.559566
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0545078, dt 0.000261611, romS norm 1.11415
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0547694, dt 0.000261611, romS norm 1.70644
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0550311, dt 0.000266843, romS norm 2.30441
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0552979, dt 0.000266843, romS norm 2.91382
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 26 at t 0.0555647, dt 0.000266843
+Window 26: initial romS norm 0.365173
+ROM online at t 0.0555647, dt 0.000266843, romS norm 0.365173
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0558316, dt 0.00027218, romS norm 0.849287
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0561038, dt 0.00027218, romS norm 1.4374
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0563759, dt 0.00027218, romS norm 2.03661
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0566481, dt 0.000277624, romS norm 2.6364
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 27 at t 0.0569257, dt 0.000277624
+Window 27: initial romS norm 0.301759
+ROM online at t 0.0569257, dt 0.000277624, romS norm 0.301759
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0572034, dt 0.000283176, romS norm 0.705891
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0574865, dt 0.000283176, romS norm 1.29075
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0577697, dt 0.000283176, romS norm 1.89142
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0580529, dt 0.00028884, romS norm 2.49329
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 28 at t 0.0583417, dt 0.00028884
+Window 28: initial romS norm 0.277295
+ROM online at t 0.0583417, dt 0.00028884, romS norm 0.277295
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0586306, dt 0.00028884, romS norm 0.674561
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0589194, dt 0.000294616, romS norm 1.25258
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.059214, dt 0.000294616, romS norm 1.85659
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0595086, dt 0.000300509, romS norm 2.4612
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 29 at t 0.0598092, dt 0.000300509
+Window 29: initial romS norm 0.27439
+ROM online at t 0.0598092, dt 0.000300509, romS norm 0.27439
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0601097, dt 0.000300509, romS norm 0.674353
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0604102, dt 0.000306519, romS norm 1.2547
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0607167, dt 0.000306519, romS norm 1.86061
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0610232, dt 0.000306519, romS norm 2.46697
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 30 at t 0.0613297, dt 0.000312649
+Window 30: initial romS norm 0.270892
+ROM online at t 0.0613297, dt 0.000312649, romS norm 0.270892
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0616424, dt 0.000318902, romS norm 0.683623
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0619613, dt 0.00032528, romS norm 1.27893
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0622866, dt 0.000331786, romS norm 1.89918
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0626183, dt 0.000338422, romS norm 2.53179
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 31 at t 0.0629568, dt 0.00034519
+Window 31: initial romS norm 0.265763
+ROM online at t 0.0629568, dt 0.00034519, romS norm 0.265763
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.063302, dt 0.00034519, romS norm 0.808827
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0636472, dt 0.00034519, romS norm 1.44086
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0639923, dt 0.00034519, romS norm 2.07765
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0643375, dt 0.00034519, romS norm 2.71225
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 32 at t 0.0646827, dt 0.00034519
+Window 32: initial romS norm 0.283025
+ROM online at t 0.0646827, dt 0.00034519, romS norm 0.283025
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0650279, dt 0.00034519, romS norm 0.903837
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0653731, dt 0.00034519, romS norm 1.52554
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0657183, dt 0.000352094, romS norm 2.1432
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0660704, dt 0.000352094, romS norm 2.76859
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 33 at t 0.0664225, dt 0.000352094
+Window 33: initial romS norm 0.289328
+ROM online at t 0.0664225, dt 0.000352094, romS norm 0.289328
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0667746, dt 0.000352094, romS norm 0.901842
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0671267, dt 0.000352094, romS norm 1.51246
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0674788, dt 0.000352094, romS norm 2.1187
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0678309, dt 0.000352094, romS norm 2.72041
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 34 at t 0.0681829, dt 0.000352094
+Window 34: initial romS norm 0.251699
+ROM online at t 0.0681829, dt 0.000352094, romS norm 0.251699
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.068535, dt 0.000352094, romS norm 0.842105
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0688871, dt 0.000352094, romS norm 1.43017
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0692392, dt 0.000352094, romS norm 2.01399
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0695913, dt 0.000359136, romS norm 2.59348
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 35 at t 0.0699505, dt 0.000359136
+Window 35: initial romS norm 0.229545
+ROM online at t 0.0699505, dt 0.000359136, romS norm 0.229545
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0703096, dt 0.000366318, romS norm 0.809231
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0706759, dt 0.000366318, romS norm 1.39778
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0710422, dt 0.000366318, romS norm 1.98183
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0714086, dt 0.000373645, romS norm 2.56181
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 36 at t 0.0717822, dt 0.000373645
+Window 36: initial romS norm 0.263829
+ROM online at t 0.0717822, dt 0.000373645, romS norm 0.263829
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0721558, dt 0.000381118, romS norm 0.845825
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.072537, dt 0.000381118, romS norm 1.43638
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0729181, dt 0.00038874, romS norm 2.02301
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0733068, dt 0.00038874, romS norm 2.61694
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 37 at t 0.0736956, dt 0.00038874
+Window 37: initial romS norm 0.299682
+ROM online at t 0.0736956, dt 0.00038874, romS norm 0.299682
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0740843, dt 0.00038874, romS norm 0.884542
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.074473, dt 0.000396515, romS norm 1.46593
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0748696, dt 0.000396515, romS norm 2.05501
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0752661, dt 0.000396515, romS norm 2.63997
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 38 at t 0.0756626, dt 0.000404445
+Window 38: initial romS norm 0.303045
+ROM online at t 0.0756626, dt 0.000404445, romS norm 0.303045
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.076067, dt 0.000412534, romS norm 0.890439
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0764796, dt 0.000420785, romS norm 1.48543
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0769003, dt 0.000429201, romS norm 2.0876
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0773295, dt 0.000437785, romS norm 2.69738
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 39 at t 0.0777673, dt 0.00044654
+Window 39: initial romS norm 0.396331
+ROM online at t 0.0777673, dt 0.00044654, romS norm 0.396331
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0782139, dt 0.000455471, romS norm 1.02047
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0786693, dt 0.00046458, romS norm 1.65245
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0791339, dt 0.00046458, romS norm 2.29162
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 40 at t 0.0795985, dt 0.00046458
+Window 40: initial romS norm 0.0482823
+ROM online at t 0.0795985, dt 0.00046458, romS norm 0.0482823
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0800631, dt 0.00046458, romS norm 0.615035
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0805277, dt 0.000473872, romS norm 1.23917
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0810015, dt 0.000473872, romS norm 1.87119
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0814754, dt 0.000473872, romS norm 2.49836
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 41 at t 0.0819493, dt 0.000483349
+Window 41: initial romS norm 0.228009
+ROM online at t 0.0819493, dt 0.000483349, romS norm 0.228009
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0824326, dt 0.000493016, romS norm 0.851217
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0829256, dt 0.000502877, romS norm 1.48896
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0834285, dt 0.000512934, romS norm 2.13368
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 42 at t 0.0839415, dt 0.000523193
+Window 42: initial romS norm 0.102001
+ROM online at t 0.0839415, dt 0.000523193, romS norm 0.102001
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0844647, dt 0.000523193, romS norm 0.595
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0849878, dt 0.000523193, romS norm 1.2442
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.085511, dt 0.000533657, romS norm 1.89002
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0860447, dt 0.000533657, romS norm 2.54296
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 43 at t 0.0865784, dt 0.000533657
+Window 43: initial romS norm 0.401402
+ROM online at t 0.0865784, dt 0.000533657, romS norm 0.401402
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.087112, dt 0.00054433, romS norm 1.03928
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0876563, dt 0.00054433, romS norm 1.68937
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0882007, dt 0.000555217, romS norm 2.33415
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 44 at t 0.0887559, dt 0.000555217
+Window 44: initial romS norm 0.277832
+ROM online at t 0.0887559, dt 0.000555217, romS norm 0.277832
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0893111, dt 0.000566321, romS norm 0.897026
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0898774, dt 0.000566321, romS norm 1.55071
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0904437, dt 0.000577647, romS norm 2.19654
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 45 at t 0.0910214, dt 0.000577647
+Window 45: initial romS norm 0.222024
+ROM online at t 0.0910214, dt 0.000577647, romS norm 0.222024
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.091599, dt 0.0005892, romS norm 0.825842
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0921882, dt 0.0005892, romS norm 1.47841
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0927774, dt 0.000600984, romS norm 2.12736
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 46 at t 0.0933784, dt 0.000613004
+Window 46: initial romS norm 0.249578
+ROM online at t 0.0933784, dt 0.000613004, romS norm 0.249578
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0939914, dt 0.000613004, romS norm 0.860799
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0946044, dt 0.000625264, romS norm 1.51401
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0952297, dt 0.000625264, romS norm 2.17988
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 47 at t 0.095855, dt 0.000625264
+Window 47: initial romS norm 0.339949
+ROM online at t 0.095855, dt 0.000625264, romS norm 0.339949
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0964802, dt 0.000625264, romS norm 0.948759
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0971055, dt 0.000625264, romS norm 1.58981
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0977308, dt 0.000625264, romS norm 2.23243
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online basis change for window 48 at t 0.098356, dt 0.000625264
+Window 48: initial romS norm 0.407591
+ROM online at t 0.098356, dt 0.000625264, romS norm 0.407591
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0989813, dt 0.000625264, romS norm 1.00432
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+ROM online at t 0.0996065, dt 0.000393457, romS norm 1.6242
+numRowV 20
+numRowE20
+numRowV 20
+numRowE20
+Elapsed time for online preprocess: 6.47 sec
+Elapsed time for time loop: 4.41778 sec
+Total time: 10.8933 sec

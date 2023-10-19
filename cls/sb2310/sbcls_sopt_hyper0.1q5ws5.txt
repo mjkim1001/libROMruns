@@ -1,0 +1,238 @@
+
+       __                __                 
+      / /   ____  ____  / /_  ____  _____   
+     / /   / __ `/ __ `/ __ \/ __ \/ ___/ 
+    / /___/ /_/ / /_/ / / / / /_/ (__  )    
+   /_____/\__,_/\__, /_/ /_/\____/____/  
+               /____/                       
+
+Options used:
+   --mesh data/cube01_hex.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --problem 1
+   --order-kinematic 2
+   --order-thermo 1
+   --ode-solver 7
+   --t-final 0.1
+   --cfl 0.5
+   --cg-tol 1e-08
+   --ftz-tol 0
+   --cg-max-steps 300
+   --max-steps -1
+   --partial-assembly
+   --no-impose-viscosity
+   --no-visualization
+   --visualization-steps 5
+   --no-match-end-time
+   --no-visit
+   --no-print
+   --outputfilename sbShortSerial
+   --visitfilename Laghos
+   --param_dir 
+   --timewindowfilename tw.csv
+   --timewindowparamfilename twp.csv
+   --initsamplesfilename initSamples
+   --partition 211
+   --no-build-database
+   --no-use-database
+   --no-sample-stages
+   --no-offline
+   --online
+   --no-restore
+   --rom_dimx -1
+   --rom_dimv -1
+   --rom_dime -1
+   --rom_dimfv -1
+   --rom_dimfe -1
+   --numsamplex 0
+   --numsamplev 0
+   --numsamplee 0
+   --numtsamplev 1
+   --numtsamplee 1
+   --sfactorx 2
+   --sfactorv 5
+   --sfactore 5
+   --rom-ef 0.9999
+   --rom-efx 0.9999
+   --sv-shift 1
+   --bi 
+   --numwindows 122
+   --numwindowsamples 0
+   --numwindowoverlap 0
+   --dtFactor 1
+   --dtc 0
+   --dmd
+   --dmdtbegin 0
+   --dtime-step -1
+   --dmdcrbf 0.9
+   --no-dmdnuf
+   --visdiff -1
+   --no-writesol
+   --no-soldiff
+   --no-romhr
+   --romhrprep
+   --precls
+   --romsvdstatic
+   --no-romsvdrm
+   --rand_dimx -1
+   --rand_dimv -1
+   --rand_dime -1
+   --rand_dimfv -1
+   --rand_dimfe -1
+   --romoffset
+   --norm_type l2
+   --sdim 0
+   --linearitytol 1e-07
+   --singularvaluetol 1e-14
+   --samplingtol 1e-07
+   --greedy-param bef
+   --greedy-param-min 0
+   --greedy-param-max 0
+   --greedy-param-size 0
+   --greedytf -1
+   --greedytol 0.1
+   --greedyalpha 1.05
+   --greedymaxclamp 2
+   --greedysubsize 0
+   --greedyconvsize 0
+   --greedysamplingtype random
+   --greedyerrorindtype useLastLifted
+   --romsns
+   --romgramschmidt
+   --rhofactor 1
+   --atwoodfactor 0.333333
+   --blastefactor 1
+   --romparam -1
+   --romoffsettype load
+   --romindicatortype time
+   --romspacetimetype spatial
+   --no-romusexv
+   --no-romusevx
+   --no-romusexandv
+   --hrsamplingtype sopt
+Reading time window parameters from file run/sbShortSerial/twp.csv
+Using time window 0 with end time 0.00196415, rdimx 6, rdimv 3, rdime 1, nsamx 12, nsamv 8, nsame 6
+Using time window 1 with end time 0.0032822, rdimx 5, rdimv 4, rdime 4, nsamx 10, nsamv 9, nsame 9
+Using time window 2 with end time 0.00460025, rdimx 5, rdimv 4, rdime 4, nsamx 10, nsamv 9, nsame 9
+Using time window 3 with end time 0.00593148, rdimx 5, rdimv 5, rdime 4, nsamx 10, nsamv 10, nsame 9
+Using time window 4 with end time 0.00730277, rdimx 5, rdimv 5, rdime 3, nsamx 10, nsamv 10, nsame 8
+Using time window 5 with end time 0.00867407, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 6 with end time 0.0100454, rdimx 5, rdimv 5, rdime 3, nsamx 10, nsamv 10, nsame 8
+Using time window 7 with end time 0.0114167, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 8 with end time 0.012788, rdimx 5, rdimv 5, rdime 3, nsamx 10, nsamv 10, nsame 8
+Using time window 9 with end time 0.0141593, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 10 with end time 0.0155306, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 11 with end time 0.0169019, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 12 with end time 0.0183146, rdimx 5, rdimv 5, rdime 4, nsamx 10, nsamv 10, nsame 9
+Using time window 13 with end time 0.0197844, rdimx 5, rdimv 5, rdime 4, nsamx 10, nsamv 10, nsame 9
+Using time window 14 with end time 0.0212687, rdimx 5, rdimv 5, rdime 4, nsamx 10, nsamv 10, nsame 9
+Using time window 15 with end time 0.0226417, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 16 with end time 0.0236337, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 17 with end time 0.0245453, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 18 with end time 0.0254568, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 19 with end time 0.0263684, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 20 with end time 0.02728, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 21 with end time 0.0281915, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 22 with end time 0.0291031, rdimx 5, rdimv 5, rdime 4, nsamx 10, nsamv 10, nsame 9
+Using time window 23 with end time 0.0300147, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 24 with end time 0.0307895, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 25 with end time 0.0315643, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 26 with end time 0.0323392, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 27 with end time 0.033114, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 28 with end time 0.0338888, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 29 with end time 0.0346637, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 30 with end time 0.0354385, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 31 with end time 0.0362133, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 32 with end time 0.0369882, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 33 with end time 0.037763, rdimx 4, rdimv 4, rdime 2, nsamx 8, nsamv 9, nsame 7
+Using time window 34 with end time 0.0385378, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 35 with end time 0.0391965, rdimx 5, rdimv 5, rdime 3, nsamx 10, nsamv 10, nsame 8
+Using time window 36 with end time 0.0398551, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 37 with end time 0.0404643, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 38 with end time 0.0410241, rdimx 5, rdimv 5, rdime 3, nsamx 10, nsamv 10, nsame 8
+Using time window 39 with end time 0.0415839, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 40 with end time 0.0421437, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 41 with end time 0.0427035, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 42 with end time 0.0432634, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 43 with end time 0.0438232, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 44 with end time 0.044383, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 45 with end time 0.0449428, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 46 with end time 0.0455026, rdimx 4, rdimv 3, rdime 2, nsamx 8, nsamv 8, nsame 7
+Using time window 47 with end time 0.0460624, rdimx 4, rdimv 4, rdime 2, nsamx 8, nsamv 9, nsame 7
+Using time window 48 with end time 0.0466223, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 49 with end time 0.0471821, rdimx 4, rdimv 4, rdime 2, nsamx 8, nsamv 9, nsame 7
+Using time window 50 with end time 0.0477419, rdimx 4, rdimv 3, rdime 2, nsamx 8, nsamv 8, nsame 7
+Using time window 51 with end time 0.0483017, rdimx 4, rdimv 3, rdime 2, nsamx 8, nsamv 8, nsame 7
+Using time window 52 with end time 0.0488615, rdimx 4, rdimv 3, rdime 2, nsamx 8, nsamv 8, nsame 7
+Using time window 53 with end time 0.0494213, rdimx 4, rdimv 3, rdime 2, nsamx 8, nsamv 8, nsame 7
+Using time window 54 with end time 0.0499812, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 55 with end time 0.0505522, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 56 with end time 0.0511232, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 57 with end time 0.0516942, rdimx 4, rdimv 5, rdime 3, nsamx 8, nsamv 10, nsame 8
+Using time window 58 with end time 0.0522652, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 59 with end time 0.0528362, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 60 with end time 0.0534072, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 61 with end time 0.0539783, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 62 with end time 0.0545493, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 63 with end time 0.0551203, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 64 with end time 0.0556913, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 65 with end time 0.0562623, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 66 with end time 0.0568333, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 67 with end time 0.0574043, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 68 with end time 0.0579753, rdimx 4, rdimv 3, rdime 2, nsamx 8, nsamv 8, nsame 7
+Using time window 69 with end time 0.0585521, rdimx 4, rdimv 3, rdime 2, nsamx 8, nsamv 8, nsame 7
+Using time window 70 with end time 0.0591345, rdimx 4, rdimv 3, rdime 2, nsamx 8, nsamv 8, nsame 7
+Using time window 71 with end time 0.0597286, rdimx 4, rdimv 3, rdime 2, nsamx 8, nsamv 8, nsame 7
+Using time window 72 with end time 0.0603286, rdimx 4, rdimv 3, rdime 2, nsamx 8, nsamv 8, nsame 7
+Using time window 73 with end time 0.0609346, rdimx 3, rdimv 3, rdime 2, nsamx 6, nsamv 8, nsame 7
+Using time window 74 with end time 0.0615527, rdimx 3, rdimv 3, rdime 2, nsamx 6, nsamv 8, nsame 7
+Using time window 75 with end time 0.0621769, rdimx 3, rdimv 2, rdime 2, nsamx 6, nsamv 7, nsame 7
+Using time window 76 with end time 0.0628137, rdimx 3, rdimv 3, rdime 2, nsamx 6, nsamv 8, nsame 7
+Using time window 77 with end time 0.0634632, rdimx 3, rdimv 3, rdime 2, nsamx 6, nsamv 8, nsame 7
+Using time window 78 with end time 0.0641191, rdimx 3, rdimv 3, rdime 2, nsamx 6, nsamv 8, nsame 7
+Using time window 79 with end time 0.0647881, rdimx 3, rdimv 2, rdime 2, nsamx 6, nsamv 7, nsame 7
+Using time window 80 with end time 0.0654773, rdimx 3, rdimv 2, rdime 2, nsamx 6, nsamv 7, nsame 7
+Using time window 81 with end time 0.0661804, rdimx 3, rdimv 3, rdime 2, nsamx 6, nsamv 8, nsame 7
+Using time window 82 with end time 0.0668903, rdimx 4, rdimv 4, rdime 2, nsamx 8, nsamv 9, nsame 7
+Using time window 83 with end time 0.0676003, rdimx 4, rdimv 4, rdime 2, nsamx 8, nsamv 9, nsame 7
+Using time window 84 with end time 0.0683103, rdimx 5, rdimv 5, rdime 2, nsamx 10, nsamv 10, nsame 7
+Using time window 85 with end time 0.0690203, rdimx 5, rdimv 5, rdime 2, nsamx 10, nsamv 10, nsame 7
+Using time window 86 with end time 0.0697303, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 87 with end time 0.0704403, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 88 with end time 0.0711644, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 89 with end time 0.0719031, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 90 with end time 0.0726565, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 91 with end time 0.0734175, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 92 with end time 0.0741937, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 93 with end time 0.0749776, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 94 with end time 0.0757771, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 95 with end time 0.0765927, rdimx 5, rdimv 5, rdime 3, nsamx 10, nsamv 10, nsame 8
+Using time window 96 with end time 0.0774082, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 97 with end time 0.0782484, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 98 with end time 0.0790969, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 99 with end time 0.0799624, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 100 with end time 0.0808278, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 101 with end time 0.081702, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 102 with end time 0.0825847, rdimx 5, rdimv 5, rdime 3, nsamx 10, nsamv 10, nsame 8
+Using time window 103 with end time 0.0834675, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 104 with end time 0.0843679, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 105 with end time 0.0852684, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 106 with end time 0.0861778, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 107 with end time 0.0870963, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 108 with end time 0.0880147, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 109 with end time 0.0889331, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 110 with end time 0.0898699, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 111 with end time 0.0908067, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 112 with end time 0.0917436, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 113 with end time 0.0926804, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 114 with end time 0.0936265, rdimx 5, rdimv 4, rdime 3, nsamx 10, nsamv 9, nsame 8
+Using time window 115 with end time 0.0945821, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 116 with end time 0.0955376, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 117 with end time 0.0965027, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Using time window 118 with end time 0.0974774, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 119 with end time 0.098452, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 120 with end time 0.0994462, rdimx 4, rdimv 4, rdime 3, nsamx 8, nsamv 9, nsame 8
+Using time window 121 with end time 0.1, rdimx 4, rdimv 3, rdime 3, nsamx 8, nsamv 8, nsame 8
+Non-Cartesian partitioning through METIS will be used.
+Zones min/max: 512 512

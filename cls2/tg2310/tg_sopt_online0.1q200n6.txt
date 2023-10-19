@@ -1,0 +1,1467 @@
+
+       __                __                 
+      / /   ____  ____  / /_  ____  _____   
+     / /   / __ `/ __ `/ __ \/ __ \/ ___/ 
+    / /___/ /_/ / /_/ / / / / /_/ (__  )    
+   /_____/\__,_/\__, /_/ /_/\____/____/  
+               /____/                       
+
+Options used:
+   --mesh data/cube01_hex.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --problem 0
+   --order-kinematic 2
+   --order-thermo 1
+   --ode-solver 7
+   --t-final 0.1
+   --cfl 0.1
+   --cg-tol 1e-08
+   --ftz-tol 0
+   --cg-max-steps 300
+   --max-steps -1
+   --partial-assembly
+   --no-impose-viscosity
+   --no-visualization
+   --visualization-steps 5
+   --no-match-end-time
+   --no-visit
+   --no-print
+   --outputfilename tgShort2Serial
+   --visitfilename Laghos
+   --param_dir 
+   --timewindowfilename tw.csv
+   --timewindowparamfilename twp.csv
+   --initsamplesfilename initSamples
+   --partition 0
+   --no-build-database
+   --no-use-database
+   --no-sample-stages
+   --no-offline
+   --online
+   --no-restore
+   --rom_dimx 4
+   --rom_dimv 48
+   --rom_dime 34
+   --rom_dimfv -1
+   --rom_dimfe -1
+   --numsamplex 0
+   --numsamplev 0
+   --numsamplee 0
+   --numtsamplev 1
+   --numtsamplee 1
+   --sfactorx 2
+   --sfactorv 200
+   --sfactore 200
+   --rom-ef 0.9999
+   --rom-efx 0.9999
+   --sv-shift 1
+   --bi 
+   --numwindows 0
+   --numwindowsamples 0
+   --numwindowoverlap 0
+   --dtFactor 1
+   --dtc 0
+   --dmd
+   --dmdtbegin 0
+   --dtime-step -1
+   --dmdcrbf 0.9
+   --no-dmdnuf
+   --visdiff -1
+   --no-writesol
+   --no-soldiff
+   --romhr
+   --no-romhrprep
+   --no-precls
+   --romsvdstatic
+   --no-romsvdrm
+   --rand_dimx -1
+   --rand_dimv -1
+   --rand_dime -1
+   --rand_dimfv -1
+   --rand_dimfe -1
+   --romoffset
+   --norm_type l2
+   --sdim 0
+   --linearitytol 1e-07
+   --singularvaluetol 1e-14
+   --samplingtol 1e-07
+   --greedy-param bef
+   --greedy-param-min 0
+   --greedy-param-max 0
+   --greedy-param-size 0
+   --greedytf -1
+   --greedytol 0.1
+   --greedyalpha 1.05
+   --greedymaxclamp 2
+   --greedysubsize 0
+   --greedyconvsize 0
+   --greedysamplingtype random
+   --greedyerrorindtype useLastLifted
+   --romsns
+   --romgramschmidt
+   --rhofactor 1
+   --atwoodfactor 0.333333
+   --blastefactor 1
+   --romparam -1
+   --romoffsettype initial
+   --romindicatortype time
+   --romspacetimetype spatial
+   --no-romusexv
+   --no-romusevx
+   --no-romusexandv
+   --hrsamplingtype gnat
+Offset Style: initial
+Indicator Style: time
+Window 0: initial romS norm 0
+ROM online at t 0, dt 0.000483484, romS norm 0
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+Repeating step 1
+ROM online at t 0, dt 0.000410961, romS norm 0
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.000410961, dt 0.000410961, romS norm 0.0293677
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.000821923, dt 0.000410961, romS norm 0.0587152
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00123288, dt 0.000410961, romS norm 0.0881189
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00164385, dt 0.000410961, romS norm 0.117682
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00205481, dt 0.000410961, romS norm 0.147535
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00246577, dt 0.000410961, romS norm 0.177822
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00287673, dt 0.000410961, romS norm 0.208676
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00328769, dt 0.000410961, romS norm 0.240204
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00369865, dt 0.000410961, romS norm 0.272463
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00410961, dt 0.000410961, romS norm 0.305448
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00452058, dt 0.000410961, romS norm 0.339089
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00493154, dt 0.000410961, romS norm 0.373247
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0053425, dt 0.000410961, romS norm 0.407731
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00575346, dt 0.000410961, romS norm 0.442308
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00616442, dt 0.000410961, romS norm 0.476724
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00657538, dt 0.000410961, romS norm 0.510725
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00698634, dt 0.000410961, romS norm 0.544076
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00739731, dt 0.000410961, romS norm 0.576579
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00780827, dt 0.000410961, romS norm 0.608089
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00821923, dt 0.000410961, romS norm 0.638519
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00863019, dt 0.000410961, romS norm 0.667849
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00904115, dt 0.000410961, romS norm 0.696123
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00945211, dt 0.000410961, romS norm 0.723445
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.00986307, dt 0.000410961, romS norm 0.749964
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.010274, dt 0.000410961, romS norm 0.775865
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.010685, dt 0.000410961, romS norm 0.801351
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.011096, dt 0.000410961, romS norm 0.826625
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0115069, dt 0.000410961, romS norm 0.851878
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0119179, dt 0.000410961, romS norm 0.877273
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0123288, dt 0.000410961, romS norm 0.90294
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0127398, dt 0.000410961, romS norm 0.92897
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0131508, dt 0.000410961, romS norm 0.955416
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0135617, dt 0.000410961, romS norm 0.982298
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0139727, dt 0.000410961, romS norm 1.00961
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0143836, dt 0.000410961, romS norm 1.03731
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0147946, dt 0.000410961, romS norm 1.06539
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0152056, dt 0.000410961, romS norm 1.09377
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0156165, dt 0.000410961, romS norm 1.12244
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0160275, dt 0.000410961, romS norm 1.15135
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0164385, dt 0.000410961, romS norm 1.18047
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0168494, dt 0.000410961, romS norm 1.20976
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0172604, dt 0.000410961, romS norm 1.23922
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0176713, dt 0.000410961, romS norm 1.2688
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0180823, dt 0.000410961, romS norm 1.2985
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0184933, dt 0.000410961, romS norm 1.32827
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0189042, dt 0.000410961, romS norm 1.3581
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0193152, dt 0.000410961, romS norm 1.38795
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0197261, dt 0.000410961, romS norm 1.4178
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0201371, dt 0.000410961, romS norm 1.44761
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0205481, dt 0.000410961, romS norm 1.47737
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.020959, dt 0.000410961, romS norm 1.50706
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.02137, dt 0.000410961, romS norm 1.53668
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.021781, dt 0.000410961, romS norm 1.56624
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0221919, dt 0.000410961, romS norm 1.59575
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0226029, dt 0.000410961, romS norm 1.62525
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0230138, dt 0.000410961, romS norm 1.65475
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0234248, dt 0.000410961, romS norm 1.68431
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0238358, dt 0.000410961, romS norm 1.71395
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0242467, dt 0.000410961, romS norm 1.74369
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0246577, dt 0.000410961, romS norm 1.77356
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0250686, dt 0.000410961, romS norm 1.80357
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0254796, dt 0.000410961, romS norm 1.83373
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0258906, dt 0.000410961, romS norm 1.86401
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0263015, dt 0.000410961, romS norm 1.89441
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0267125, dt 0.000410961, romS norm 1.92491
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0271235, dt 0.000410961, romS norm 1.95546
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0275344, dt 0.000410961, romS norm 1.98606
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0279454, dt 0.000410961, romS norm 2.01666
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0283563, dt 0.000410961, romS norm 2.04725
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0287673, dt 0.000410961, romS norm 2.0778
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0291783, dt 0.000410961, romS norm 2.10831
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0295892, dt 0.000410961, romS norm 2.13876
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0300002, dt 0.000410961, romS norm 2.16917
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0304111, dt 0.000410961, romS norm 2.19953
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0308221, dt 0.000410961, romS norm 2.22985
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0312331, dt 0.000410961, romS norm 2.26015
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.031644, dt 0.000410961, romS norm 2.29042
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.032055, dt 0.000410961, romS norm 2.32069
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.032466, dt 0.000410961, romS norm 2.35096
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0328769, dt 0.000410961, romS norm 2.38125
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0332879, dt 0.000410961, romS norm 2.41155
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0336988, dt 0.000410961, romS norm 2.44187
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0341098, dt 0.000410961, romS norm 2.47222
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0345208, dt 0.000410961, romS norm 2.50259
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0349317, dt 0.000410961, romS norm 2.53298
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0353427, dt 0.000410961, romS norm 2.56341
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0357536, dt 0.000410961, romS norm 2.59385
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0361646, dt 0.000410961, romS norm 2.62431
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0365756, dt 0.000410961, romS norm 2.65479
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0369865, dt 0.000410961, romS norm 2.68527
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0373975, dt 0.000410961, romS norm 2.71574
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0378084, dt 0.000410961, romS norm 2.7462
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0382194, dt 0.000410961, romS norm 2.77664
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0386304, dt 0.000410961, romS norm 2.80703
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0390413, dt 0.000410961, romS norm 2.83736
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0394523, dt 0.000410961, romS norm 2.86762
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0398633, dt 0.000410961, romS norm 2.89779
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0402742, dt 0.000410961, romS norm 2.92787
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0406852, dt 0.000410961, romS norm 2.95784
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0410961, dt 0.000410961, romS norm 2.9877
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0415071, dt 0.000410961, romS norm 3.01745
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0419181, dt 0.000410961, romS norm 3.04708
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.042329, dt 0.000410961, romS norm 3.07661
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.04274, dt 0.000410961, romS norm 3.10604
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0431509, dt 0.000410961, romS norm 3.13538
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0435619, dt 0.000410961, romS norm 3.16465
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0439729, dt 0.000410961, romS norm 3.19385
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0443838, dt 0.000410961, romS norm 3.22301
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0447948, dt 0.000410961, romS norm 3.25213
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0452058, dt 0.000410961, romS norm 3.28123
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0456167, dt 0.000410961, romS norm 3.31032
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0460277, dt 0.000410961, romS norm 3.3394
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0464386, dt 0.000410961, romS norm 3.36847
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0468496, dt 0.000410961, romS norm 3.39755
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0472606, dt 0.000410961, romS norm 3.42663
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0476715, dt 0.000410961, romS norm 3.45571
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0480825, dt 0.000410961, romS norm 3.48479
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0484934, dt 0.000410961, romS norm 3.51387
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0489044, dt 0.000410961, romS norm 3.54295
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0493154, dt 0.000410961, romS norm 3.57202
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0497263, dt 0.000410961, romS norm 3.60108
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0501373, dt 0.000410961, romS norm 3.63013
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+Repeating step 123
+ROM online at t 0.0501373, dt 0.000349317, romS norm 3.63013
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0504866, dt 0.000349317, romS norm 3.65482
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0508359, dt 0.000349317, romS norm 3.67949
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0511852, dt 0.000349317, romS norm 3.70415
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0515346, dt 0.000349317, romS norm 3.72881
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0518839, dt 0.000349317, romS norm 3.75345
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0522332, dt 0.000349317, romS norm 3.77808
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0525825, dt 0.000349317, romS norm 3.80271
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0529318, dt 0.000349317, romS norm 3.82734
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0532811, dt 0.000349317, romS norm 3.85196
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0536305, dt 0.000349317, romS norm 3.87658
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0539798, dt 0.000349317, romS norm 3.90121
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0543291, dt 0.000349317, romS norm 3.92584
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0546784, dt 0.000349317, romS norm 3.95048
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0550277, dt 0.000349317, romS norm 3.97514
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.055377, dt 0.000349317, romS norm 3.99981
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0557264, dt 0.000349317, romS norm 4.0245
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0560757, dt 0.000349317, romS norm 4.0492
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.056425, dt 0.000349317, romS norm 4.07393
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0567743, dt 0.000349317, romS norm 4.09868
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0571236, dt 0.000349317, romS norm 4.12346
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.057473, dt 0.000349317, romS norm 4.14826
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0578223, dt 0.000349317, romS norm 4.17307
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0581716, dt 0.000349317, romS norm 4.19791
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0585209, dt 0.000349317, romS norm 4.22277
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0588702, dt 0.000349317, romS norm 4.24764
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0592195, dt 0.000349317, romS norm 4.27253
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0595689, dt 0.000349317, romS norm 4.29743
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0599182, dt 0.000349317, romS norm 4.32233
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0602675, dt 0.000349317, romS norm 4.34724
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0606168, dt 0.000349317, romS norm 4.37214
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0609661, dt 0.000349317, romS norm 4.39705
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0613154, dt 0.000349317, romS norm 4.42194
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0616648, dt 0.000349317, romS norm 4.44683
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0620141, dt 0.000349317, romS norm 4.47172
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0623634, dt 0.000349317, romS norm 4.49659
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0627127, dt 0.000349317, romS norm 4.52145
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.063062, dt 0.000349317, romS norm 4.5463
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0634113, dt 0.000349317, romS norm 4.57115
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0637607, dt 0.000349317, romS norm 4.59598
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.06411, dt 0.000349317, romS norm 4.62081
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0644593, dt 0.000349317, romS norm 4.64563
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0648086, dt 0.000349317, romS norm 4.67045
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0651579, dt 0.000349317, romS norm 4.69527
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0655072, dt 0.000349317, romS norm 4.72009
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0658566, dt 0.000349317, romS norm 4.74491
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0662059, dt 0.000349317, romS norm 4.76974
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0665552, dt 0.000349317, romS norm 4.79458
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0669045, dt 0.000349317, romS norm 4.81943
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0672538, dt 0.000349317, romS norm 4.84429
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0676032, dt 0.000349317, romS norm 4.86916
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0679525, dt 0.000349317, romS norm 4.89404
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0683018, dt 0.000349317, romS norm 4.91894
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0686511, dt 0.000349317, romS norm 4.94385
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0690004, dt 0.000349317, romS norm 4.96878
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0693497, dt 0.000349317, romS norm 4.99371
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0696991, dt 0.000349317, romS norm 5.01866
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0700484, dt 0.000349317, romS norm 5.04362
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0703977, dt 0.000349317, romS norm 5.06859
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.070747, dt 0.000349317, romS norm 5.09357
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0710963, dt 0.000349317, romS norm 5.11856
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0714456, dt 0.000349317, romS norm 5.14356
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.071795, dt 0.000349317, romS norm 5.16856
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0721443, dt 0.000349317, romS norm 5.19357
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0724936, dt 0.000349317, romS norm 5.21859
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0728429, dt 0.000349317, romS norm 5.24361
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0731922, dt 0.000349317, romS norm 5.26864
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0735415, dt 0.000349317, romS norm 5.29368
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0738909, dt 0.000349317, romS norm 5.31873
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0742402, dt 0.000349317, romS norm 5.34378
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0745895, dt 0.000349317, romS norm 5.36884
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0749388, dt 0.000349317, romS norm 5.39391
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0752881, dt 0.000349317, romS norm 5.419
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0756374, dt 0.000349317, romS norm 5.44409
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0759868, dt 0.000349317, romS norm 5.46921
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0763361, dt 0.000349317, romS norm 5.49433
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0766854, dt 0.000349317, romS norm 5.51948
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0770347, dt 0.000349317, romS norm 5.54465
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.077384, dt 0.000349317, romS norm 5.56984
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0777333, dt 0.000349317, romS norm 5.59505
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0780827, dt 0.000349317, romS norm 5.62028
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.078432, dt 0.000349317, romS norm 5.64554
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0787813, dt 0.000349317, romS norm 5.67083
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0791306, dt 0.000349317, romS norm 5.69614
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0794799, dt 0.000349317, romS norm 5.72147
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0798293, dt 0.000349317, romS norm 5.74683
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0801786, dt 0.000349317, romS norm 5.77221
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0805279, dt 0.000349317, romS norm 5.79762
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0808772, dt 0.000349317, romS norm 5.82305
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0812265, dt 0.000349317, romS norm 5.8485
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0815758, dt 0.000349317, romS norm 5.87396
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0819252, dt 0.000349317, romS norm 5.89945
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0822745, dt 0.000349317, romS norm 5.92495
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0826238, dt 0.000349317, romS norm 5.95046
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0829731, dt 0.000349317, romS norm 5.97598
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0833224, dt 0.000349317, romS norm 6.00152
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0836717, dt 0.000349317, romS norm 6.02706
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0840211, dt 0.000349317, romS norm 6.05261
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0843704, dt 0.000349317, romS norm 6.07816
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0847197, dt 0.000349317, romS norm 6.10372
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.085069, dt 0.000349317, romS norm 6.12927
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0854183, dt 0.000349317, romS norm 6.15483
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0857676, dt 0.000349317, romS norm 6.18038
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.086117, dt 0.000349317, romS norm 6.20593
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0864663, dt 0.000349317, romS norm 6.23147
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0868156, dt 0.000349317, romS norm 6.25701
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0871649, dt 0.000349317, romS norm 6.28253
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0875142, dt 0.000349317, romS norm 6.30804
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0878635, dt 0.000349317, romS norm 6.33354
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0882129, dt 0.000349317, romS norm 6.35902
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0885622, dt 0.000349317, romS norm 6.38448
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0889115, dt 0.000349317, romS norm 6.40992
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0892608, dt 0.000349317, romS norm 6.43534
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0896101, dt 0.000349317, romS norm 6.46073
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0899595, dt 0.000349317, romS norm 6.48609
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0903088, dt 0.000349317, romS norm 6.51142
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0906581, dt 0.000349317, romS norm 6.53671
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0910074, dt 0.000349317, romS norm 6.56197
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0913567, dt 0.000349317, romS norm 6.58719
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.091706, dt 0.000349317, romS norm 6.61236
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0920554, dt 0.000349317, romS norm 6.6375
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0924047, dt 0.000349317, romS norm 6.66259
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.092754, dt 0.000349317, romS norm 6.68763
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0931033, dt 0.000349317, romS norm 6.71263
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0934526, dt 0.000349317, romS norm 6.73758
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0938019, dt 0.000349317, romS norm 6.76248
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0941513, dt 0.000349317, romS norm 6.78733
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0945006, dt 0.000349317, romS norm 6.81214
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0948499, dt 0.000349317, romS norm 6.83689
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0951992, dt 0.000349317, romS norm 6.8616
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0955485, dt 0.000349317, romS norm 6.88626
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0958978, dt 0.000349317, romS norm 6.91089
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0962472, dt 0.000349317, romS norm 6.93547
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0965965, dt 0.000349317, romS norm 6.96002
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0969458, dt 0.000349317, romS norm 6.98453
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0972951, dt 0.000349317, romS norm 7.00901
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0976444, dt 0.000349317, romS norm 7.03347
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0979937, dt 0.000349317, romS norm 7.05792
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+Repeating step 260
+ROM online at t 0.0979937, dt 0.00029692, romS norm 7.05792
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0982907, dt 0.00029692, romS norm 7.07868
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0985876, dt 0.00029692, romS norm 7.09943
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0988845, dt 0.00029692, romS norm 7.12018
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0991814, dt 0.00029692, romS norm 7.14093
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0994783, dt 0.00029692, romS norm 7.16169
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+ROM online at t 0.0997753, dt 0.000224737, romS norm 7.18246
+numRowV 248
+numRowE234
+numRowV 248
+numRowE234
+Elapsed time for online preprocess: 0.360049 sec
+Elapsed time for time loop: 16.0046 sec
+Total time: 16.3671 sec

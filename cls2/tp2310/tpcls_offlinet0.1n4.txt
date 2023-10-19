@@ -1,0 +1,277 @@
+
+       __                __                 
+      / /   ____  ____  / /_  ____  _____   
+     / /   / __ `/ __ `/ __ \/ __ \/ ___/ 
+    / /___/ /_/ / /_/ / / / / /_/ (__  )    
+   /_____/\__,_/\__, /_/ /_/\____/____/  
+               /____/                       
+
+Options used:
+   --mesh data/box01_hex.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --problem 3
+   --order-kinematic 2
+   --order-thermo 1
+   --ode-solver 7
+   --t-final 0.1
+   --cfl 0.5
+   --cg-tol 1e-08
+   --ftz-tol 0
+   --cg-max-steps 300
+   --max-steps -1
+   --partial-assembly
+   --no-impose-viscosity
+   --no-visualization
+   --visualization-steps 5
+   --no-match-end-time
+   --visit
+   --no-print
+   --outputfilename tpShort2
+   --visitfilename Laghos
+   --param_dir 
+   --timewindowfilename tw.csv
+   --timewindowparamfilename twp.csv
+   --initsamplesfilename initSamples
+   --partition 0
+   --no-build-database
+   --no-use-database
+   --sample-stages
+   --offline
+   --no-online
+   --no-restore
+   --rom_dimx -1
+   --rom_dimv -1
+   --rom_dime -1
+   --rom_dimfv -1
+   --rom_dimfe -1
+   --numsamplex 0
+   --numsamplev 0
+   --numsamplee 0
+   --numtsamplev 1
+   --numtsamplee 1
+   --sfactorx 2
+   --sfactorv 20
+   --sfactore 2
+   --rom-ef 0.99999
+   --rom-efx 0.9999
+   --sv-shift 1
+   --bi 
+   --numwindows 0
+   --numwindowsamples 0
+   --numwindowoverlap 0
+   --dtFactor 1
+   --dtc 0
+   --dmd
+   --dmdtbegin 0
+   --dtime-step -1
+   --dmdcrbf 0.9
+   --no-dmdnuf
+   --visdiff -1
+   --writesol
+   --no-soldiff
+   --no-romhr
+   --no-romhrprep
+   --no-precls
+   --romsvdstatic
+   --no-romsvdrm
+   --rand_dimx -1
+   --rand_dimv -1
+   --rand_dime -1
+   --rand_dimfv -1
+   --rand_dimfe -1
+   --romoffset
+   --norm_type l2
+   --sdim 1000
+   --linearitytol 1e-07
+   --singularvaluetol 1e-14
+   --samplingtol 1e-07
+   --greedy-param bef
+   --greedy-param-min 0
+   --greedy-param-max 0
+   --greedy-param-size 0
+   --greedytf -1
+   --greedytol 0.1
+   --greedyalpha 1.05
+   --greedymaxclamp 2
+   --greedysubsize 0
+   --greedyconvsize 0
+   --greedysamplingtype random
+   --greedyerrorindtype useLastLifted
+   --romsns
+   --romgramschmidt
+   --rhofactor 1
+   --atwoodfactor 0.333333
+   --blastefactor 1
+   --romparam -1
+   --romoffsettype initial
+   --romindicatortype time
+   --romspacetimetype spatial
+   --no-romusexv
+   --no-romusevx
+   --no-romusexandv
+   --hrsamplingtype gnat
+Zones min/max: 1344 1344
+Number of kinematic (position, velocity) dofs: 38475
+Number of specific internal energy dofs: 10752
+0: pmesh number of elements 1344
+0: max_model_dim 1000
+X taking sample #0 at t 0
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+V taking sample #0 at t 0
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+E taking sample #0 at t 0
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+FOM simulation at t 0, dt 0.0209927
+Repeating step 1
+FOM simulation at t 0, dt 0.0178438
+Repeating step 1
+FOM simulation at t 0, dt 0.0151672
+Repeating step 1
+FOM simulation at t 0, dt 0.0128922
+X taking sample #0 at t 0.00644608
+V taking sample #0 at t 0.00644608
+E taking sample #0 at t 0.00644608
+Runge-Kutta stage 1 sampled
+X taking sample #1 at t 0.0128922
+V taking sample #1 at t 0.0128922
+E taking sample #1 at t 0.0128922
+FOM simulation at t 0.0128922, dt 0.0128922
+Repeating step 2
+FOM simulation at t 0.0128922, dt 0.0109583
+Repeating step 2
+FOM simulation at t 0.0128922, dt 0.00931458
+X taking sample #2 at t 0.0175494
+V taking sample #2 at t 0.0175494
+E taking sample #2 at t 0.0175494
+Runge-Kutta stage 1 sampled
+X taking sample #3 at t 0.0222067
+V taking sample #3 at t 0.0222067
+E taking sample #3 at t 0.0222067
+FOM simulation at t 0.0222067, dt 0.00931458
+X taking sample #4 at t 0.026864
+V taking sample #4 at t 0.026864
+E taking sample #4 at t 0.026864
+Runge-Kutta stage 1 sampled
+X taking sample #5 at t 0.0315213
+V taking sample #5 at t 0.0315213
+E taking sample #5 at t 0.0315213
+FOM simulation at t 0.0315213, dt 0.00931458
+Repeating step 4
+FOM simulation at t 0.0315213, dt 0.00791739
+X taking sample #6 at t 0.03548
+V taking sample #6 at t 0.03548
+E taking sample #6 at t 0.03548
+Runge-Kutta stage 1 sampled
+X taking sample #7 at t 0.0394387
+V taking sample #7 at t 0.0394387
+E taking sample #7 at t 0.0394387
+FOM simulation at t 0.0394387, dt 0.00791739
+X taking sample #8 at t 0.0433974
+V taking sample #8 at t 0.0433974
+E taking sample #8 at t 0.0433974
+Runge-Kutta stage 1 sampled
+X taking sample #9 at t 0.0473561
+V taking sample #9 at t 0.0473561
+E taking sample #9 at t 0.0473561
+step     5,	t = 0.0474,	dt = 0.007917,	|e| = 135.0524481558
+FOM simulation at t 0.0473560908, dt 0.0079173918
+X taking sample #10 at t 0.0513147866
+V taking sample #10 at t 0.0513147866
+E taking sample #10 at t 0.0513147866
+Runge-Kutta stage 1 sampled
+X taking sample #11 at t 0.0552734825
+V taking sample #11 at t 0.0552734825
+E taking sample #11 at t 0.0552734825
+FOM simulation at t 0.0552734825, dt 0.0079173918
+X taking sample #12 at t 0.0592321784
+V taking sample #12 at t 0.0592321784
+E taking sample #12 at t 0.0592321784
+Runge-Kutta stage 1 sampled
+X taking sample #13 at t 0.0631908743
+V taking sample #13 at t 0.0631908743
+E taking sample #13 at t 0.0631908743
+FOM simulation at t 0.0631908743, dt 0.0079173918
+X taking sample #14 at t 0.0671495701
+V taking sample #14 at t 0.0671495701
+E taking sample #14 at t 0.0671495701
+Runge-Kutta stage 1 sampled
+X taking sample #15 at t 0.0711082660
+V taking sample #15 at t 0.0711082660
+E taking sample #15 at t 0.0711082660
+FOM simulation at t 0.0711082660, dt 0.0079173918
+X taking sample #16 at t 0.0750669619
+V taking sample #16 at t 0.0750669619
+E taking sample #16 at t 0.0750669619
+Runge-Kutta stage 1 sampled
+X taking sample #17 at t 0.0790256578
+V taking sample #17 at t 0.0790256578
+E taking sample #17 at t 0.0790256578
+FOM simulation at t 0.0790256578, dt 0.0079173918
+X taking sample #18 at t 0.0829843536
+V taking sample #18 at t 0.0829843536
+E taking sample #18 at t 0.0829843536
+Runge-Kutta stage 1 sampled
+X taking sample #19 at t 0.0869430495
+V taking sample #19 at t 0.0869430495
+E taking sample #19 at t 0.0869430495
+step    10,	t = 0.0869,	dt = 0.007917,	|e| = 135.2512770440
+FOM simulation at t 0.0869430495, dt 0.0079173918
+X taking sample #20 at t 0.0909017454
+V taking sample #20 at t 0.0909017454
+E taking sample #20 at t 0.0909017454
+Runge-Kutta stage 1 sampled
+X taking sample #21 at t 0.0948604413
+V taking sample #21 at t 0.0948604413
+E taking sample #21 at t 0.0948604413
+FOM simulation at t 0.0948604413, dt 0.0051395587
+X taking sample #22 at t 0.0974302206
+V taking sample #22 at t 0.0974302206
+E taking sample #22 at t 0.0974302206
+Runge-Kutta stage 1 sampled
+X taking sample #23 at t 0.1000000000
+V taking sample #23 at t 0.1000000000
+E taking sample #23 at t 0.1000000000
+step    12,	t = 0.1000,	dt = 0.005242,	|e| = 135.3368067926
+Creating file: run/tpShort2/basisX0.000000
+Creating file: run/tpShort2/basisV0.000000
+Creating file: run/tpShort2/basisE0.000000
+X basis summary output: 
+For energy fraction: 0.9000000000, take first 1 of 24 basis vectors
+For energy fraction: 0.9900000000, take first 2 of 24 basis vectors
+For energy fraction: 0.9990000000, take first 4 of 24 basis vectors
+For energy fraction: 0.9999000000, take first 6 of 24 basis vectors
+Take first 6 of 24 basis vectors
+V basis summary output: 
+For energy fraction: 0.9000000000, take first 2 of 24 basis vectors
+For energy fraction: 0.9900000000, take first 4 of 24 basis vectors
+For energy fraction: 0.9990000000, take first 6 of 24 basis vectors
+For energy fraction: 0.9999000000, take first 9 of 24 basis vectors
+Take first 14 of 24 basis vectors
+E basis summary output: 
+For energy fraction: 0.9000000000, take first 1 of 24 basis vectors
+For energy fraction: 0.9900000000, take first 3 of 24 basis vectors
+For energy fraction: 0.9990000000, take first 5 of 24 basis vectors
+For energy fraction: 0.9999000000, take first 9 of 24 basis vectors
+Take first 12 of 24 basis vectors
+
+CG (H1) total time: 3.5955187850
+CG (H1) rate (megadofs x cg_iterations / second): 6.1743732483
+
+CG (L2) total time: 0.2190707020
+CG (L2) rate (megadofs x cg_iterations / second): 6.0498824713
+
+Forces total time: 0.6733145960
+Forces rate (megadofs x timesteps / second): 2.6320118568
+
+UpdateQuadData total time: 5.9828227360
+UpdateQuadData rate (megaquads x timesteps / second): 0.6182178820
+
+Major kernels total time (seconds): 10.2516561170
+Major kernels total rate (megadofs x time steps / second): 0.1728668988
+
+Energy diff: 3.21e-12
+Elapsed time for sampling in the offline phase: 5.28e-01 sec
+Elapsed time for basis construction in the offline phase: 4.66e-01 sec
+Elapsed time for time loop: 1.11e+01 sec
+Total time: 1.27e+01 sec

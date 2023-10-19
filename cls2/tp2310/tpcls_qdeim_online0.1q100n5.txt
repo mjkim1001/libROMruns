@@ -1,0 +1,226 @@
+
+       __                __                 
+      / /   ____  ____  / /_  ____  _____   
+     / /   / __ `/ __ `/ __ \/ __ \/ ___/ 
+    / /___/ /_/ / /_/ / / / / /_/ (__  )    
+   /_____/\__,_/\__, /_/ /_/\____/____/  
+               /____/                       
+
+Options used:
+   --mesh data/box01_hex.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --problem 3
+   --order-kinematic 2
+   --order-thermo 1
+   --ode-solver 7
+   --t-final 0.1
+   --cfl 0.5
+   --cg-tol 1e-08
+   --ftz-tol 0
+   --cg-max-steps 300
+   --max-steps -1
+   --partial-assembly
+   --no-impose-viscosity
+   --no-visualization
+   --visualization-steps 5
+   --no-match-end-time
+   --no-visit
+   --no-print
+   --outputfilename tpShortSerial
+   --visitfilename Laghos
+   --param_dir 
+   --timewindowfilename tw.csv
+   --timewindowparamfilename twp.csv
+   --initsamplesfilename initSamples
+   --partition 0
+   --no-build-database
+   --no-use-database
+   --no-sample-stages
+   --no-offline
+   --online
+   --no-restore
+   --rom_dimx 6
+   --rom_dimv 18
+   --rom_dime 20
+   --rom_dimfv -1
+   --rom_dimfe -1
+   --numsamplex 0
+   --numsamplev 0
+   --numsamplee 0
+   --numtsamplev 1
+   --numtsamplee 1
+   --sfactorx 2
+   --sfactorv 100
+   --sfactore 100
+   --rom-ef 0.9999
+   --rom-efx 0.9999
+   --sv-shift 1
+   --bi 
+   --numwindows 0
+   --numwindowsamples 0
+   --numwindowoverlap 0
+   --dtFactor 1
+   --dtc 0
+   --dmd
+   --dmdtbegin 0
+   --dtime-step -1
+   --dmdcrbf 0.9
+   --no-dmdnuf
+   --visdiff -1
+   --no-writesol
+   --no-soldiff
+   --romhr
+   --no-romhrprep
+   --precls
+   --romsvdstatic
+   --no-romsvdrm
+   --rand_dimx -1
+   --rand_dimv -1
+   --rand_dime -1
+   --rand_dimfv -1
+   --rand_dimfe -1
+   --romoffset
+   --norm_type l2
+   --sdim 0
+   --linearitytol 1e-07
+   --singularvaluetol 1e-14
+   --samplingtol 1e-07
+   --greedy-param bef
+   --greedy-param-min 0
+   --greedy-param-max 0
+   --greedy-param-size 0
+   --greedytf -1
+   --greedytol 0.1
+   --greedyalpha 1.05
+   --greedymaxclamp 2
+   --greedysubsize 0
+   --greedyconvsize 0
+   --greedysamplingtype random
+   --greedyerrorindtype useLastLifted
+   --romsns
+   --romgramschmidt
+   --rhofactor 1
+   --atwoodfactor 0.333333
+   --blastefactor 1
+   --romparam -1
+   --romoffsettype initial
+   --romindicatortype time
+   --romspacetimetype spatial
+   --no-romusexv
+   --no-romusevx
+   --no-romusexandv
+   --hrsamplingtype gnat
+Offset Style: initial
+Indicator Style: time
+Window 0: initial romS norm 0
+ROM online at t 0, dt 0.0209927, romS norm 0
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+Repeating step 1
+ROM online at t 0, dt 0.0178438, romS norm 0
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+Repeating step 1
+ROM online at t 0, dt 0.0151672, romS norm 0
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+Repeating step 1
+ROM online at t 0, dt 0.0128921, romS norm 0
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+Repeating step 1
+ROM online at t 0, dt 0.0109583, romS norm 0
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+Repeating step 1
+ROM online at t 0, dt 0.00931457, romS norm 0
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.00931457, dt 0.00931457, romS norm 3.19676
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.0186291, dt 0.00931457, romS norm 4.36226
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.0279437, dt 0.00931457, romS norm 5.54516
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+Repeating step 4
+ROM online at t 0.0279437, dt 0.00791739, romS norm 5.54516
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.0358611, dt 0.00791739, romS norm 6.5424
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.0437785, dt 0.00791739, romS norm 7.46405
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.0516959, dt 0.00791739, romS norm 8.35705
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.0596133, dt 0.00791739, romS norm 9.22293
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.0675307, dt 0.00791739, romS norm 10.0647
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.075448, dt 0.00791739, romS norm 10.8847
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.0833654, dt 0.00791739, romS norm 11.6842
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.0912828, dt 0.00791739, romS norm 12.4636
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+Repeating step 12
+ROM online at t 0.0912828, dt 0.00672978, romS norm 12.4636
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+ROM online at t 0.0980126, dt 0.00198741, romS norm 13.111
+numRowV 118
+numRowE120
+numRowV 118
+numRowE120
+Elapsed time for online preprocess: 0.194571 sec
+Elapsed time for time loop: 0.989165 sec
+Total time: 1.18617 sec

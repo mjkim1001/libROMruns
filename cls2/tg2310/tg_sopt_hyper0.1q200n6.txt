@@ -1,0 +1,143 @@
+
+       __                __                 
+      / /   ____  ____  / /_  ____  _____   
+     / /   / __ `/ __ `/ __ \/ __ \/ ___/ 
+    / /___/ /_/ / /_/ / / / / /_/ (__  )    
+   /_____/\__,_/\__, /_/ /_/\____/____/  
+               /____/                       
+
+Options used:
+   --mesh data/cube01_hex.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --problem 0
+   --order-kinematic 2
+   --order-thermo 1
+   --ode-solver 7
+   --t-final 0.1
+   --cfl 0.1
+   --cg-tol 1e-08
+   --ftz-tol 0
+   --cg-max-steps 300
+   --max-steps -1
+   --partial-assembly
+   --no-impose-viscosity
+   --no-visualization
+   --visualization-steps 5
+   --no-match-end-time
+   --no-visit
+   --no-print
+   --outputfilename tgShort2Serial
+   --visitfilename Laghos
+   --param_dir 
+   --timewindowfilename tw.csv
+   --timewindowparamfilename twp.csv
+   --initsamplesfilename initSamples
+   --partition 0
+   --no-build-database
+   --no-use-database
+   --no-sample-stages
+   --no-offline
+   --online
+   --no-restore
+   --rom_dimx 4
+   --rom_dimv 48
+   --rom_dime 34
+   --rom_dimfv -1
+   --rom_dimfe -1
+   --numsamplex 0
+   --numsamplev 0
+   --numsamplee 0
+   --numtsamplev 1
+   --numtsamplee 1
+   --sfactorx 2
+   --sfactorv 200
+   --sfactore 200
+   --rom-ef 0.9999
+   --rom-efx 0.9999
+   --sv-shift 1
+   --bi 
+   --numwindows 0
+   --numwindowsamples 0
+   --numwindowoverlap 0
+   --dtFactor 1
+   --dtc 0
+   --dmd
+   --dmdtbegin 0
+   --dtime-step -1
+   --dmdcrbf 0.9
+   --no-dmdnuf
+   --visdiff -1
+   --no-writesol
+   --no-soldiff
+   --no-romhr
+   --romhrprep
+   --no-precls
+   --romsvdstatic
+   --no-romsvdrm
+   --rand_dimx -1
+   --rand_dimv -1
+   --rand_dime -1
+   --rand_dimfv -1
+   --rand_dimfe -1
+   --romoffset
+   --norm_type l2
+   --sdim 0
+   --linearitytol 1e-07
+   --singularvaluetol 1e-14
+   --samplingtol 1e-07
+   --greedy-param bef
+   --greedy-param-min 0
+   --greedy-param-max 0
+   --greedy-param-size 0
+   --greedytf -1
+   --greedytol 0.1
+   --greedyalpha 1.05
+   --greedymaxclamp 2
+   --greedysubsize 0
+   --greedyconvsize 0
+   --greedysamplingtype random
+   --greedyerrorindtype useLastLifted
+   --romsns
+   --romgramschmidt
+   --rhofactor 1
+   --atwoodfactor 0.333333
+   --blastefactor 1
+   --romparam -1
+   --romoffsettype initial
+   --romindicatortype time
+   --romspacetimetype spatial
+   --no-romusexv
+   --no-romusevx
+   --no-romusexandv
+   --hrsamplingtype sopt
+Zones min/max: 512 512
+Number of kinematic (position, velocity) dofs: 14739
+Number of specific internal energy dofs: 4096
+0: pmesh number of elements 512
+Opening file: run/tgShort2Serial/basisV0.000000
+Read basis run/tgShort2Serial/basisV0 of dimension 48
+Opening file: run/tgShort2Serial/basisE0.000000
+Read basis run/tgShort2Serial/basisE0 of dimension 34
+Opening file: run/tgShort2Serial/basisX0.000000
+Read basis run/tgShort2Serial/basisX0 of dimension 4
+Opening file: run/tgShort2Serial/basisV0.000000
+Read basis run/tgShort2Serial/basisV0 of dimension 48
+Opening file: run/tgShort2Serial/basisE0.000000
+Read basis run/tgShort2Serial/basisE0 of dimension 34
+Reading: run/tgShort2Serial/ROMoffset/init
+Read init vectors X, V, E with norms 71.1796, 36, 9588.01
+start preprocessing hyper-reduction
+number of samples for velocity: 248
+number of samples for energy  : 234
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+conditionNum:8.812311 -0.000045:0.000005
+48	248	conditionNum:2.919396 -0.000041:0.000014
+34	234		E234sample mesh has 407 elements, 722 vertices
+Elapsed time for hyper-reduction preprocessing: 9.30374 sec
+Writing SP files for window: 0
+Offset Style: initial
+Indicator Style: time
+Window 0: initial romS norm 0
+Hyperreduction pre-processing completed. 

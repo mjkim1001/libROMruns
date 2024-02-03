@@ -23,7 +23,7 @@ srun -n 1 -p pdebug laghos -m data/cube01_hex.mesh -pt 211 -restore -romsns -sol
         errE=$(cat ${myPath}/sb_eqp_restore${t}ws${ws}.txt | grep "Energy Rel. DIFF norm " | egrep -wo 'nan|[0-9]*\.([0-9]*|[0-9]*e\-[0-9]*|[0-9]*e\+[0-9]*)')
         errV=$(cat ${myPath}/sb_eqp_restore${t}ws${ws}.txt | grep "Velocity Rel. DIFF norm " | egrep -wo 'nan|[0-9]*\.([0-9]*|[0-9]*e\-[0-9]*|[0-9]*e\+[0-9]*)')
         TT1=$(cat ${myPath}/sb_eqp_merge${t}ws${ws}.txt | grep "Elapsed time for merge: " | egrep -wo 'nan|[0-9]*\.([0-9]*|[0-9]*e\-[0-9]*|[0-9]*e\+[0-9]*)')
-        TT2=$(cat ${myPath}/sb_eqp_prep${t}ws${ws}.txt | grep "Elapsed time for hyper-reduction preprocessing: " | egrep -wo 'nan|[0-9]*\.([0-9]*|[0-9]*e\-[0-9]*|[0-9]*e\+[0-9]*)')
+        TT2=$(cat ${myPath}/sb_eqp_online${t}ws${ws}.txt | grep "Elapsed time for time loop: " | egrep -wo 'nan|[0-9]*\.([0-9]*|[0-9]*e\-[0-9]*|[0-9]*e\+[0-9]*)')
         TT3=$(cat ${myPath}/sb_eqp_restore${t}ws${ws}.txt | grep "Total time: " | egrep -wo 'nan|[0-9]*\.([0-9]*|[0-9]*e\-[0-9]*|[0-9]*e\+[0-9]*)')
 
         printf ",${errX},${errV},${errE},${TT1},${TT2},${TT3}\n" >> "$output"

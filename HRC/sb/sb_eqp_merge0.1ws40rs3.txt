@@ -1,0 +1,1835 @@
+Options used:
+   --numsets 1
+   --numwindows 0
+   --numwindowsamples 40
+   --numwindowoverlap 4
+   --bi 
+   --rom-ef 0.9999
+   --sv-shift 1
+   --romoffset
+   --romoffsettype interpolate
+   --romindicatortype time
+   --romsns
+   --outputfilename 
+   --timewindowfilename tw.csv
+   --timewindowparamfilename twp.csv
+   --eqp
+run/param0_tSnapX
+run/param0_tSnapV
+run/param0_tSnapE
+Opening file: run/param0_varX0_snapshot.000000
+Opening file: run/param0_varV0_snapshot.000000
+Opening file: run/param0_varE0_snapshot.000000
+Loading snapshots for X in basis window 0
+Opening file: run/param0_varX0_snapshot.000000
+44 columns read. Columns 0 to 43
+Computing SVD for X in basis window 0
+Creating file: run/basisX0.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 4 of 44 basis vectors
+For energy fraction: 0.9999, take first 8 of 44 basis vectors
+Take first 8 of 44 basis vectors
+Loading snapshots for V in basis window 0
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 0 to 44
+Computing SVD for V in basis window 0
+Creating file: run/basisV0.000000
+V basis summary output: For energy fraction: 0.9, take first 2 of 45 basis vectors
+For energy fraction: 0.99, take first 4 of 45 basis vectors
+For energy fraction: 0.999, take first 9 of 45 basis vectors
+For energy fraction: 0.9999, take first 14 of 45 basis vectors
+Take first 14 of 45 basis vectors
+Loading snapshots for E in basis window 0
+Opening file: run/param0_varE0_snapshot.000000
+44 columns read. Columns 0 to 43
+Computing SVD for E in basis window 0
+Creating file: run/basisE0.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 3 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 1
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 39 to 83
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 1
+Creating file: run/basisX1.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 3 of 44 basis vectors
+For energy fraction: 0.9999, take first 7 of 44 basis vectors
+Take first 7 of 44 basis vectors
+Loading snapshots for V in basis window 1
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 40 to 84
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 1
+Creating file: run/basisV1.000000
+V basis summary output: For energy fraction: 0.9, take first 2 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 10 of 44 basis vectors
+For energy fraction: 0.9999, take first 16 of 44 basis vectors
+Take first 16 of 44 basis vectors
+Loading snapshots for E in basis window 1
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 39 to 83
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 1
+Creating file: run/basisE1.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 3 of 44 basis vectors
+For energy fraction: 0.9999, take first 7 of 44 basis vectors
+Take first 7 of 44 basis vectors
+Loading snapshots for X in basis window 2
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 79 to 123
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 2
+Creating file: run/basisX2.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 3 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for V in basis window 2
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 80 to 124
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 2
+Creating file: run/basisV2.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 11 of 44 basis vectors
+For energy fraction: 0.9999, take first 20 of 44 basis vectors
+Take first 20 of 44 basis vectors
+Loading snapshots for E in basis window 2
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 79 to 123
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 2
+Creating file: run/basisE2.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 4 of 44 basis vectors
+For energy fraction: 0.9999, take first 7 of 44 basis vectors
+Take first 7 of 44 basis vectors
+Loading snapshots for X in basis window 3
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 119 to 163
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 3
+Creating file: run/basisX3.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for V in basis window 3
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 120 to 164
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 3
+Creating file: run/basisV3.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 11 of 44 basis vectors
+For energy fraction: 0.9999, take first 21 of 44 basis vectors
+Take first 21 of 44 basis vectors
+Loading snapshots for E in basis window 3
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 119 to 163
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 3
+Creating file: run/basisE3.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 3 of 44 basis vectors
+For energy fraction: 0.9999, take first 8 of 44 basis vectors
+Take first 8 of 44 basis vectors
+Loading snapshots for X in basis window 4
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 159 to 203
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 4
+Creating file: run/basisX4.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 4
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 160 to 204
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 4
+Creating file: run/basisV4.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 8 of 44 basis vectors
+For energy fraction: 0.9999, take first 18 of 44 basis vectors
+Take first 18 of 44 basis vectors
+Loading snapshots for E in basis window 4
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 159 to 203
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 4
+Creating file: run/basisE4.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 3 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 5
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 199 to 243
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 5
+Creating file: run/basisX5.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 5
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 200 to 244
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 5
+Creating file: run/basisV5.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 7 of 44 basis vectors
+For energy fraction: 0.9999, take first 15 of 44 basis vectors
+Take first 15 of 44 basis vectors
+Loading snapshots for E in basis window 5
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 199 to 243
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 5
+Creating file: run/basisE5.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 3 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 6
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 239 to 283
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 6
+Creating file: run/basisX6.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 6
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 240 to 284
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 6
+Creating file: run/basisV6.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 6 of 44 basis vectors
+For energy fraction: 0.9999, take first 13 of 44 basis vectors
+Take first 13 of 44 basis vectors
+Loading snapshots for E in basis window 6
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 239 to 283
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 6
+Creating file: run/basisE6.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 7
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 279 to 323
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 7
+Creating file: run/basisX7.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 7
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 280 to 324
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 7
+Creating file: run/basisV7.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 8 of 44 basis vectors
+For energy fraction: 0.9999, take first 19 of 44 basis vectors
+Take first 19 of 44 basis vectors
+Loading snapshots for E in basis window 7
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 279 to 323
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 7
+Creating file: run/basisE7.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 8
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 319 to 363
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 8
+Creating file: run/basisX8.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 8
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 320 to 364
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 8
+Creating file: run/basisV8.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 6 of 44 basis vectors
+For energy fraction: 0.9999, take first 12 of 44 basis vectors
+Take first 12 of 44 basis vectors
+Loading snapshots for E in basis window 8
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 319 to 363
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 8
+Creating file: run/basisE8.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 9
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 359 to 403
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 9
+Creating file: run/basisX9.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 2 of 44 basis vectors
+Take first 2 of 44 basis vectors
+Loading snapshots for V in basis window 9
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 360 to 404
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 9
+Creating file: run/basisV9.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 5 of 44 basis vectors
+For energy fraction: 0.9999, take first 11 of 44 basis vectors
+Take first 11 of 44 basis vectors
+Loading snapshots for E in basis window 9
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 359 to 403
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 9
+Creating file: run/basisE9.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 10
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 399 to 443
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 10
+Creating file: run/basisX10.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 10
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 400 to 444
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 10
+Creating file: run/basisV10.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 8 of 44 basis vectors
+For energy fraction: 0.9999, take first 17 of 44 basis vectors
+Take first 17 of 44 basis vectors
+Loading snapshots for E in basis window 10
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 399 to 443
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 10
+Creating file: run/basisE10.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 11
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 439 to 483
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 11
+Creating file: run/basisX11.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 2 of 44 basis vectors
+Take first 2 of 44 basis vectors
+Loading snapshots for V in basis window 11
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 440 to 484
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 11
+Creating file: run/basisV11.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 8 of 44 basis vectors
+For energy fraction: 0.9999, take first 18 of 44 basis vectors
+Take first 18 of 44 basis vectors
+Loading snapshots for E in basis window 11
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 439 to 483
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 11
+Creating file: run/basisE11.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 12
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 479 to 523
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 12
+Creating file: run/basisX12.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 2 of 44 basis vectors
+Take first 2 of 44 basis vectors
+Loading snapshots for V in basis window 12
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 480 to 524
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 12
+Creating file: run/basisV12.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 7 of 44 basis vectors
+For energy fraction: 0.9999, take first 14 of 44 basis vectors
+Take first 14 of 44 basis vectors
+Loading snapshots for E in basis window 12
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 479 to 523
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 12
+Creating file: run/basisE12.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 13
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 519 to 563
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 13
+Creating file: run/basisX13.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 2 of 44 basis vectors
+Take first 2 of 44 basis vectors
+Loading snapshots for V in basis window 13
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 520 to 564
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 13
+Creating file: run/basisV13.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 6 of 44 basis vectors
+For energy fraction: 0.9999, take first 16 of 44 basis vectors
+Take first 16 of 44 basis vectors
+Loading snapshots for E in basis window 13
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 519 to 563
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 13
+Creating file: run/basisE13.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 14
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 559 to 603
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 14
+Creating file: run/basisX14.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 2 of 44 basis vectors
+Take first 2 of 44 basis vectors
+Loading snapshots for V in basis window 14
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 560 to 604
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 14
+Creating file: run/basisV14.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 6 of 44 basis vectors
+For energy fraction: 0.9999, take first 15 of 44 basis vectors
+Take first 15 of 44 basis vectors
+Loading snapshots for E in basis window 14
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 559 to 603
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 14
+Creating file: run/basisE14.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for X in basis window 15
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 599 to 643
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 15
+Creating file: run/basisX15.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 2 of 44 basis vectors
+Take first 2 of 44 basis vectors
+Loading snapshots for V in basis window 15
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 600 to 644
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 15
+Creating file: run/basisV15.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 7 of 44 basis vectors
+For energy fraction: 0.9999, take first 17 of 44 basis vectors
+Take first 17 of 44 basis vectors
+Loading snapshots for E in basis window 15
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 599 to 643
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 15
+Creating file: run/basisE15.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 16
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 639 to 683
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 16
+Creating file: run/basisX16.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 16
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 640 to 684
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 16
+Creating file: run/basisV16.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 9 of 44 basis vectors
+For energy fraction: 0.9999, take first 19 of 44 basis vectors
+Take first 19 of 44 basis vectors
+Loading snapshots for E in basis window 16
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 639 to 683
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 16
+Creating file: run/basisE16.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 17
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 679 to 723
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 17
+Creating file: run/basisX17.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 17
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 680 to 724
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 17
+Creating file: run/basisV17.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 5 of 44 basis vectors
+For energy fraction: 0.999, take first 13 of 44 basis vectors
+For energy fraction: 0.9999, take first 25 of 44 basis vectors
+Take first 25 of 44 basis vectors
+Loading snapshots for E in basis window 17
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 679 to 723
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 17
+Creating file: run/basisE17.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 7 of 44 basis vectors
+Take first 7 of 44 basis vectors
+Loading snapshots for X in basis window 18
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 719 to 763
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 18
+Creating file: run/basisX18.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 18
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 720 to 764
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 18
+Creating file: run/basisV18.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 15 of 44 basis vectors
+For energy fraction: 0.9999, take first 28 of 44 basis vectors
+Take first 28 of 44 basis vectors
+Loading snapshots for E in basis window 18
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 719 to 763
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 18
+Creating file: run/basisE18.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 8 of 44 basis vectors
+Take first 8 of 44 basis vectors
+Loading snapshots for X in basis window 19
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 759 to 803
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 19
+Creating file: run/basisX19.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 19
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 760 to 804
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 19
+Creating file: run/basisV19.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 5 of 44 basis vectors
+For energy fraction: 0.999, take first 14 of 44 basis vectors
+For energy fraction: 0.9999, take first 27 of 44 basis vectors
+Take first 27 of 44 basis vectors
+Loading snapshots for E in basis window 19
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 759 to 803
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 19
+Creating file: run/basisE19.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 8 of 44 basis vectors
+Take first 8 of 44 basis vectors
+Loading snapshots for X in basis window 20
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 799 to 843
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 20
+Creating file: run/basisX20.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 20
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 800 to 844
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 20
+Creating file: run/basisV20.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 10 of 44 basis vectors
+For energy fraction: 0.9999, take first 23 of 44 basis vectors
+Take first 23 of 44 basis vectors
+Loading snapshots for E in basis window 20
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 799 to 843
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 20
+Creating file: run/basisE20.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 21
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 839 to 883
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 21
+Creating file: run/basisX21.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 21
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 840 to 884
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 21
+Creating file: run/basisV21.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 11 of 44 basis vectors
+For energy fraction: 0.9999, take first 24 of 44 basis vectors
+Take first 24 of 44 basis vectors
+Loading snapshots for E in basis window 21
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 839 to 883
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 21
+Creating file: run/basisE21.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 22
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 879 to 923
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 22
+Creating file: run/basisX22.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 22
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 880 to 924
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 22
+Creating file: run/basisV22.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 11 of 44 basis vectors
+For energy fraction: 0.9999, take first 25 of 44 basis vectors
+Take first 25 of 44 basis vectors
+Loading snapshots for E in basis window 22
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 879 to 923
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 22
+Creating file: run/basisE22.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 23
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 919 to 963
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 23
+Creating file: run/basisX23.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 23
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 920 to 964
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 23
+Creating file: run/basisV23.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 15 of 44 basis vectors
+For energy fraction: 0.9999, take first 29 of 44 basis vectors
+Take first 29 of 44 basis vectors
+Loading snapshots for E in basis window 23
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 919 to 963
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 23
+Creating file: run/basisE23.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 24
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 959 to 1003
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 24
+Creating file: run/basisX24.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 24
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 960 to 1004
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 24
+Creating file: run/basisV24.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 13 of 44 basis vectors
+For energy fraction: 0.9999, take first 29 of 44 basis vectors
+Take first 29 of 44 basis vectors
+Loading snapshots for E in basis window 24
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 959 to 1003
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 24
+Creating file: run/basisE24.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 25
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 999 to 1043
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 25
+Creating file: run/basisX25.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 25
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1000 to 1044
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 25
+Creating file: run/basisV25.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 15 of 44 basis vectors
+For energy fraction: 0.9999, take first 30 of 44 basis vectors
+Take first 30 of 44 basis vectors
+Loading snapshots for E in basis window 25
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 999 to 1043
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 25
+Creating file: run/basisE25.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 7 of 44 basis vectors
+Take first 7 of 44 basis vectors
+Loading snapshots for X in basis window 26
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1039 to 1083
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 26
+Creating file: run/basisX26.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 26
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1040 to 1084
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 26
+Creating file: run/basisV26.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 15 of 44 basis vectors
+For energy fraction: 0.9999, take first 30 of 44 basis vectors
+Take first 30 of 44 basis vectors
+Loading snapshots for E in basis window 26
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1039 to 1083
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 26
+Creating file: run/basisE26.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 7 of 44 basis vectors
+Take first 7 of 44 basis vectors
+Loading snapshots for X in basis window 27
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1079 to 1123
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 27
+Creating file: run/basisX27.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 27
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1080 to 1124
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 27
+Creating file: run/basisV27.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 14 of 44 basis vectors
+For energy fraction: 0.9999, take first 29 of 44 basis vectors
+Take first 29 of 44 basis vectors
+Loading snapshots for E in basis window 27
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1079 to 1123
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 27
+Creating file: run/basisE27.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 28
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1119 to 1163
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 28
+Creating file: run/basisX28.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 28
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1120 to 1164
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 28
+Creating file: run/basisV28.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 13 of 44 basis vectors
+For energy fraction: 0.9999, take first 29 of 44 basis vectors
+Take first 29 of 44 basis vectors
+Loading snapshots for E in basis window 28
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1119 to 1163
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 28
+Creating file: run/basisE28.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 29
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1159 to 1203
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 29
+Creating file: run/basisX29.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 29
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1160 to 1204
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 29
+Creating file: run/basisV29.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 15 of 44 basis vectors
+For energy fraction: 0.9999, take first 32 of 44 basis vectors
+Take first 32 of 44 basis vectors
+Loading snapshots for E in basis window 29
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1159 to 1203
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 29
+Creating file: run/basisE29.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 30
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1199 to 1243
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 30
+Creating file: run/basisX30.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 30
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1200 to 1244
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 30
+Creating file: run/basisV30.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 13 of 44 basis vectors
+For energy fraction: 0.9999, take first 29 of 44 basis vectors
+Take first 29 of 44 basis vectors
+Loading snapshots for E in basis window 30
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1199 to 1243
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 30
+Creating file: run/basisE30.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 31
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1239 to 1283
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 31
+Creating file: run/basisX31.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 31
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1240 to 1284
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 31
+Creating file: run/basisV31.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 14 of 44 basis vectors
+For energy fraction: 0.9999, take first 30 of 44 basis vectors
+Take first 30 of 44 basis vectors
+Loading snapshots for E in basis window 31
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1239 to 1283
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 31
+Creating file: run/basisE31.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 32
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1279 to 1323
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 32
+Creating file: run/basisX32.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 32
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1280 to 1324
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 32
+Creating file: run/basisV32.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 14 of 44 basis vectors
+For energy fraction: 0.9999, take first 30 of 44 basis vectors
+Take first 30 of 44 basis vectors
+Loading snapshots for E in basis window 32
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1279 to 1323
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 32
+Creating file: run/basisE32.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 33
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1319 to 1363
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 33
+Creating file: run/basisX33.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 33
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1320 to 1364
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 33
+Creating file: run/basisV33.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 4 of 44 basis vectors
+For energy fraction: 0.999, take first 17 of 44 basis vectors
+For energy fraction: 0.9999, take first 34 of 44 basis vectors
+Take first 34 of 44 basis vectors
+Loading snapshots for E in basis window 33
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1319 to 1363
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 33
+Creating file: run/basisE33.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 7 of 44 basis vectors
+Take first 7 of 44 basis vectors
+Loading snapshots for X in basis window 34
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1359 to 1403
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 34
+Creating file: run/basisX34.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 34
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1360 to 1404
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 34
+Creating file: run/basisV34.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 14 of 44 basis vectors
+For energy fraction: 0.9999, take first 31 of 44 basis vectors
+Take first 31 of 44 basis vectors
+Loading snapshots for E in basis window 34
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1359 to 1403
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 34
+Creating file: run/basisE34.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 35
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1399 to 1443
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 35
+Creating file: run/basisX35.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 35
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1400 to 1444
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 35
+Creating file: run/basisV35.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 15 of 44 basis vectors
+For energy fraction: 0.9999, take first 32 of 44 basis vectors
+Take first 32 of 44 basis vectors
+Loading snapshots for E in basis window 35
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1399 to 1443
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 35
+Creating file: run/basisE35.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 6 of 44 basis vectors
+Take first 6 of 44 basis vectors
+Loading snapshots for X in basis window 36
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1439 to 1483
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 36
+Creating file: run/basisX36.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 36
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1440 to 1484
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 36
+Creating file: run/basisV36.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 11 of 44 basis vectors
+For energy fraction: 0.9999, take first 29 of 44 basis vectors
+Take first 29 of 44 basis vectors
+Loading snapshots for E in basis window 36
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1439 to 1483
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 36
+Creating file: run/basisE36.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 37
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1479 to 1523
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 37
+Creating file: run/basisX37.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 37
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1480 to 1524
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 37
+Creating file: run/basisV37.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 10 of 44 basis vectors
+For energy fraction: 0.9999, take first 29 of 44 basis vectors
+Take first 29 of 44 basis vectors
+Loading snapshots for E in basis window 37
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1479 to 1523
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 37
+Creating file: run/basisE37.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for X in basis window 38
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1519 to 1563
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 38
+Creating file: run/basisX38.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 38
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1520 to 1564
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 38
+Creating file: run/basisV38.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 3 of 44 basis vectors
+For energy fraction: 0.999, take first 14 of 44 basis vectors
+For energy fraction: 0.9999, take first 32 of 44 basis vectors
+Take first 32 of 44 basis vectors
+Loading snapshots for E in basis window 38
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1519 to 1563
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 38
+Creating file: run/basisE38.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 39
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1559 to 1603
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 39
+Creating file: run/basisX39.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 39
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1560 to 1604
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 39
+Creating file: run/basisV39.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 11 of 44 basis vectors
+For energy fraction: 0.9999, take first 29 of 44 basis vectors
+Take first 29 of 44 basis vectors
+Loading snapshots for E in basis window 39
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1559 to 1603
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 39
+Creating file: run/basisE39.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 40
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1599 to 1643
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 40
+Creating file: run/basisX40.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 40
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1600 to 1644
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 40
+Creating file: run/basisV40.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 12 of 44 basis vectors
+For energy fraction: 0.9999, take first 31 of 44 basis vectors
+Take first 31 of 44 basis vectors
+Loading snapshots for E in basis window 40
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1599 to 1643
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 40
+Creating file: run/basisE40.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 41
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1639 to 1683
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 41
+Creating file: run/basisX41.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 41
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1640 to 1684
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 41
+Creating file: run/basisV41.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 12 of 44 basis vectors
+For energy fraction: 0.9999, take first 31 of 44 basis vectors
+Take first 31 of 44 basis vectors
+Loading snapshots for E in basis window 41
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1639 to 1683
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 41
+Creating file: run/basisE41.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 42
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1679 to 1723
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 42
+Creating file: run/basisX42.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 42
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1680 to 1724
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 42
+Creating file: run/basisV42.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 11 of 44 basis vectors
+For energy fraction: 0.9999, take first 30 of 44 basis vectors
+Take first 30 of 44 basis vectors
+Loading snapshots for E in basis window 42
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1679 to 1723
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 42
+Creating file: run/basisE42.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 43
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1719 to 1763
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 43
+Creating file: run/basisX43.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 43
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1720 to 1764
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 43
+Creating file: run/basisV43.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 8 of 44 basis vectors
+For energy fraction: 0.9999, take first 27 of 44 basis vectors
+Take first 27 of 44 basis vectors
+Loading snapshots for E in basis window 43
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1719 to 1763
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 43
+Creating file: run/basisE43.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for X in basis window 44
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1759 to 1803
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 44
+Creating file: run/basisX44.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 44
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1760 to 1804
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 44
+Creating file: run/basisV44.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 10 of 44 basis vectors
+For energy fraction: 0.9999, take first 29 of 44 basis vectors
+Take first 29 of 44 basis vectors
+Loading snapshots for E in basis window 44
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1759 to 1803
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 44
+Creating file: run/basisE44.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 45
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1799 to 1843
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 45
+Creating file: run/basisX45.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 45
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1800 to 1844
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 45
+Creating file: run/basisV45.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 12 of 44 basis vectors
+For energy fraction: 0.9999, take first 31 of 44 basis vectors
+Take first 31 of 44 basis vectors
+Loading snapshots for E in basis window 45
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1799 to 1843
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 45
+Creating file: run/basisE45.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 46
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1839 to 1883
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 46
+Creating file: run/basisX46.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 46
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1840 to 1884
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 46
+Creating file: run/basisV46.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 14 of 44 basis vectors
+For energy fraction: 0.9999, take first 32 of 44 basis vectors
+Take first 32 of 44 basis vectors
+Loading snapshots for E in basis window 46
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1839 to 1883
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 46
+Creating file: run/basisE46.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 47
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1879 to 1923
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 47
+Creating file: run/basisX47.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 47
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1880 to 1924
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 47
+Creating file: run/basisV47.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 13 of 44 basis vectors
+For energy fraction: 0.9999, take first 31 of 44 basis vectors
+Take first 31 of 44 basis vectors
+Loading snapshots for E in basis window 47
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1879 to 1923
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 47
+Creating file: run/basisE47.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 48
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1919 to 1963
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 48
+Creating file: run/basisX48.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 48
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1920 to 1964
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 48
+Creating file: run/basisV48.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 10 of 44 basis vectors
+For energy fraction: 0.9999, take first 29 of 44 basis vectors
+Take first 29 of 44 basis vectors
+Loading snapshots for E in basis window 48
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1919 to 1963
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 48
+Creating file: run/basisE48.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for X in basis window 49
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1959 to 2003
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 49
+Creating file: run/basisX49.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 49
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 1960 to 2004
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 49
+Creating file: run/basisV49.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 10 of 44 basis vectors
+For energy fraction: 0.9999, take first 29 of 44 basis vectors
+Take first 29 of 44 basis vectors
+Loading snapshots for E in basis window 49
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1959 to 2003
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 49
+Creating file: run/basisE49.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 50
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 1999 to 2043
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 50
+Creating file: run/basisX50.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 50
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 2000 to 2044
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 50
+Creating file: run/basisV50.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 12 of 44 basis vectors
+For energy fraction: 0.9999, take first 30 of 44 basis vectors
+Take first 30 of 44 basis vectors
+Loading snapshots for E in basis window 50
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 1999 to 2043
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 50
+Creating file: run/basisE50.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 4 of 44 basis vectors
+Take first 4 of 44 basis vectors
+Loading snapshots for X in basis window 51
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 2039 to 2083
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 51
+Creating file: run/basisX51.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 51
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 2040 to 2084
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 51
+Creating file: run/basisV51.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 14 of 44 basis vectors
+For energy fraction: 0.9999, take first 32 of 44 basis vectors
+Take first 32 of 44 basis vectors
+Loading snapshots for E in basis window 51
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 2039 to 2083
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 51
+Creating file: run/basisE51.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 52
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 2079 to 2123
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 52
+Creating file: run/basisX52.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 52
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 2080 to 2124
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 52
+Creating file: run/basisV52.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 13 of 44 basis vectors
+For energy fraction: 0.9999, take first 32 of 44 basis vectors
+Take first 32 of 44 basis vectors
+Loading snapshots for E in basis window 52
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 2079 to 2123
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 52
+Creating file: run/basisE52.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 53
+Opening file: run/param0_varX0_snapshot.000000
+45 columns read. Columns 2119 to 2163
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 53
+Creating file: run/basisX53.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 3 of 44 basis vectors
+Take first 3 of 44 basis vectors
+Loading snapshots for V in basis window 53
+Opening file: run/param0_varV0_snapshot.000000
+45 columns read. Columns 2120 to 2164
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 53
+Creating file: run/basisV53.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 2 of 44 basis vectors
+For energy fraction: 0.999, take first 13 of 44 basis vectors
+For energy fraction: 0.9999, take first 32 of 44 basis vectors
+Take first 32 of 44 basis vectors
+Loading snapshots for E in basis window 53
+Opening file: run/param0_varE0_snapshot.000000
+45 columns read. Columns 2119 to 2163
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 53
+Creating file: run/basisE53.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 44 basis vectors
+For energy fraction: 0.99, take first 1 of 44 basis vectors
+For energy fraction: 0.999, take first 2 of 44 basis vectors
+For energy fraction: 0.9999, take first 5 of 44 basis vectors
+Take first 5 of 44 basis vectors
+Loading snapshots for X in basis window 54
+Opening file: run/param0_varX0_snapshot.000000
+36 columns read. Columns 2159 to 2194
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for X in basis window 54
+Creating file: run/basisX54.000000
+X basis summary output: For energy fraction: 0.9, take first 1 of 35 basis vectors
+For energy fraction: 0.99, take first 1 of 35 basis vectors
+For energy fraction: 0.999, take first 2 of 35 basis vectors
+For energy fraction: 0.9999, take first 2 of 35 basis vectors
+Take first 2 of 35 basis vectors
+Loading snapshots for V in basis window 54
+Opening file: run/param0_varV0_snapshot.000000
+36 columns read. Columns 2160 to 2195
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for V in basis window 54
+Creating file: run/basisV54.000000
+V basis summary output: For energy fraction: 0.9, take first 1 of 35 basis vectors
+For energy fraction: 0.99, take first 2 of 35 basis vectors
+For energy fraction: 0.999, take first 9 of 35 basis vectors
+For energy fraction: 0.9999, take first 23 of 35 basis vectors
+Take first 23 of 35 basis vectors
+Loading snapshots for E in basis window 54
+Opening file: run/param0_varE0_snapshot.000000
+36 columns read. Columns 2159 to 2194
+WARNING: BasisGenerator::takeSample skipped trivial sample at time 0.0000E+00
+Computing SVD for E in basis window 54
+Creating file: run/basisE54.000000
+E basis summary output: For energy fraction: 0.9, take first 1 of 35 basis vectors
+For energy fraction: 0.99, take first 1 of 35 basis vectors
+For energy fraction: 0.999, take first 2 of 35 basis vectors
+For energy fraction: 0.9999, take first 3 of 35 basis vectors
+Take first 3 of 35 basis vectors
+Elapsed time for merge: 2523.31 sec

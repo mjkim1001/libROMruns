@@ -1,0 +1,1664 @@
+
+       __                __                 
+      / /   ____  ____  / /_  ____  _____   
+     / /   / __ `/ __ `/ __ \/ __ \/ ___/ 
+    / /___/ /_/ / /_/ / / / / /_/ (__  )    
+   /_____/\__,_/\__, /_/ /_/\____/____/  
+               /____/                       
+
+Options used:
+   --mesh data/cube01_hex.mesh
+   --refine-serial 2
+   --refine-parallel 0
+   --problem 1
+   --order-kinematic 2
+   --order-thermo 1
+   --ode-solver 7
+   --t-final 0.1
+   --cfl 0.5
+   --cg-tol 1e-08
+   --ftz-tol 0
+   --cg-max-steps 300
+   --max-steps -1
+   --partial-assembly
+   --no-impose-viscosity
+   --no-visualization
+   --visualization-steps 5
+   --no-match-end-time
+   --no-visit
+   --no-print
+   --outputfilename sbWinS
+   --visitfilename Laghos
+   --param_dir 
+   --timewindowfilename tw.csv
+   --timewindowparamfilename twp.csv
+   --initsamplesfilename initSamples
+   --partition 211
+   --no-build-database
+   --no-use-database
+   --no-sample-stages
+   --no-offline
+   --online
+   --no-restore
+   --rom_dimx -1
+   --rom_dimv -1
+   --rom_dime -1
+   --rom_dimfv -1
+   --rom_dimfe -1
+   --numsamplex 0
+   --numsamplev 0
+   --numsamplee 0
+   --numtsamplev 1
+   --numtsamplee 1
+   --sfactorx 2
+   --sfactorv 2
+   --sfactore 2
+   --rom-ef 0.9999
+   --rom-efx 0.9999
+   --sv-shift 1
+   --bi 
+   --numwindows 49
+   --numwindowsamples 0
+   --numwindowoverlap 0
+   --dtFactor 1
+   --dtc 0
+   --dmd
+   --dmdtbegin 0
+   --dtime-step -1
+   --dmdcrbf 0.9
+   --no-dmdnuf
+   --visdiff -1
+   --no-writesol
+   --no-soldiff
+   --no-romhr
+   --romhrprep
+   --romsvdstatic
+   --no-romsvdrm
+   --rand_dimx -1
+   --rand_dimv -1
+   --rand_dime -1
+   --rand_dimfv -1
+   --rand_dimfe -1
+   --romoffset
+   --norm_type l2
+   --sdim 0
+   --linearitytol 1e-07
+   --singularvaluetol 1e-14
+   --samplingtol 1e-07
+   --greedy-param bef
+   --greedy-param-min 0
+   --greedy-param-max 0
+   --greedy-param-size 0
+   --greedytf -1
+   --greedytol 0.1
+   --greedyalpha 1.05
+   --greedymaxclamp 2
+   --greedysubsize 0
+   --greedyconvsize 0
+   --greedysamplingtype random
+   --greedyerrorindtype useLastLifted
+   --romsns
+   --romgramschmidt
+   --rhofactor 1
+   --atwoodfactor 0.333333
+   --blastefactor 1
+   --romparam -1
+   --romoffsettype load
+   --romindicatortype time
+   --romspacetimetype spatial
+   --no-romusexv
+   --no-romusevx
+   --no-romusexandv
+   --hrsamplingtype sopt
+Reading time window parameters from file run/sbWinS/twp.csv
+Using time window 0 with end time 0.0032822, rdimx 7, rdimv 8, rdime 5, nsamx 14, nsamv 16, nsame 10
+Using time window 1 with end time 0.00661713, rdimx 6, rdimv 10, rdime 6, nsamx 12, nsamv 20, nsame 12
+Using time window 2 with end time 0.0100454, rdimx 6, rdimv 9, rdime 6, nsamx 12, nsamv 18, nsame 12
+Using time window 3 with end time 0.0134736, rdimx 5, rdimv 8, rdime 6, nsamx 10, nsamv 16, nsame 12
+Using time window 4 with end time 0.0169019, rdimx 4, rdimv 10, rdime 6, nsamx 8, nsamv 20, nsame 12
+Using time window 5 with end time 0.0205265, rdimx 6, rdimv 10, rdime 7, nsamx 12, nsamv 20, nsame 14
+Using time window 6 with end time 0.0236337, rdimx 5, rdimv 10, rdime 6, nsamx 10, nsamv 20, nsame 12
+Using time window 7 with end time 0.0259126, rdimx 4, rdimv 9, rdime 5, nsamx 8, nsamv 18, nsame 10
+Using time window 8 with end time 0.0281915, rdimx 3, rdimv 9, rdime 5, nsamx 6, nsamv 18, nsame 10
+Using time window 9 with end time 0.0304021, rdimx 4, rdimv 9, rdime 6, nsamx 8, nsamv 18, nsame 12
+Using time window 10 with end time 0.0323392, rdimx 3, rdimv 9, rdime 6, nsamx 6, nsamv 18, nsame 12
+Using time window 11 with end time 0.0342763, rdimx 4, rdimv 9, rdime 6, nsamx 8, nsamv 18, nsame 12
+Using time window 12 with end time 0.0362133, rdimx 3, rdimv 8, rdime 5, nsamx 6, nsamv 16, nsame 10
+Using time window 13 with end time 0.0381504, rdimx 3, rdimv 8, rdime 5, nsamx 6, nsamv 16, nsame 10
+Using time window 14 with end time 0.0398551, rdimx 4, rdimv 10, rdime 7, nsamx 8, nsamv 20, nsame 14
+Using time window 15 with end time 0.041304, rdimx 3, rdimv 10, rdime 7, nsamx 6, nsamv 20, nsame 14
+Using time window 16 with end time 0.0427035, rdimx 3, rdimv 8, rdime 4, nsamx 6, nsamv 16, nsame 8
+Using time window 17 with end time 0.0441031, rdimx 3, rdimv 8, rdime 5, nsamx 6, nsamv 16, nsame 10
+Using time window 18 with end time 0.0455026, rdimx 3, rdimv 7, rdime 4, nsamx 6, nsamv 14, nsame 8
+Using time window 19 with end time 0.0469022, rdimx 2, rdimv 7, rdime 5, nsamx 4, nsamv 14, nsame 10
+Using time window 20 with end time 0.0483017, rdimx 2, rdimv 10, rdime 6, nsamx 4, nsamv 20, nsame 12
+Using time window 21 with end time 0.0497013, rdimx 2, rdimv 8, rdime 4, nsamx 4, nsamv 16, nsame 8
+Using time window 22 with end time 0.0511232, rdimx 3, rdimv 10, rdime 5, nsamx 6, nsamv 20, nsame 10
+Using time window 23 with end time 0.0525507, rdimx 3, rdimv 9, rdime 5, nsamx 6, nsamv 18, nsame 10
+Using time window 24 with end time 0.0539783, rdimx 3, rdimv 9, rdime 5, nsamx 6, nsamv 18, nsame 10
+Using time window 25 with end time 0.0554058, rdimx 3, rdimv 8, rdime 4, nsamx 6, nsamv 16, nsame 8
+Using time window 26 with end time 0.0568333, rdimx 3, rdimv 9, rdime 4, nsamx 6, nsamv 18, nsame 8
+Using time window 27 with end time 0.0582609, rdimx 2, rdimv 10, rdime 5, nsamx 4, nsamv 20, nsame 10
+Using time window 28 with end time 0.0597286, rdimx 2, rdimv 8, rdime 4, nsamx 4, nsamv 16, nsame 8
+Using time window 29 with end time 0.0612436, rdimx 2, rdimv 7, rdime 4, nsamx 4, nsamv 14, nsame 8
+Using time window 30 with end time 0.0628137, rdimx 2, rdimv 7, rdime 3, nsamx 4, nsamv 14, nsame 6
+Using time window 31 with end time 0.0644536, rdimx 2, rdimv 8, rdime 3, nsamx 4, nsamv 16, nsame 6
+Using time window 32 with end time 0.0661804, rdimx 2, rdimv 7, rdime 3, nsamx 4, nsamv 14, nsame 6
+Using time window 33 with end time 0.0679553, rdimx 3, rdimv 10, rdime 6, nsamx 6, nsamv 20, nsame 12
+Using time window 34 with end time 0.0697303, rdimx 4, rdimv 10, rdime 6, nsamx 8, nsamv 20, nsame 12
+Using time window 35 with end time 0.0715338, rdimx 3, rdimv 10, rdime 7, nsamx 6, nsamv 20, nsame 14
+Using time window 36 with end time 0.0734175, rdimx 3, rdimv 10, rdime 7, nsamx 6, nsamv 20, nsame 14
+Using time window 37 with end time 0.0753774, rdimx 3, rdimv 10, rdime 6, nsamx 6, nsamv 20, nsame 12
+Using time window 38 with end time 0.0774082, rdimx 4, rdimv 10, rdime 7, nsamx 8, nsamv 20, nsame 14
+Using time window 39 with end time 0.0795296, rdimx 3, rdimv 10, rdime 6, nsamx 6, nsamv 20, nsame 12
+Using time window 40 with end time 0.081702, rdimx 4, rdimv 10, rdime 7, nsamx 8, nsamv 20, nsame 14
+Using time window 41 with end time 0.0839177, rdimx 3, rdimv 10, rdime 6, nsamx 6, nsamv 20, nsame 12
+Using time window 42 with end time 0.0861778, rdimx 3, rdimv 10, rdime 7, nsamx 6, nsamv 20, nsame 14
+Using time window 43 with end time 0.0884739, rdimx 3, rdimv 10, rdime 6, nsamx 6, nsamv 20, nsame 12
+Using time window 44 with end time 0.0908067, rdimx 3, rdimv 10, rdime 6, nsamx 6, nsamv 20, nsame 12
+Using time window 45 with end time 0.0931488, rdimx 3, rdimv 10, rdime 6, nsamx 6, nsamv 20, nsame 12
+Using time window 46 with end time 0.0955376, rdimx 3, rdimv 9, rdime 5, nsamx 6, nsamv 18, nsame 10
+Using time window 47 with end time 0.0979647, rdimx 3, rdimv 10, rdime 6, nsamx 6, nsamv 20, nsame 12
+Using time window 48 with end time 0.1, rdimx 3, rdimv 9, rdime 5, nsamx 6, nsamv 18, nsame 10
+Non-Cartesian partitioning through METIS will be used.
+Zones min/max: 512 512
+Number of kinematic (position, velocity) dofs: 14739
+Number of specific internal energy dofs: 4096
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+VecFEM nqp 64
+solver nqp times nzones 32768
+0: pmesh number of elements 512
+Opening file: run/sbWinS/basisV48.000000
+Read basis run/sbWinS/basisV48 of dimension 9
+Opening file: run/sbWinS/basisE48.000000
+Read basis run/sbWinS/basisE48 of dimension 5
+Opening file: run/sbWinS/basisX48.000000
+Read basis run/sbWinS/basisX48 of dimension 3
+Opening file: run/sbWinS/basisV48.000000
+Read basis run/sbWinS/basisV48 of dimension 9
+Opening file: run/sbWinS/basisE48.000000
+Read basis run/sbWinS/basisE48 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.3099, 21.8977, 256.328
+start preprocessing hyper-reduction
+number of samples for velocity: 18
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 20 elements, 63 vertices
+Elapsed time for hyper-reduction preprocessing: 0.105484 sec
+Opening file: run/sbWinS/basisV47.000000
+Read basis run/sbWinS/basisV47 of dimension 10
+Opening file: run/sbWinS/basisE47.000000
+Read basis run/sbWinS/basisE47 of dimension 6
+Opening file: run/sbWinS/basisX47.000000
+Read basis run/sbWinS/basisX47 of dimension 3
+Opening file: run/sbWinS/basisV47.000000
+Read basis run/sbWinS/basisV47 of dimension 10
+Opening file: run/sbWinS/basisE47.000000
+Read basis run/sbWinS/basisE47 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.3038, 21.8988, 258.699
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 19 elements, 64 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0812621 sec
+Opening file: run/sbWinS/basisV46.000000
+Read basis run/sbWinS/basisV46 of dimension 9
+Opening file: run/sbWinS/basisE46.000000
+Read basis run/sbWinS/basisE46 of dimension 5
+Opening file: run/sbWinS/basisX46.000000
+Read basis run/sbWinS/basisX46 of dimension 3
+Opening file: run/sbWinS/basisV46.000000
+Read basis run/sbWinS/basisV46 of dimension 9
+Opening file: run/sbWinS/basisE46.000000
+Read basis run/sbWinS/basisE46 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.298, 21.8991, 261.111
+start preprocessing hyper-reduction
+number of samples for velocity: 18
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 16 elements, 55 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0660557 sec
+Opening file: run/sbWinS/basisV45.000000
+Read basis run/sbWinS/basisV45 of dimension 10
+Opening file: run/sbWinS/basisE45.000000
+Read basis run/sbWinS/basisE45 of dimension 6
+Opening file: run/sbWinS/basisX45.000000
+Read basis run/sbWinS/basisX45 of dimension 3
+Opening file: run/sbWinS/basisV45.000000
+Read basis run/sbWinS/basisV45 of dimension 10
+Opening file: run/sbWinS/basisE45.000000
+Read basis run/sbWinS/basisE45 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2924, 21.9024, 263.556
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 17 elements, 55 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0797329 sec
+Opening file: run/sbWinS/basisV44.000000
+Read basis run/sbWinS/basisV44 of dimension 10
+Opening file: run/sbWinS/basisE44.000000
+Read basis run/sbWinS/basisE44 of dimension 6
+Opening file: run/sbWinS/basisX44.000000
+Read basis run/sbWinS/basisX44 of dimension 3
+Opening file: run/sbWinS/basisV44.000000
+Read basis run/sbWinS/basisV44 of dimension 10
+Opening file: run/sbWinS/basisE44.000000
+Read basis run/sbWinS/basisE44 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2869, 21.9054, 266.078
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 22 elements, 61 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0824309 sec
+Opening file: run/sbWinS/basisV43.000000
+Read basis run/sbWinS/basisV43 of dimension 10
+Opening file: run/sbWinS/basisE43.000000
+Read basis run/sbWinS/basisE43 of dimension 6
+Opening file: run/sbWinS/basisX43.000000
+Read basis run/sbWinS/basisX43 of dimension 3
+Opening file: run/sbWinS/basisV43.000000
+Read basis run/sbWinS/basisV43 of dimension 10
+Opening file: run/sbWinS/basisE43.000000
+Read basis run/sbWinS/basisE43 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2816, 21.9104, 268.652
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 17 elements, 56 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0782997 sec
+Opening file: run/sbWinS/basisV42.000000
+Read basis run/sbWinS/basisV42 of dimension 10
+Opening file: run/sbWinS/basisE42.000000
+Read basis run/sbWinS/basisE42 of dimension 7
+Opening file: run/sbWinS/basisX42.000000
+Read basis run/sbWinS/basisX42 of dimension 3
+Opening file: run/sbWinS/basisV42.000000
+Read basis run/sbWinS/basisV42 of dimension 10
+Opening file: run/sbWinS/basisE42.000000
+Read basis run/sbWinS/basisE42 of dimension 7
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2766, 21.9159, 271.282
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 14
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 17 elements, 53 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0812848 sec
+Opening file: run/sbWinS/basisV41.000000
+Read basis run/sbWinS/basisV41 of dimension 10
+Opening file: run/sbWinS/basisE41.000000
+Read basis run/sbWinS/basisE41 of dimension 6
+Opening file: run/sbWinS/basisX41.000000
+Read basis run/sbWinS/basisX41 of dimension 3
+Opening file: run/sbWinS/basisV41.000000
+Read basis run/sbWinS/basisV41 of dimension 10
+Opening file: run/sbWinS/basisE41.000000
+Read basis run/sbWinS/basisE41 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2718, 21.9193, 273.962
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 17 elements, 53 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0788119 sec
+Opening file: run/sbWinS/basisV40.000000
+Read basis run/sbWinS/basisV40 of dimension 10
+Opening file: run/sbWinS/basisE40.000000
+Read basis run/sbWinS/basisE40 of dimension 7
+Opening file: run/sbWinS/basisX40.000000
+Read basis run/sbWinS/basisX40 of dimension 4
+Opening file: run/sbWinS/basisV40.000000
+Read basis run/sbWinS/basisV40 of dimension 10
+Opening file: run/sbWinS/basisE40.000000
+Read basis run/sbWinS/basisE40 of dimension 7
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2672, 21.9184, 276.687
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 14
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 16 elements, 51 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0796904 sec
+Opening file: run/sbWinS/basisV39.000000
+Read basis run/sbWinS/basisV39 of dimension 10
+Opening file: run/sbWinS/basisE39.000000
+Read basis run/sbWinS/basisE39 of dimension 6
+Opening file: run/sbWinS/basisX39.000000
+Read basis run/sbWinS/basisX39 of dimension 3
+Opening file: run/sbWinS/basisV39.000000
+Read basis run/sbWinS/basisV39 of dimension 10
+Opening file: run/sbWinS/basisE39.000000
+Read basis run/sbWinS/basisE39 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2628, 21.9213, 279.45
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 14 elements, 51 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0797375 sec
+Opening file: run/sbWinS/basisV38.000000
+Read basis run/sbWinS/basisV38 of dimension 10
+Opening file: run/sbWinS/basisE38.000000
+Read basis run/sbWinS/basisE38 of dimension 7
+Opening file: run/sbWinS/basisX38.000000
+Read basis run/sbWinS/basisX38 of dimension 4
+Opening file: run/sbWinS/basisV38.000000
+Read basis run/sbWinS/basisV38 of dimension 10
+Opening file: run/sbWinS/basisE38.000000
+Read basis run/sbWinS/basisE38 of dimension 7
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2587, 21.9257, 282.194
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 14
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 16 elements, 55 vertices
+Elapsed time for hyper-reduction preprocessing: 0.082412 sec
+Opening file: run/sbWinS/basisV37.000000
+Read basis run/sbWinS/basisV37 of dimension 10
+Opening file: run/sbWinS/basisE37.000000
+Read basis run/sbWinS/basisE37 of dimension 6
+Opening file: run/sbWinS/basisX37.000000
+Read basis run/sbWinS/basisX37 of dimension 3
+Opening file: run/sbWinS/basisV37.000000
+Read basis run/sbWinS/basisV37 of dimension 10
+Opening file: run/sbWinS/basisE37.000000
+Read basis run/sbWinS/basisE37 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2548, 21.9302, 284.939
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 14 elements, 47 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0793694 sec
+Opening file: run/sbWinS/basisV36.000000
+Read basis run/sbWinS/basisV36 of dimension 10
+Opening file: run/sbWinS/basisE36.000000
+Read basis run/sbWinS/basisE36 of dimension 7
+Opening file: run/sbWinS/basisX36.000000
+Read basis run/sbWinS/basisX36 of dimension 3
+Opening file: run/sbWinS/basisV36.000000
+Read basis run/sbWinS/basisV36 of dimension 10
+Opening file: run/sbWinS/basisE36.000000
+Read basis run/sbWinS/basisE36 of dimension 7
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2512, 21.9345, 287.675
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 14
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 18 elements, 57 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0841866 sec
+Opening file: run/sbWinS/basisV35.000000
+Read basis run/sbWinS/basisV35 of dimension 10
+Opening file: run/sbWinS/basisE35.000000
+Read basis run/sbWinS/basisE35 of dimension 7
+Opening file: run/sbWinS/basisX35.000000
+Read basis run/sbWinS/basisX35 of dimension 3
+Opening file: run/sbWinS/basisV35.000000
+Read basis run/sbWinS/basisV35 of dimension 10
+Opening file: run/sbWinS/basisE35.000000
+Read basis run/sbWinS/basisE35 of dimension 7
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2478, 21.935, 290.395
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 14
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 13 elements, 47 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0804287 sec
+Opening file: run/sbWinS/basisV34.000000
+Read basis run/sbWinS/basisV34 of dimension 10
+Opening file: run/sbWinS/basisE34.000000
+Read basis run/sbWinS/basisE34 of dimension 6
+Opening file: run/sbWinS/basisX34.000000
+Read basis run/sbWinS/basisX34 of dimension 4
+Opening file: run/sbWinS/basisV34.000000
+Read basis run/sbWinS/basisV34 of dimension 10
+Opening file: run/sbWinS/basisE34.000000
+Read basis run/sbWinS/basisE34 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2445, 21.9372, 293.179
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 16 elements, 55 vertices
+Elapsed time for hyper-reduction preprocessing: 0.078043 sec
+Opening file: run/sbWinS/basisV33.000000
+Read basis run/sbWinS/basisV33 of dimension 10
+Opening file: run/sbWinS/basisE33.000000
+Read basis run/sbWinS/basisE33 of dimension 6
+Opening file: run/sbWinS/basisX33.000000
+Read basis run/sbWinS/basisX33 of dimension 3
+Opening file: run/sbWinS/basisV33.000000
+Read basis run/sbWinS/basisV33 of dimension 10
+Opening file: run/sbWinS/basisE33.000000
+Read basis run/sbWinS/basisE33 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2413, 21.9365, 296.076
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 16 elements, 55 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0799816 sec
+Opening file: run/sbWinS/basisV32.000000
+Read basis run/sbWinS/basisV32 of dimension 7
+Opening file: run/sbWinS/basisE32.000000
+Read basis run/sbWinS/basisE32 of dimension 3
+Opening file: run/sbWinS/basisX32.000000
+Read basis run/sbWinS/basisX32 of dimension 2
+Opening file: run/sbWinS/basisV32.000000
+Read basis run/sbWinS/basisV32 of dimension 7
+Opening file: run/sbWinS/basisE32.000000
+Read basis run/sbWinS/basisE32 of dimension 3
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2382, 21.9374, 299.009
+start preprocessing hyper-reduction
+number of samples for velocity: 14
+number of samples for energy  : 6
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 19 elements, 62 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0449828 sec
+Opening file: run/sbWinS/basisV31.000000
+Read basis run/sbWinS/basisV31 of dimension 8
+Opening file: run/sbWinS/basisE31.000000
+Read basis run/sbWinS/basisE31 of dimension 3
+Opening file: run/sbWinS/basisX31.000000
+Read basis run/sbWinS/basisX31 of dimension 2
+Opening file: run/sbWinS/basisV31.000000
+Read basis run/sbWinS/basisV31 of dimension 8
+Opening file: run/sbWinS/basisE31.000000
+Read basis run/sbWinS/basisE31 of dimension 3
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2354, 21.9377, 301.905
+start preprocessing hyper-reduction
+number of samples for velocity: 16
+number of samples for energy  : 6
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 14 elements, 51 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0506219 sec
+Opening file: run/sbWinS/basisV30.000000
+Read basis run/sbWinS/basisV30 of dimension 7
+Opening file: run/sbWinS/basisE30.000000
+Read basis run/sbWinS/basisE30 of dimension 3
+Opening file: run/sbWinS/basisX30.000000
+Read basis run/sbWinS/basisX30 of dimension 2
+Opening file: run/sbWinS/basisV30.000000
+Read basis run/sbWinS/basisV30 of dimension 7
+Opening file: run/sbWinS/basisE30.000000
+Read basis run/sbWinS/basisE30 of dimension 3
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2328, 21.9372, 304.786
+start preprocessing hyper-reduction
+number of samples for velocity: 14
+number of samples for energy  : 6
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 24 elements, 72 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0517524 sec
+Opening file: run/sbWinS/basisV29.000000
+Read basis run/sbWinS/basisV29 of dimension 7
+Opening file: run/sbWinS/basisE29.000000
+Read basis run/sbWinS/basisE29 of dimension 4
+Opening file: run/sbWinS/basisX29.000000
+Read basis run/sbWinS/basisX29 of dimension 2
+Opening file: run/sbWinS/basisV29.000000
+Read basis run/sbWinS/basisV29 of dimension 7
+Opening file: run/sbWinS/basisE29.000000
+Read basis run/sbWinS/basisE29 of dimension 4
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2303, 21.9351, 307.672
+start preprocessing hyper-reduction
+number of samples for velocity: 14
+number of samples for energy  : 8
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 18 elements, 57 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0468765 sec
+Opening file: run/sbWinS/basisV28.000000
+Read basis run/sbWinS/basisV28 of dimension 8
+Opening file: run/sbWinS/basisE28.000000
+Read basis run/sbWinS/basisE28 of dimension 4
+Opening file: run/sbWinS/basisX28.000000
+Read basis run/sbWinS/basisX28 of dimension 2
+Opening file: run/sbWinS/basisV28.000000
+Read basis run/sbWinS/basisV28 of dimension 8
+Opening file: run/sbWinS/basisE28.000000
+Read basis run/sbWinS/basisE28 of dimension 4
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.228, 21.9325, 310.574
+start preprocessing hyper-reduction
+number of samples for velocity: 16
+number of samples for energy  : 8
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 11 elements, 43 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0521282 sec
+Opening file: run/sbWinS/basisV27.000000
+Read basis run/sbWinS/basisV27 of dimension 10
+Opening file: run/sbWinS/basisE27.000000
+Read basis run/sbWinS/basisE27 of dimension 5
+Opening file: run/sbWinS/basisX27.000000
+Read basis run/sbWinS/basisX27 of dimension 2
+Opening file: run/sbWinS/basisV27.000000
+Read basis run/sbWinS/basisV27 of dimension 10
+Opening file: run/sbWinS/basisE27.000000
+Read basis run/sbWinS/basisE27 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2257, 21.93, 313.502
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 14 elements, 52 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0775708 sec
+Opening file: run/sbWinS/basisV26.000000
+Read basis run/sbWinS/basisV26 of dimension 9
+Opening file: run/sbWinS/basisE26.000000
+Read basis run/sbWinS/basisE26 of dimension 4
+Opening file: run/sbWinS/basisX26.000000
+Read basis run/sbWinS/basisX26 of dimension 3
+Opening file: run/sbWinS/basisV26.000000
+Read basis run/sbWinS/basisV26 of dimension 9
+Opening file: run/sbWinS/basisE26.000000
+Read basis run/sbWinS/basisE26 of dimension 4
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2235, 21.9268, 316.541
+start preprocessing hyper-reduction
+number of samples for velocity: 18
+number of samples for energy  : 8
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 13 elements, 47 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0625155 sec
+Opening file: run/sbWinS/basisV25.000000
+Read basis run/sbWinS/basisV25 of dimension 8
+Opening file: run/sbWinS/basisE25.000000
+Read basis run/sbWinS/basisE25 of dimension 4
+Opening file: run/sbWinS/basisX25.000000
+Read basis run/sbWinS/basisX25 of dimension 3
+Opening file: run/sbWinS/basisV25.000000
+Read basis run/sbWinS/basisV25 of dimension 8
+Opening file: run/sbWinS/basisE25.000000
+Read basis run/sbWinS/basisE25 of dimension 4
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2214, 21.9234, 319.695
+start preprocessing hyper-reduction
+number of samples for velocity: 16
+number of samples for energy  : 8
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 12 elements, 41 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0509109 sec
+Opening file: run/sbWinS/basisV24.000000
+Read basis run/sbWinS/basisV24 of dimension 9
+Opening file: run/sbWinS/basisE24.000000
+Read basis run/sbWinS/basisE24 of dimension 5
+Opening file: run/sbWinS/basisX24.000000
+Read basis run/sbWinS/basisX24 of dimension 3
+Opening file: run/sbWinS/basisV24.000000
+Read basis run/sbWinS/basisV24 of dimension 9
+Opening file: run/sbWinS/basisE24.000000
+Read basis run/sbWinS/basisE24 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2193, 21.9203, 322.975
+start preprocessing hyper-reduction
+number of samples for velocity: 18
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 12 elements, 41 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0645669 sec
+Opening file: run/sbWinS/basisV23.000000
+Read basis run/sbWinS/basisV23 of dimension 9
+Opening file: run/sbWinS/basisE23.000000
+Read basis run/sbWinS/basisE23 of dimension 5
+Opening file: run/sbWinS/basisX23.000000
+Read basis run/sbWinS/basisX23 of dimension 3
+Opening file: run/sbWinS/basisV23.000000
+Read basis run/sbWinS/basisV23 of dimension 9
+Opening file: run/sbWinS/basisE23.000000
+Read basis run/sbWinS/basisE23 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2173, 21.9182, 326.39
+start preprocessing hyper-reduction
+number of samples for velocity: 18
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 9 elements, 31 vertices
+Elapsed time for hyper-reduction preprocessing: 0.060624 sec
+Opening file: run/sbWinS/basisV22.000000
+Read basis run/sbWinS/basisV22 of dimension 10
+Opening file: run/sbWinS/basisE22.000000
+Read basis run/sbWinS/basisE22 of dimension 5
+Opening file: run/sbWinS/basisX22.000000
+Read basis run/sbWinS/basisX22 of dimension 3
+Opening file: run/sbWinS/basisV22.000000
+Read basis run/sbWinS/basisV22 of dimension 10
+Opening file: run/sbWinS/basisE22.000000
+Read basis run/sbWinS/basisE22 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2153, 21.9172, 329.943
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 10 elements, 35 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0725226 sec
+Opening file: run/sbWinS/basisV21.000000
+Read basis run/sbWinS/basisV21 of dimension 8
+Opening file: run/sbWinS/basisE21.000000
+Read basis run/sbWinS/basisE21 of dimension 4
+Opening file: run/sbWinS/basisX21.000000
+Read basis run/sbWinS/basisX21 of dimension 2
+Opening file: run/sbWinS/basisV21.000000
+Read basis run/sbWinS/basisV21 of dimension 8
+Opening file: run/sbWinS/basisE21.000000
+Read basis run/sbWinS/basisE21 of dimension 4
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2134, 21.913, 333.593
+start preprocessing hyper-reduction
+number of samples for velocity: 16
+number of samples for energy  : 8
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 12 elements, 42 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0487605 sec
+Opening file: run/sbWinS/basisV20.000000
+Read basis run/sbWinS/basisV20 of dimension 10
+Opening file: run/sbWinS/basisE20.000000
+Read basis run/sbWinS/basisE20 of dimension 6
+Opening file: run/sbWinS/basisX20.000000
+Read basis run/sbWinS/basisX20 of dimension 2
+Opening file: run/sbWinS/basisV20.000000
+Read basis run/sbWinS/basisV20 of dimension 10
+Opening file: run/sbWinS/basisE20.000000
+Read basis run/sbWinS/basisE20 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2115, 21.9085, 337.397
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 11 elements, 39 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0770775 sec
+Opening file: run/sbWinS/basisV19.000000
+Read basis run/sbWinS/basisV19 of dimension 7
+Opening file: run/sbWinS/basisE19.000000
+Read basis run/sbWinS/basisE19 of dimension 5
+Opening file: run/sbWinS/basisX19.000000
+Read basis run/sbWinS/basisX19 of dimension 2
+Opening file: run/sbWinS/basisV19.000000
+Read basis run/sbWinS/basisV19 of dimension 7
+Opening file: run/sbWinS/basisE19.000000
+Read basis run/sbWinS/basisE19 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2097, 21.9054, 341.362
+start preprocessing hyper-reduction
+number of samples for velocity: 14
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 13 elements, 45 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0436576 sec
+Opening file: run/sbWinS/basisV18.000000
+Read basis run/sbWinS/basisV18 of dimension 7
+Opening file: run/sbWinS/basisE18.000000
+Read basis run/sbWinS/basisE18 of dimension 4
+Opening file: run/sbWinS/basisX18.000000
+Read basis run/sbWinS/basisX18 of dimension 3
+Opening file: run/sbWinS/basisV18.000000
+Read basis run/sbWinS/basisV18 of dimension 7
+Opening file: run/sbWinS/basisE18.000000
+Read basis run/sbWinS/basisE18 of dimension 4
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.208, 21.9006, 345.501
+start preprocessing hyper-reduction
+number of samples for velocity: 14
+number of samples for energy  : 8
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 12 elements, 43 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0427033 sec
+Opening file: run/sbWinS/basisV17.000000
+Read basis run/sbWinS/basisV17 of dimension 8
+Opening file: run/sbWinS/basisE17.000000
+Read basis run/sbWinS/basisE17 of dimension 5
+Opening file: run/sbWinS/basisX17.000000
+Read basis run/sbWinS/basisX17 of dimension 3
+Opening file: run/sbWinS/basisV17.000000
+Read basis run/sbWinS/basisV17 of dimension 8
+Opening file: run/sbWinS/basisE17.000000
+Read basis run/sbWinS/basisE17 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2063, 21.8913, 349.824
+start preprocessing hyper-reduction
+number of samples for velocity: 16
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 10 elements, 35 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0518444 sec
+Opening file: run/sbWinS/basisV16.000000
+Read basis run/sbWinS/basisV16 of dimension 8
+Opening file: run/sbWinS/basisE16.000000
+Read basis run/sbWinS/basisE16 of dimension 4
+Opening file: run/sbWinS/basisX16.000000
+Read basis run/sbWinS/basisX16 of dimension 3
+Opening file: run/sbWinS/basisV16.000000
+Read basis run/sbWinS/basisV16 of dimension 8
+Opening file: run/sbWinS/basisE16.000000
+Read basis run/sbWinS/basisE16 of dimension 4
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2046, 21.8804, 354.344
+start preprocessing hyper-reduction
+number of samples for velocity: 16
+number of samples for energy  : 8
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 11 elements, 38 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0522877 sec
+Opening file: run/sbWinS/basisV15.000000
+Read basis run/sbWinS/basisV15 of dimension 10
+Opening file: run/sbWinS/basisE15.000000
+Read basis run/sbWinS/basisE15 of dimension 7
+Opening file: run/sbWinS/basisX15.000000
+Read basis run/sbWinS/basisX15 of dimension 3
+Opening file: run/sbWinS/basisV15.000000
+Read basis run/sbWinS/basisV15 of dimension 10
+Opening file: run/sbWinS/basisE15.000000
+Read basis run/sbWinS/basisE15 of dimension 7
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.203, 21.8689, 359.256
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 14
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 17 elements, 54 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0832197 sec
+Opening file: run/sbWinS/basisV14.000000
+Read basis run/sbWinS/basisV14 of dimension 10
+Opening file: run/sbWinS/basisE14.000000
+Read basis run/sbWinS/basisE14 of dimension 7
+Opening file: run/sbWinS/basisX14.000000
+Read basis run/sbWinS/basisX14 of dimension 4
+Opening file: run/sbWinS/basisV14.000000
+Read basis run/sbWinS/basisV14 of dimension 10
+Opening file: run/sbWinS/basisE14.000000
+Read basis run/sbWinS/basisE14 of dimension 7
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.2011, 21.8406, 365.374
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 14
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 16 elements, 52 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0808694 sec
+Opening file: run/sbWinS/basisV13.000000
+Read basis run/sbWinS/basisV13 of dimension 8
+Opening file: run/sbWinS/basisE13.000000
+Read basis run/sbWinS/basisE13 of dimension 5
+Opening file: run/sbWinS/basisX13.000000
+Read basis run/sbWinS/basisX13 of dimension 3
+Opening file: run/sbWinS/basisV13.000000
+Read basis run/sbWinS/basisV13 of dimension 8
+Opening file: run/sbWinS/basisE13.000000
+Read basis run/sbWinS/basisE13 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1991, 21.8115, 372.806
+start preprocessing hyper-reduction
+number of samples for velocity: 16
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 10 elements, 35 vertices
+Elapsed time for hyper-reduction preprocessing: 0.051814 sec
+Opening file: run/sbWinS/basisV12.000000
+Read basis run/sbWinS/basisV12 of dimension 8
+Opening file: run/sbWinS/basisE12.000000
+Read basis run/sbWinS/basisE12 of dimension 5
+Opening file: run/sbWinS/basisX12.000000
+Read basis run/sbWinS/basisX12 of dimension 3
+Opening file: run/sbWinS/basisV12.000000
+Read basis run/sbWinS/basisV12 of dimension 8
+Opening file: run/sbWinS/basisE12.000000
+Read basis run/sbWinS/basisE12 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1971, 21.7791, 380.806
+start preprocessing hyper-reduction
+number of samples for velocity: 16
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 11 elements, 40 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0520789 sec
+Opening file: run/sbWinS/basisV11.000000
+Read basis run/sbWinS/basisV11 of dimension 9
+Opening file: run/sbWinS/basisE11.000000
+Read basis run/sbWinS/basisE11 of dimension 6
+Opening file: run/sbWinS/basisX11.000000
+Read basis run/sbWinS/basisX11 of dimension 4
+Opening file: run/sbWinS/basisV11.000000
+Read basis run/sbWinS/basisV11 of dimension 9
+Opening file: run/sbWinS/basisE11.000000
+Read basis run/sbWinS/basisE11 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1953, 21.7462, 389.46
+start preprocessing hyper-reduction
+number of samples for velocity: 18
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 10 elements, 34 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0629504 sec
+Opening file: run/sbWinS/basisV10.000000
+Read basis run/sbWinS/basisV10 of dimension 9
+Opening file: run/sbWinS/basisE10.000000
+Read basis run/sbWinS/basisE10 of dimension 6
+Opening file: run/sbWinS/basisX10.000000
+Read basis run/sbWinS/basisX10 of dimension 3
+Opening file: run/sbWinS/basisV10.000000
+Read basis run/sbWinS/basisV10 of dimension 9
+Opening file: run/sbWinS/basisE10.000000
+Read basis run/sbWinS/basisE10 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1936, 21.7054, 398.875
+start preprocessing hyper-reduction
+number of samples for velocity: 18
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 10 elements, 35 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0618533 sec
+Opening file: run/sbWinS/basisV9.000000
+Read basis run/sbWinS/basisV9 of dimension 9
+Opening file: run/sbWinS/basisE9.000000
+Read basis run/sbWinS/basisE9 of dimension 6
+Opening file: run/sbWinS/basisX9.000000
+Read basis run/sbWinS/basisX9 of dimension 4
+Opening file: run/sbWinS/basisV9.000000
+Read basis run/sbWinS/basisV9 of dimension 9
+Opening file: run/sbWinS/basisE9.000000
+Read basis run/sbWinS/basisE9 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1917, 21.6413, 410.811
+start preprocessing hyper-reduction
+number of samples for velocity: 18
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 11 elements, 38 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0627398 sec
+Opening file: run/sbWinS/basisV8.000000
+Read basis run/sbWinS/basisV8 of dimension 9
+Opening file: run/sbWinS/basisE8.000000
+Read basis run/sbWinS/basisE8 of dimension 5
+Opening file: run/sbWinS/basisX8.000000
+Read basis run/sbWinS/basisX8 of dimension 3
+Opening file: run/sbWinS/basisV8.000000
+Read basis run/sbWinS/basisV8 of dimension 9
+Opening file: run/sbWinS/basisE8.000000
+Read basis run/sbWinS/basisE8 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1899, 21.5472, 424.738
+start preprocessing hyper-reduction
+number of samples for velocity: 18
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 11 elements, 38 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0617207 sec
+Opening file: run/sbWinS/basisV7.000000
+Read basis run/sbWinS/basisV7 of dimension 9
+Opening file: run/sbWinS/basisE7.000000
+Read basis run/sbWinS/basisE7 of dimension 5
+Opening file: run/sbWinS/basisX7.000000
+Read basis run/sbWinS/basisX7 of dimension 4
+Opening file: run/sbWinS/basisV7.000000
+Read basis run/sbWinS/basisV7 of dimension 9
+Opening file: run/sbWinS/basisE7.000000
+Read basis run/sbWinS/basisE7 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1882, 21.4409, 440.523
+start preprocessing hyper-reduction
+number of samples for velocity: 18
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 14 elements, 42 vertices
+Elapsed time for hyper-reduction preprocessing: 0.06197 sec
+Opening file: run/sbWinS/basisV6.000000
+Read basis run/sbWinS/basisV6 of dimension 10
+Opening file: run/sbWinS/basisE6.000000
+Read basis run/sbWinS/basisE6 of dimension 6
+Opening file: run/sbWinS/basisX6.000000
+Read basis run/sbWinS/basisX6 of dimension 5
+Opening file: run/sbWinS/basisV6.000000
+Read basis run/sbWinS/basisV6 of dimension 10
+Opening file: run/sbWinS/basisE6.000000
+Read basis run/sbWinS/basisE6 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1862, 21.2448, 465.45
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 11 elements, 39 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0762891 sec
+Opening file: run/sbWinS/basisV5.000000
+Read basis run/sbWinS/basisV5 of dimension 10
+Opening file: run/sbWinS/basisE5.000000
+Read basis run/sbWinS/basisE5 of dimension 7
+Opening file: run/sbWinS/basisX5.000000
+Read basis run/sbWinS/basisX5 of dimension 6
+Opening file: run/sbWinS/basisV5.000000
+Read basis run/sbWinS/basisV5 of dimension 10
+Opening file: run/sbWinS/basisE5.000000
+Read basis run/sbWinS/basisE5 of dimension 7
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1841, 20.9648, 500.707
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 14
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 10 elements, 38 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0758724 sec
+Opening file: run/sbWinS/basisV4.000000
+Read basis run/sbWinS/basisV4 of dimension 10
+Opening file: run/sbWinS/basisE4.000000
+Read basis run/sbWinS/basisE4 of dimension 6
+Opening file: run/sbWinS/basisX4.000000
+Read basis run/sbWinS/basisX4 of dimension 4
+Opening file: run/sbWinS/basisV4.000000
+Read basis run/sbWinS/basisV4 of dimension 10
+Opening file: run/sbWinS/basisE4.000000
+Read basis run/sbWinS/basisE4 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1825, 20.5776, 543.699
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 9 elements, 34 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0747191 sec
+Opening file: run/sbWinS/basisV3.000000
+Read basis run/sbWinS/basisV3 of dimension 8
+Opening file: run/sbWinS/basisE3.000000
+Read basis run/sbWinS/basisE3 of dimension 6
+Opening file: run/sbWinS/basisX3.000000
+Read basis run/sbWinS/basisX3 of dimension 5
+Opening file: run/sbWinS/basisV3.000000
+Read basis run/sbWinS/basisV3 of dimension 8
+Opening file: run/sbWinS/basisE3.000000
+Read basis run/sbWinS/basisE3 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1813, 19.9451, 605.186
+start preprocessing hyper-reduction
+number of samples for velocity: 16
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 9 elements, 37 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0537262 sec
+Opening file: run/sbWinS/basisV2.000000
+Read basis run/sbWinS/basisV2 of dimension 9
+Opening file: run/sbWinS/basisE2.000000
+Read basis run/sbWinS/basisE2 of dimension 6
+Opening file: run/sbWinS/basisX2.000000
+Read basis run/sbWinS/basisX2 of dimension 6
+Opening file: run/sbWinS/basisV2.000000
+Read basis run/sbWinS/basisV2 of dimension 9
+Opening file: run/sbWinS/basisE2.000000
+Read basis run/sbWinS/basisE2 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1804, 18.504, 704.135
+start preprocessing hyper-reduction
+number of samples for velocity: 18
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 9 elements, 32 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0623982 sec
+Opening file: run/sbWinS/basisV1.000000
+Read basis run/sbWinS/basisV1 of dimension 10
+Opening file: run/sbWinS/basisE1.000000
+Read basis run/sbWinS/basisE1 of dimension 6
+Opening file: run/sbWinS/basisX1.000000
+Read basis run/sbWinS/basisX1 of dimension 6
+Opening file: run/sbWinS/basisV1.000000
+Read basis run/sbWinS/basisV1 of dimension 10
+Opening file: run/sbWinS/basisE1.000000
+Read basis run/sbWinS/basisE1 of dimension 6
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1798, 15.2762, 861.851
+start preprocessing hyper-reduction
+number of samples for velocity: 20
+number of samples for energy  : 12
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 8 elements, 30 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0747378 sec
+Opening file: run/sbWinS/basisV0.000000
+Read basis run/sbWinS/basisV0 of dimension 8
+Opening file: run/sbWinS/basisE0.000000
+Read basis run/sbWinS/basisE0 of dimension 5
+Opening file: run/sbWinS/basisX0.000000
+Read basis run/sbWinS/basisX0 of dimension 7
+Opening file: run/sbWinS/basisV0.000000
+Read basis run/sbWinS/basisV0 of dimension 8
+Opening file: run/sbWinS/basisE0.000000
+Read basis run/sbWinS/basisE0 of dimension 5
+Reading: run/sbWinS/ROMoffset/init
+Read init vectors X, V, E with norms 71.1796, 0, 1024
+start preprocessing hyper-reduction
+number of samples for velocity: 16
+number of samples for energy  : 10
+number of prescribed samples for velocity: 0
+number of prescribed samples for energy  : 0
+sample mesh has 6 elements, 24 vertices
+Elapsed time for hyper-reduction preprocessing: 0.0487682 sec
+Writing SP files for window: 0
+Writing SP files for window: 1
+Writing SP files for window: 2
+Writing SP files for window: 3
+Writing SP files for window: 4
+Writing SP files for window: 5
+Writing SP files for window: 6
+Writing SP files for window: 7
+Writing SP files for window: 8
+Writing SP files for window: 9
+Writing SP files for window: 10
+Writing SP files for window: 11
+Writing SP files for window: 12
+Writing SP files for window: 13
+Writing SP files for window: 14
+Writing SP files for window: 15
+Writing SP files for window: 16
+Writing SP files for window: 17
+Writing SP files for window: 18
+Writing SP files for window: 19
+Writing SP files for window: 20
+Writing SP files for window: 21
+Writing SP files for window: 22
+Writing SP files for window: 23
+Writing SP files for window: 24
+Writing SP files for window: 25
+Writing SP files for window: 26
+Writing SP files for window: 27
+Writing SP files for window: 28
+Writing SP files for window: 29
+Writing SP files for window: 30
+Writing SP files for window: 31
+Writing SP files for window: 32
+Writing SP files for window: 33
+Writing SP files for window: 34
+Writing SP files for window: 35
+Writing SP files for window: 36
+Writing SP files for window: 37
+Writing SP files for window: 38
+Writing SP files for window: 39
+Writing SP files for window: 40
+Writing SP files for window: 41
+Writing SP files for window: 42
+Writing SP files for window: 43
+Writing SP files for window: 44
+Writing SP files for window: 45
+Writing SP files for window: 46
+Writing SP files for window: 47
+Writing SP files for window: 48
+Offset Style: load
+Indicator Style: time
+Window 0: initial romS norm 0
+Hyperreduction pre-processing completed. 

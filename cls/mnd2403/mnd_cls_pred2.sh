@@ -26,7 +26,7 @@ echo "Recovering number of basis vectors:"
 for ((n = 0; n < "${#fractions[@]}"; n++)); do
 echo "frac: ${fractions[$n]}, w-basis vectors: ${n_w[$n]}, r-basis vectors: ${n_r[$n]}, nl-basis vectors: ${n_nl[$n]}"
 for((qq=1 ;qq<=23;qq++)) do
-q=$((qq+ 5*n_nl[$n]))
+q=$((5*qq+ n_nl[$n]))
         mixed_nonlinear_diffusion -online -rrdim ${n_r[$n]} -rwdim ${n_w[$n]} -nldim ${n_nl[$n]} -p 1 -sh 0.3 -id 3 -nsr $q -hrtype sopt > "${myPath}/mnd_pred_sopt_online${n}q${q}.txt"
         err=$(cat ${myPath}/mnd_pred_sopt_online${n}q${q}.txt | grep "Relative l2 error of ROM solution " | egrep -wo 'nan|[0-9]*\.([0-9]*|[0-9]*e\-[0-9]*|[0-9]*e\+[0-9]*)')
         TT=$(cat ${myPath}/mnd_pred_sopt_online${n}q${q}.txt | grep "Elapsed time for time integration loop " | egrep -wo 'nan|[0-9]*\.([0-9]*|[0-9]*e\-[0-9]*|[0-9]*e\+[0-9]*)')
